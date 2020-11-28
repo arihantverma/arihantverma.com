@@ -5,5 +5,5 @@
 [[redirects]]
   from = '/resume'
   to = 'https://www.notion.so/arihant/Arihant-Verma-88508cf57c38404ebdfb2a3f2bfd6877'
-  status = 200
+  status = 301
   force = true
