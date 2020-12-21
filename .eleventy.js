@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
+const util = require('util');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
@@ -20,6 +21,11 @@ module.exports = function (eleventyConfig) {
       "dd LLL yyyy"
     );
   });
+
+  eleventyConfig.addFilter('dump', obj => {
+    return util.inspect(obj)
+  });
+
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
@@ -70,6 +76,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("fonts");
+
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
