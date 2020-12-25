@@ -6,19 +6,24 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const CleanCSS = require("clean-css");
+const footnotes = require('eleventy-plugin-footnotes')
+
+const readableFormatForLuxon = "dd LLL yyyy"
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(footnotes)
 
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
+    return DateTime.fromJSDate(dateObj, { zone: "utc+05:30" }).toFormat(
+      readableFormatForLuxon
     );
   });
 
@@ -43,6 +48,49 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("min", (...numbers) => {
     return Math.min.apply(null, numbers);
+  });
+
+/** SHORT CODES */
+  eleventyConfig.addShortcode("pageHeading", (title, putColor) => {
+    return `<h1 class="heading-generic ${putColor ? 'heading__color' : ''}">${title}</h1>`
+  })
+
+  // georgia-font font1point1rem classes if we want georgia with 1.1rem
+  eleventyConfig.addShortcode("inlineDoubleQuotes", (text) => {
+    return `<span class="double-open-close-quote">${text}</span>`
+  })
+
+  eleventyConfig.addShortcode("note", (text) => {
+    return `<p style="background: var(--oceanblue);color: white;padding: 10px 15px;">${text}</p>`
+  })
+
+  eleventyConfig.addShortcode("blur", (text, spread = "5px", blurColor = "rgba(0, 0, 0, 0.75") => {
+    return `<span style="color: transparent; text-shadow: 0 0 ${spread} ${blurColor}">${text}</span>`
+  })
+
+  eleventyConfig.addPairedShortcode("doubleQuotesPaired", (content) => {
+    return `<span class="double-open-close-quote">${content}</span>`
+  })
+
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, bs) {
+
+        bs.addMiddleware("*", (req, res) => {
+          const content_404 = fs.readFileSync('_site/404.html');
+          // Add 404 http status code in request header.
+          res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      }
+    }
+  });
+
+  // inline css https://www.11ty.dev/docs/quicktips/inline-css/
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
   });
 
   eleventyConfig.addCollection("tagList", function (collection) {
