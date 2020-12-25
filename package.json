@@ -1,28 +1,29 @@
 {
-  "name": "eleventy-base-blog",
-  "version": "5.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "name": "arihantverma.com",
+  "version": "1.0.0",
+  "description": "Arihant Verma's personal website",
   "scripts": {
-    "build": "eleventy",
+    "buildprod": "DEBUG=* ELEVENTY_ENV=prod eleventy",
+    "builddev": "DEBUG=* ELEVENTY_ENV=dev eleventy",
     "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "start": "eleventy --serve",
+    "servedev": "ELEVENTY_ENV=dev eleventy --serve",
+    "start": "ELEVENTY_ENV=dev eleventy --serve",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/arihantverma/website"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Arihant Verma",
+    "email": "arihantverma1994@gmail.com",
+    "url": "https://arihantverma.com/"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/arihantverma/website/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://github.com/arihantverma/website#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
@@ -31,5 +32,9 @@
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5"
+  },
+  "dependencies": {
+    "clean-css": "^4.2.3",
+    "eleventy-plugin-footnotes": "^0.9.0"
   }
 }

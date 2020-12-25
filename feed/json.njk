@@ -6,7 +6,7 @@ eleventyExcludeFromCollections: true
 {
   "version": "https://jsonfeed.org/version/1",
   "title": "{{ metadata.title }}",
-  "home_page_url": "{{ metadata.url }}",
+  "home_page_url": "{{ metadata.homeUrl }}",
   "feed_url": "{{ metadata.jsonfeed.url }}",
   "description": "{{ metadata.description }}",
   "author": {
@@ -15,7 +15,7 @@ eleventyExcludeFromCollections: true
   },
   "items": [
     {%- for post in collections.posts | reverse %}
-    {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
+    {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.homeUrl) }}{% endset -%}
     {
       "id": "{{ absolutePostUrl }}",
       "url": "{{ absolutePostUrl }}",

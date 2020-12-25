@@ -2,14 +2,43 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
+<h1 class="heading-generic">{{ title }}</h1>
 
-{{ content | safe }}
+<section class="post-content">
+  {% if not dontShowDate %}
+    <div class="post__container">
+      <div class="post__date">
+        <span>Last Modified: </span>
+        <time datetime="{{ post.date | htmlDateString }}">
+          <em>
+            {{page.date | readableDate }}</title>
+          </em>
+        </time>
+      </div>
 
-<hr>
+      {% if publishDate %}
+        <div class="post__date">
+          <span>Published On: </span>
+          <time datetime="{{ publishDate | readableDate }}" class="post__date">
+            <em>
+              {{publishDate | readableDate }}</title>
+            </em>
+          </time>
+        </div>
+    </div>
+  {% endif %}
+
+    <hr>
+  {% endif %}
+
+  {{ content | safe }}
+</section>
+
 <ul>
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
   {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
+
+{% footnotes %}
