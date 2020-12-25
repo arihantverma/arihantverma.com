@@ -5,6 +5,7 @@ templateClass: tmpl-post
 eleventyNavigation:
   key: About Me
   order: 2
+dontShowDate: true
 ---
 
 I'm Arihant. It means one who has conquered his mind. I'm a non stick pan to events 🥘 🟩
@@ -16,6 +17,12 @@ I like to read other people's code, learn from it, and make videos about or writ
 I read and write a lot of short stories, novels and poetry. A weekly list of literature and art suggestions coming soon.
 
 I write because it keeps me honest to myself and because I like to write stories which help people become free of concern.
+
+Look out for this web space for
+
+- Book Reviews, Book Suggestions
+- React, Javascript, CSS
+- Deep run downs of open source code
 
 ## Links
 

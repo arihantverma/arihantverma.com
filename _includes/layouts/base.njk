@@ -1,21 +1,75 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% set absolutePageUrl %}{{ page.url | url | absoluteUrl(metadata.homeUrl) }}{% endset %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
-    {# <link rel="stylesheet" href="{{ '/css/reset.css' | url }}"> #}
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <meta name="author" content="{{ metadata.author.name }}">
+
+    {# OPEN GRAPH TAGS #}
+
+    {#
+      TODO: be more precise with og:type 'article' namespace when you get time.
+      reference — https://ogp.me/#types
+    #}
+    <meta property="og:type" content="{{ogType or 'website'}}">
+    <meta property="og:description" content="{{ description or metadata.description }}">
+    <meta property="og:url" content="{{ absolutePageUrl }}">
+     {# TODO #}
+    {# <meta property="og:img" content="${data.img}"> #}
+    {# <meta property="og:img:alt" content="${data.img_alt}"> #}
+
+    {# STYLE SHEETS #}
+
+    {% if envdata.environment !== "prod" %}
+      <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    {% endif %}
+
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+
+    {# MISC | SEO #}
+
+    <link rel="canonical" href="{{ absolutePageUrl }}"/>
+
+
+    {# TWITTER META TAGS #}
+    {% if image %}
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="{{ image }}">
+    {% else %}
+      <meta name="twitter:card" content="summary">
+    {% endif %}
+    <meta name="twitter:site" content="@gdadsriver">
+    <meta name="twitter:creator" content="@gdadsriver">
+    <meta name="twitter:title" content="{{ title or metadata.title }}">
+
+    {# RSS FEED #}
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+    <meta name="twitter:description" content="{{ description or metadata.description }}">
     {# <link rel="preload" as="font" href="/fonts/wotfard-regular-webfont.woff2" type="font/woff2" crossorigin="anonymous"> #}
+
+    {# website css inline #}
+
+
+    {% set css %}
+      {% include "../../css/index.css" %}
+    {% endset %}
+
+
+  {% if envdata.environment === 'prod' %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+  {% endif %}
+
   </head>
   <body>
     <header>
       <h1 class="home">
-        <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+        <a class="heading__color" href="{{ '/' | url }}">{{ metadata.title }}</a>
       </h1>
 
       <nav class="nav-container">

@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Arihant Verma's personal website",
   "scripts": {
-    "build": "eleventy",
+    "buildprod": "DEBUG=* ELEVENTY_ENV=prod eleventy",
+    "builddev": "DEBUG=* ELEVENTY_ENV=dev eleventy",
     "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "start": "eleventy --serve",
+    "servedev": "ELEVENTY_ENV=dev eleventy --serve",
+    "start": "ELEVENTY_ENV=dev eleventy --serve",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {
@@ -31,5 +32,9 @@
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5"
+  },
+  "dependencies": {
+    "clean-css": "^4.2.3",
+    "eleventy-plugin-footnotes": "^0.9.0"
   }
 }

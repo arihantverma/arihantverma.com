@@ -1,24 +1,33 @@
-{# <ol reversed="reversed" class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+<ol reversed="reversed" class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
   {% for post in postslist | reverse %}
     <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-      <a href="{{ post.url | url }}" class="postlist-link">
-        {% if post.data.title %}{{ post.data.title }}
-        {% else %}
-          <code>{{ post.url }}</code>
-        {% endif %}
-      </a>
-      <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      {% for tag in post.data.tags %}
-        {%- if collections.tagList.indexOf(tag) != -1 -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
+
+      <span class="post-list-item__date-container">
+        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      </span>
+
+        <span class="post-list-item__title-container">
+          <a href="{{ post.url | url }}" class="postlist-link">
+            {% if post.data.title %}{{ post.data.title }}
+            {% else %}
+              <code>{{ post.url }}</code>
+            {% endif %}
+          </a>
+        </span>
+
+        <span class="post-list-item__tags-container">
+        {% for tag in post.data.tags %}
+          {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %}
+        </span>
     </li>
   {% endfor %}
-</ol> #}
+</ol>
 
-<table class="home__list-of-posts">
+{# <table class="home__list-of-posts">
   <tbody>
     {% for post in postslist | reverse %}
 
@@ -51,4 +60,4 @@
 
     {% endfor %}
   </tbody>
-</table>
+</table> #}
