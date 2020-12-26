@@ -26,8 +26,8 @@
   /* --color-gray-100: white; */
 }
 
-* {
-  box-sizing: border-box;
+*, *:after, *:before {
+	box-sizing: border-box;
 }
 
 /* @font-face {
@@ -48,20 +48,22 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Garamond, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Garamond, -apple-system, BlinkMacSystemFont, 'Helvetica Neue','Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   color: var(--darkgray);
   background-color: var(--white);
 }
+
 p:last-child {
   margin-bottom: 0;
 }
-p,
+
+/* p, */
 .tmpl-post li,
 img {
   max-width: 37.5em; /* 600px /16 */
 }
-p,
+/* p, */
 .tmpl-post li {
   line-height: 1.45;
 }
@@ -74,6 +76,7 @@ a[href]:visited {
 .main-container {
   padding: 1rem 0 0;
   max-width: 675px;
+  /* margin: 0 302.500px; */
   margin: auto;
 }
 
@@ -185,7 +188,8 @@ pre {
 .heading-generic {
   text-align: left;
   padding: 0 1.25rem;
-  font-family: impact, Georgia, Garamond, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: impact, Helvetica, Georgia, Garamond, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
 }
 
 .heading__color {
@@ -196,16 +200,17 @@ pre {
 .nav-container {
   display: inline-block;
 }
+
 .nav-list {
   padding: 0;
   list-style: none;
   margin-left: 1em;
   font-weight: 700;
-  font-family:  Garamond, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:  Garamond, Helvetica, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .nav-item {
   display: inline-block;
-  margin-right: 1em;
+  margin: 0 1.2rem -2px 0;
 
   /* to prevent a slight flicker */
   border-bottom: 2px solid white;
@@ -247,10 +252,9 @@ pre {
   text-align: left;
 }
 
-
 .post-content {
   padding: 0 1.25rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   counter-reset: footnotes;
 }
 
@@ -324,7 +328,7 @@ pre {
   font-size: 1.2rem;
 }
 .postlist-item {
-  padding: 5px 10px;
+  padding: 10px 20px;
   /* counter-increment: start-from -1; */
   /* display: flex; */
   /* text-align: center; */
@@ -364,6 +368,7 @@ pre {
   align-items: center; */
   /* flex: 1 */
   flex: 1;
+  padding: 0 15px 0 0;
 }
 
 .post-list-item__title-container {
@@ -465,8 +470,8 @@ a[href].direct-link:focus:visited,
 }
 
 @media only screen
-  and (min-device-width: 768px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-device-width: 768px) {
+
     header {
       display: flex;
       align-items: center;
@@ -488,6 +493,7 @@ a[href].direct-link:focus:visited,
 
     .main-container {
       padding: 1rem;
+      min-width: 675px;
     }
 
     .heading-generic {
@@ -510,8 +516,12 @@ a[href].direct-link:focus:visited,
     }
 
     /* .post-content {
-      font-size: 1.4rem;
+      min-width: 675px;
     } */
+
+    .postlist-item {
+      padding: 0;
+    }
 
     .nav-list a {
       font-family: Impact, Georgia, Garamond, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

@@ -6,6 +6,7 @@ eleventyNavigation:
   key: About Me
   order: 2
 dontShowDate: true
+permalink: '/about/'
 ---
 
 I'm Arihant. It means one who has conquered his mind. I'm a non stick pan to events 🥘 🟩

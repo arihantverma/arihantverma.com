@@ -64,7 +64,7 @@ module.exports = function (eleventyConfig) {
     return `<p style="background: var(--oceanblue);color: white;padding: 10px 15px;">${text}</p>`
   })
 
-  eleventyConfig.addShortcode("blur", (text, spread = "5px", blurColor = "rgba(0, 0, 0, 0.75") => {
+  eleventyConfig.addShortcode("blur", (text, spread = "10px", blurColor = "rgba(0, 0, 0, 0.75") => {
     return `<span style="color: transparent; text-shadow: 0 0 ${spread} ${blurColor}">${text}</span>`
   })
 

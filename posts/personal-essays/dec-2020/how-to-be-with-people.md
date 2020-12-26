@@ -3,7 +3,7 @@ title: I don't know how to be with people.
 tags: personal essay
 layout: layouts/post.njk
 date: Last Modified
-publishDate: 2020-12-24
+publishDate: 2020-12-25
 ---
 
 {% note "Note: This is a rant. Please read at your own discretion." %}
@@ -56,7 +56,7 @@ I recently quit my job, so that I find a better paying one ( not a good reason t
 
 ## My Resgination Mail
 
- Hey {% blur "Abhishek" "5px" "rgba(0, 0, 0, 0.5)"%},
+ Hey {% blur "Abhishek" "10px" "rgba(0, 0, 0, 0.5)"%},
 
 Thanks a lot for the conversation that we had at the start of the last week. It gave me a sense of direction and of course very concerned, empathetic and encouraging advice from you.
 

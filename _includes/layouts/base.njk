@@ -92,4 +92,19 @@
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const garamondIsAvailable = document.fonts && document.fonts.check("1.2rem Garamond");
+      const selectorString = '.post-content';
+
+      const selectors = document.querySelectorAll(selectorString)
+
+      if (garamondIsAvailable) {
+        Array.prototype.slice.call(selectors).forEach(node => {
+          node.style.fontSize = "1.3rem";
+        })
+      }
+    })
+  </script>
 </html>

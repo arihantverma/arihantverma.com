@@ -6,9 +6,11 @@ eleventyNavigation:
   key: Writing
   order: 4
 dontShowDate: true
+permalink: '/writing/'
 ---
 
-## Poems
+### Poems
+
 [Three poems by Arihant Verma](https://bengalurureview.com/arihant-verma-poems)
 <em>Bengaluru Review</em>
 
