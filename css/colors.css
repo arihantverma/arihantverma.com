@@ -1,0 +1,35 @@
+:root {
+  --red: #c5004a;
+  --darkred: #7f0036;
+  --lightgray: #e0e0e0;
+  --gray: #c0c0c0;
+  --darkgray: #333;
+  --navy: #17050f;
+  --blue: #082840;
+  --white: #fff;
+  --oceanblue: #26b2cf;
+}
+
+/* gray */
+:root {
+  /* --color-gray-00:  black; */
+  /* --color-gray-10:  hsl(0, 0%, 10%); */
+  /* --color-gray-20:  hsl(0, 0%, 20%); */
+  /* --color-gray-30:  hsl(0, 0%, 30%); */
+  --color-gray-40:  hsl(0, 0%, 40%);
+  /* --color-gray-50:  hsl(0, 0%, 50%); */
+  /* --color-gray-60:  hsl(0, 0%, 60%); */
+  --color-gray-70:  hsl(0, 0%, 70%);
+  /* --color-gray-80:  hsl(0, 0%, 80%); */
+  --color-gray-90:  hsl(0, 0%, 90%);
+  --color-gray-95:  hsl(0, 0%, 95%);
+  /* --color-gray-100: white; */
+}
+
+.color-ocean-blue {
+  color: var(--oceanblue)
+}
+
+.color-navy {
+  color: var(--navy)
+}

@@ -10,7 +10,7 @@
           <a href="{{ post.url | url }}" class="postlist-link">
             {% if post.data.title %}{{ post.data.title }}
             {% else %}
-              <code>{{ post.url }}</code>
+              <span>{{ post.url }}</span>
             {% endif %}
           </a>
         </span>
@@ -26,38 +26,3 @@
     </li>
   {% endfor %}
 </ol>
-
-{# <table class="home__list-of-posts">
-  <tbody>
-    {% for post in postslist | reverse %}
-
-      <tr>
-        <td class="post__time-cell">
-          <time datetime="{{ post.date | htmlDateString }}">
-            {{post.date | readableDate }}</title>
-          </time>
-        </td>
-
-        <td>
-          <a href="{{ post.url | url }}" class="postlist-link">
-            {% if post.data.title %}{{ post.data.title }}
-            {% else %}
-              <span>{{ post.url }}</span>
-            {% endif %}
-          </a>
-        </td>
-
-        <td>
-          {% for tag in post.data.tags %}
-            {%- if collections.tagList.indexOf(tag) != -1 -%}
-              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-              <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-            {%- endif -%}
-          {% endfor %}
-        </td>
-
-      </tr>
-
-    {% endfor %}
-  </tbody>
-</table> #}

@@ -1,0 +1,34 @@
+.flex {
+  display: flex;
+}
+
+.r-cent-vert {
+  align-items: center;
+}
+
+.r-cent-hor {
+  justify-content: center;
+}
+
+.block {
+  display: block;
+}
+
+@media only screen
+and (min-device-width: 768px) {
+  .d-flex {
+    display: flex;
+  }
+
+  .d-r-cent-vert {
+    align-items: center;
+  }
+
+  .d-r-cent-hor {
+    justify-content: center;
+  }
+
+  .d-block {
+    display: block;
+  }
+}
