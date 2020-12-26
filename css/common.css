@@ -1,0 +1,51 @@
+html {
+  /* https://css-tricks.com/elegant-fix-jumping-scrollbar-issue/. */
+  margin-left: calc(100vw - 100%);
+}
+
+.main-container {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+@media only screen
+and (min-device-width: 768px) {
+  .main-container {
+    padding: 0;
+  }
+}
+
+/* .text-align-center {
+  text-align: center;
+} */
+
+@media only screen
+and (min-device-width: 768px) {
+  .d-text-align-center {
+    text-align: center;
+  }
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.double-open-close-quote {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.double-open-close-quote::before {
+ content: open-quote;
+}
+
+.double-open-close-quote::after {
+ content: close-quote;
+}
+
+/* a kind of a tags */
+
+.underlined-anchor {
+  text-decoration: underline;
+  color: var(--navy);
+}

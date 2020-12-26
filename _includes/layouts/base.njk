@@ -23,9 +23,18 @@
 
     {# STYLE SHEETS #}
 
-    {% if envdata.environment !== "prod" %}
-      <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
-    {% endif %}
+    <link rel="stylesheet" href="{{ '/css/remedy/remedy.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/remedy/reminders.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/colors.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/fonts.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/fonts-override.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/common.css' | url }}">
+
+    <link rel="stylesheet" href="{{ '/css/layout.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/header.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/post.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/post-list.css' | url }}">
+
 
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
 
@@ -54,41 +63,30 @@
     {# website css inline #}
 
 
-    {% set css %}
+    {# {% set css %}
       {% include "../../css/index.css" %}
-    {% endset %}
+    {% endset %} #}
 
 
-  {% if envdata.environment === 'prod' %}
+  {# {% if envdata.environment === 'prod' %}
     <style>
       {{ css | cssmin | safe }}
     </style>
-  {% endif %}
+  {% endif %} #}
 
   </head>
   <body>
-    <header>
-      <h1 class="home">
-        <a class="heading__color" href="{{ '/' | url }}">{{ metadata.title }}</a>
-      </h1>
+    <div class="app">
+      {# flex r-cent-hor r-cent-vert #}
+      {% include "./_header.njk" %}
 
-      <nav class="nav-container">
-        <ul class="nav-list">
-          {%- for entry in collections.all | eleventyNavigation %}
-            <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}">
-              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-            </li>
-          {%- endfor %}
-        </ul>
-      </nav>
+      <main{% if templateclass %} class="{{ templateClass }}" {% endif %} class="main-container">
+        {{ content | safe }}
+      </main>
 
-    </header>
+      <footer></footer>
 
-    <main{% if templateclass %} class="{{ templateClass }}" {% endif %} class="main-container">
-      {{ content | safe }}
-    </main>
-
-    <footer></footer>
+    </div>
 
     <!-- Current page: {{ page.url | url }} -->
   </body>
@@ -96,13 +94,13 @@
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
       const garamondIsAvailable = document.fonts && document.fonts.check("1.2rem Garamond");
-      const selectorString = '.post-content';
+      const selectorString = '.post__content';
 
       const selectors = document.querySelectorAll(selectorString)
 
       if (garamondIsAvailable) {
         Array.prototype.slice.call(selectors).forEach(node => {
-          node.style.fontSize = "1.3rem";
+          node.style.fontSize = "1.4rem";
         })
       }
     })

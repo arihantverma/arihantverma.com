@@ -1,0 +1,25 @@
+{% if not dontShowDate %}
+  <div class="post__date--container font-size-base">
+    <div class="post__date post__last-modified-date">
+      <span>Last Modified: </span>
+      <time datetime="{{ post.date | htmlDateString }}">
+        <em>
+          {{page.date | readableDate }}</title>
+        </em>
+      </time>
+    </div>
+
+    {% if publishDate %}
+      <div class="post__date post__publish-date">
+        <span>Published On: </span>
+        <time datetime="{{ publishDate | readableDate }}">
+          <em>
+            {{publishDate | readableDate }}</title>
+          </em>
+        </time>
+      </div>
+  </div>
+{% endif %}
+
+  <hr>
+{% endif %}
