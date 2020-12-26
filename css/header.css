@@ -18,6 +18,7 @@
 
 .site-header__nav-list--item {
   border-bottom: 4px solid white;
+  margin-bottom: -4px;
 }
 
 .site-header__nav-list--item-active {
@@ -26,7 +27,6 @@
 
 .site-header__nav-list--item-link {
   padding: 1rem;
-  text-decoration: none;
 }
 
 .site-header__nav-list--item:hover .site-header__nav-list--item-link {

@@ -28,8 +28,12 @@
     <link rel="stylesheet" href="{{ '/css/colors.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/fonts.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/fonts-override.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/common.css' | url }}">
+
     <link rel="stylesheet" href="{{ '/css/layout.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/header.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/post.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/post-list.css' | url }}">
 
 
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
@@ -74,37 +78,13 @@
   <body>
     <div class="app">
       {# flex r-cent-hor r-cent-vert #}
-      <header class="site-header font-family-system font-family-override-impact font-family-helvetica  d-font-family-impact block d-flex d-r-cent-vert d-r-cent-hor">
-        <h1 class="site-header__heading font-size-xxxxlarge">
-          <a
-            class="site-header__heading--link color-ocean-blue"
-            href="{{ '/' | url }}">
-              {{ metadata.title }}
-          </a>
-        </h1>
+      {% include "./_header.njk" %}
 
-        <nav class="site-header__nav-container">
-          <ul class="site-header__nav-list flex">
-            {%- for entry in collections.all | eleventyNavigation %}
-              <li
-                class="site-header__nav-list--item{% if entry.url == page.url %} site-header__nav-list--item-active{% endif %}"
-              >
-                <a
-                  href="{{ entry.url | url }}"
-                  class="site-header__nav-list--item-link font-size-xlarge d-font-size-xxlarge font-weight-bold color-navy">
-                  {{ entry.title }}
-                </a>
-              </li>
-            {%- endfor %}
-          </ul>
-        </nav>
-      </header>
+      <main{% if templateclass %} class="{{ templateClass }}" {% endif %} class="main-container">
+        {{ content | safe }}
+      </main>
 
-    <main{% if templateclass %} class="{{ templateClass }}" {% endif %} class="main-container">
-      {{ content | safe }}
-    </main>
-
-    <footer></footer>
+      <footer></footer>
 
     </div>
 
@@ -114,13 +94,13 @@
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
       const garamondIsAvailable = document.fonts && document.fonts.check("1.2rem Garamond");
-      const selectorString = '.post-content';
+      const selectorString = '.post__content';
 
       const selectors = document.querySelectorAll(selectorString)
 
       if (garamondIsAvailable) {
         Array.prototype.slice.call(selectors).forEach(node => {
-          node.style.fontSize = "1.3rem";
+          node.style.fontSize = "1.4rem";
         })
       }
     })

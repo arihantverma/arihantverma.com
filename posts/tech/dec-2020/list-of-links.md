@@ -3,7 +3,7 @@ title: This is my fifth post.
 description: Weekly List of Tech Things
 date: 2018-09-30
 tags: weekly tech links
-layout: layouts/post.njk
+layout: layouts/post/post.njk
 eleventyExcludeFromCollections: true,
 permalink: false
 ---
@@ -17,3 +17,4 @@ Bring to the table win-win survival strategies to ensure proactive domination. A
 - https://snyk.io/vuln/SNYK-JS-MINIMIST-559764
 - `npm root -g`
 - [an interesting privacy leak](https://lobste.rs/s/oay17v/introducing_emoji_picker_element_memory)
+https://twitter.com/gdadsriver/status/1342848820661559296

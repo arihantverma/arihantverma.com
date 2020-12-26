@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+
+<section class="post__container font-family-system font-family-garamond">
+  <h1 class="post__heading font-family-system font-family-override-impact font-family-helvetica d-font-family-impact color-dark-gray">{{ title }}</h1>
+
+  <section class="post__content font-size-xlarge">
+    {% include "./_dates.njk" %}
+
+    <article>
+      {{ content | safe }}
+    </article>
+  </section>
+<section>
+
+{% include "./_prevnext.njk" %}
+
+{% footnotes %}

@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  eleventyConfig.addFilter('dump', obj => {
+  eleventyConfig.addFilter('dump', (obj) => {
     return util.inspect(obj)
   });
 
@@ -50,10 +50,7 @@ module.exports = function (eleventyConfig) {
     return Math.min.apply(null, numbers);
   });
 
-/** SHORT CODES */
-  eleventyConfig.addShortcode("pageHeading", (title, putColor) => {
-    return `<h1 class="heading-generic ${putColor ? 'heading__color' : ''}">${title}</h1>`
-  })
+  /** SHORT CODES */
 
   // georgia-font font1point1rem classes if we want georgia with 1.1rem
   eleventyConfig.addShortcode("inlineDoubleQuotes", (text) => {
