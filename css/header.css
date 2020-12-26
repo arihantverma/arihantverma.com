@@ -1,0 +1,36 @@
+.site-header {
+  border-bottom: 1px dashed var(--lightgray);
+}
+
+.site-header__heading {
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.site-header__heading :link:not(:hover) {
+  text-decoration: none;
+  margin: 1rem 0;
+}
+
+.site-header__nav-list {
+  padding: 0;
+}
+
+.site-header__nav-list--item {
+  border-bottom: 4px solid white;
+  margin-bottom: -4px;
+}
+
+.site-header__nav-list--item-active {
+  border-bottom: 4px solid var(--oceanblue)
+}
+
+.site-header__nav-list--item-link {
+  padding: 1rem;
+}
+
+.site-header__nav-list--item:hover .site-header__nav-list--item-link {
+  color: var(--oceanblue)
+}
+
+

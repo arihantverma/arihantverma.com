@@ -1,0 +1,25 @@
+<header class="site-header font-family-system font-family-override-impact font-family-helvetica  d-font-family-impact block d-flex d-r-cent-vert d-r-cent-hor">
+  <h1 class="site-header__heading font-size-xxxxlarge">
+    <a
+      class="site-header__heading--link color-ocean-blue"
+      href="{{ '/' | url }}">
+        {{ metadata.title }}
+    </a>
+  </h1>
+
+  <nav class="site-header__nav-container">
+    <ul class="site-header__nav-list flex">
+      {%- for entry in collections.all | eleventyNavigation %}
+        <li
+          class="site-header__nav-list--item{% if entry.url == page.url %} site-header__nav-list--item-active{% endif %}"
+        >
+          <a
+            href="{{ entry.url | url }}"
+            class="site-header__nav-list--item-link font-size-xlarge d-font-size-xxlarge font-weight-bold color-navy no-text-decoration">
+            {{ entry.title }}
+          </a>
+        </li>
+      {%- endfor %}
+    </ul>
+  </nav>
+</header>
