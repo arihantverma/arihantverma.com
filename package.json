@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Arihant Verma's personal website",
   "scripts": {
-    "buildprod": "DEBUG=* ELEVENTY_ENV=prod eleventy",
-    "builddev": "DEBUG=* ELEVENTY_ENV=dev eleventy",
+    "buildprod": "DEBUG=* ELEVENTY_ENV=production eleventy",
+    "builddev": "DEBUG=* ELEVENTY_ENV=development eleventy",
     "watch": "eleventy --watch",
-    "servedev": "ELEVENTY_ENV=dev eleventy --serve",
-    "start": "ELEVENTY_ENV=dev eleventy --serve",
+    "servedev": "ELEVENTY_ENV=development eleventy --serve",
+    "start": "ELEVENTY_ENV=development eleventy --serve",
     "debug": "DEBUG=* eleventy"
   },
   "repository": {

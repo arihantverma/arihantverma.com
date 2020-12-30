@@ -21,20 +21,6 @@
     {# <meta property="og:img" content="${data.img}"> #}
     {# <meta property="og:img:alt" content="${data.img_alt}"> #}
 
-    {# STYLE SHEETS #}
-
-    <link rel="stylesheet" href="{{ '/css/remedy/remedy.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/remedy/reminders.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/colors.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/fonts.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/fonts-override.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/common.css' | url }}">
-
-    <link rel="stylesheet" href="{{ '/css/layout.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/header.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/post.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/post-list.css' | url }}">
-
 
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
 
@@ -63,16 +49,25 @@
     {# website css inline #}
 
 
-    {# {% set css %}
-      {% include "../../css/index.css" %}
-    {% endset %} #}
+    {% set css %}
+      {# STYLE SHEETS #}
+      {% include "../../css/remedy/remedy.css" %}
+      {% include "../../css/remedy/reminders.css" %}
+      {% include "../../css/colors.css" %}
+      {% include "../../css/fonts.css" %}
+      {% include "../../css/fonts-override.css" %}
+      {% include "../../css/common.css" %}
+      {% include "../../css/layout.css" %}
+      {% include "../../css/header.css" %}
+      {% include "../../css/post.css" %}
+      {% include "../../css/post-list.css" %}
+    {% endset %}
 
-
-  {# {% if envdata.environment === 'prod' %}
-    <style>
-      {{ css | cssmin | safe }}
-    </style>
-  {% endif %} #}
+  {% if myProject.environment == "production" %}
+    <style>{{ css | cssmin | safe }}</style>
+  {% else %}
+    <style>{{ css | safe }}</style>
+  {% endif %}
 
   </head>
   <body>

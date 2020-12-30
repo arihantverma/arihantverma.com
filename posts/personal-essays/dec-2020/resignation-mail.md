@@ -8,7 +8,7 @@ publishDate: 2020-12-27
 
 ## My Resgination Mail
 
- Hey {% blur "Boss'sName" "10px" "rgba(0, 0, 0, 0.5)"%},
+ Hey {% blur "Boss's_Name" "10px" "rgba(0, 0, 0, 0.5)"%},
 
 Thanks a lot for the conversation that we had at the start of the last week. It gave me a sense of direction and of course very concerned, empathetic and encouraging advice from you.
 

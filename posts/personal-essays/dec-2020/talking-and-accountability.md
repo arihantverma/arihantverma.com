@@ -82,8 +82,4 @@ I ask if I should go get her milk for her, I say, _{% inlineDoubleQuotes "I real
 
 [This website that you're at](https://github.com/arihantverma/arihantverma.com) is the first project out of finally realising it was time for me to shun all sensory pleasures and work. If you've made it to the end of the post. Congrats! You deserve some confetti 🎉🎊.
 
-
-
-
-
-
+Thank the Lord for meditation.
