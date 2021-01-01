@@ -44,7 +44,9 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
     <meta name="twitter:description" content="{{ description or metadata.description }}">
-    {# <link rel="preload" as="font" href="/fonts/wotfard-regular-webfont.woff2" type="font/woff2" crossorigin="anonymous"> #}
+
+    {# todo: find out what 'crossorigin' does #}
+    <link rel="preload" as="font" href="/fonts/CascadiaCode.woff2" type="font/woff2">
 
     {# website css inline #}
 
@@ -57,6 +59,7 @@
       {% include "../../css/fonts.css" %}
       {% include "../../css/fonts-override.css" %}
       {% include "../../css/common.css" %}
+      {% include "../../css/code.css" %}
       {% include "../../css/layout.css" %}
       {% include "../../css/header.css" %}
       {% include "../../css/post.css" %}

@@ -2,8 +2,6 @@
 title: Importance Of Talking And The Birth Of Accountability
 tags: ["personal essay", "accountability", "thoughts"]
 layout: layouts/post/post.njk
-date: Last Modified
-publishDate: 2020-12-25
 ---
 
 ## A Brief History Of Me Not Talking

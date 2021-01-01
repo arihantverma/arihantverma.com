@@ -9,11 +9,29 @@ const markdownItAnchor = require("markdown-it-anchor");
 const CleanCSS = require("clean-css");
 const footnotes = require('eleventy-plugin-footnotes')
 
-const readableFormatForLuxon = "dd LLL yyyy"
+const {timeZone, readableDateFormatForLuxon} = require('./utils/constants');
+const getReadableDate = require("./utils/get-readable-date");
+
+
+/* Markdown Overrides */
+let markdownLibrary = markdownIt({
+  html: true,
+  breaks: true,
+  linkify: true,
+}).use(markdownItAnchor, {
+  permalink: true,
+  permalinkClass: "direct-link",
+  permalinkSymbol: "#",
+});
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight, {
+    init: function({ Prism }) {
+      // Prism.languages.myCustomLanguage = /* */;
+    }
+  });
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(footnotes)
 
@@ -22,19 +40,18 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post/post.njk");
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc+05:30" }).toFormat(
-      readableFormatForLuxon
-    );
+    return getReadableDate(dateObj)
   });
 
   eleventyConfig.addFilter('dump', (obj) => {
     return util.inspect(obj)
   });
 
+  eleventyConfig.addFilter('dumpKeys', obj => util.inspect(Object.keys(obj)))
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
+    return DateTime.fromJSDate(dateObj, { zone: timeZone }).toFormat("yyyy-LL-dd");
   });
 
   // Get the first `n` elements of a collection.
@@ -57,8 +74,36 @@ module.exports = function (eleventyConfig) {
     return `<span class="double-open-close-quote">${text}</span>`
   })
 
-  eleventyConfig.addShortcode("note", (text) => {
-    return `<p style="background: var(--oceanblue);color: white;padding: 10px 15px;">${text}</p>`
+  eleventyConfig.addShortcode("twitterShareLink", (
+    text = '',
+    url = '',
+    related = '',
+    hashtags = '',
+    additionalTwitterHandles = []
+  ) => {
+    const defaultHashtags = "marketingtwitter"
+
+    let additionalTwitterHandlesText = ''
+
+    additionalTwitterHandles.forEach((handle, index) => {
+      const isLast = index === additionalTwitterHandles.length - 1;
+      additionalTwitterHandlesText += `@${handle}${isLast ? ' ': ''}`;
+    })
+
+    const twitterText = `${text} ${additionalTwitterHandlesText}`;
+
+    const link = `https://twitter.com/intent/tweet?text=${twitterText}&url=${url}&via=gdadsriver&related=${related}&hashtags=${defaultHashtags}${hashtags ? ',' : ''}${hashtags}`;
+
+    return `<div class="post__twitter-share-text">
+      <h2 class="post__share--heading">Share</h2>
+      <span>If you liked this article please</span>
+      <a href="${link}">share it on twitter</a>
+    </div>`
+  })
+
+  eleventyConfig.addPairedShortcode("note", (content, fontSize) => {
+    const markdownToHtml = markdownLibrary.render(content);
+    return `<div class="post__note"><h3>Note</h3><div>${markdownToHtml}</div></div>`
   })
 
   eleventyConfig.addShortcode("blur", (text, spread = "10px", blurColor = "rgba(0, 0, 0, 0.75") => {
@@ -123,17 +168,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
 
-
-  /* Markdown Overrides */
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true,
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#",
-  });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Browsersync Overrides

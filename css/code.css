@@ -1,12 +1,16 @@
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
+  font-family: Cascadia Code, Courier, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono",
     "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
     "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
     "Courier New", Courier, monospace;
   line-height: 1.5;
+  background: #fdf6e380;
+  font-size: 1.2rem;
 }
+
 pre {
+  border-radius: 20px;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -25,6 +29,11 @@ pre {
   margin: 0.5em 0;
   background-color: #f6f6f6;
 }
+
+pre[class*="language-"] {
+  padding: 1.5rem;
+}
+
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
