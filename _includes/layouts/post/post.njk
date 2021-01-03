@@ -11,10 +11,21 @@ templateClass: tmpl-post
 
     <article>
       {{ content | safe }}
+
+      {% if not dontShowShare%}
+        {% twitterShareLink title, metadata.siteUrl + page.url, twitterRelated, twitterHashtags, twitterHandlesForText %}
+      {% endif %}
+
     </article>
   </section>
+
+  {% if not dontShowReadMore %}
+    <section class="post__read-more--container">
+      {% include "./_prevnext.njk" %}
+    </section>
+  {% endif %}
+
+  {% footnotes %}
 <section>
 
-{% include "./_prevnext.njk" %}
 
-{% footnotes %}

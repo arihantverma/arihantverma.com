@@ -7,7 +7,7 @@
     <li class="post-list__item{% if post.url == url %} postlist-item-active{% endif %}">
 
       <span class="post-list__item--date">
-        <time class="postlist-date" datetime="{{ post.data.publishDate | htmlDateString }}">{{ post.data.publishDate | readableDate }}</time>
+        <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       </span>
 
       <h3 class="post-list__item-title-url font-size-xlarge d-font-size-xxlarge">

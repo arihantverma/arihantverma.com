@@ -46,9 +46,17 @@
   margin-left: 0.1em;
 }
 
-.post__content a {
-  text-decoration: underline;
+.post__content a,
+.post__container a {
+  text-decoration: none;
+  border-bottom: 2px dotted var(--oceanblue);
   color: var(--navy);
+}
+
+
+.post__content a:hover,
+.post__container a:hover {
+  border-bottom: 2px solid var(--oceanblue);
 }
 
 
@@ -59,4 +67,44 @@
 .post__content table td,
 .post__content table th {
   padding-right: 1em;
+}
+
+/* injected from `note` paired short code */
+.post__note {
+  padding: 5px 10px 15px;
+  font-size: 1.2rem;
+  border: 1px dashed black;
+  background: var(--color-gray-90);
+}
+
+.post__note h3 {
+  text-decoration: underline;
+  margin: 5px 0;
+}
+
+.post__note p:last-child {
+  margin: 0;
+}
+
+.post__read-more--list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.post__read-more--container {
+  margin: 20px 0;
+  border: 2px solid var(--oceanblue);
+  padding: 1rem;
+}
+
+.post__read-more--container h2,
+.post__twitter-share-text h2 {
+  margin: 0 0 10px 0;
+}
+
+
+.post__twitter-share-text {
+  padding: 1rem;
+  border: 2px dotted var(--navy);
 }

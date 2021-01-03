@@ -6,6 +6,8 @@ eleventyNavigation:
   key: Writing
   order: 4
 dontShowDate: true
+dontShowShare: true
+dontShowReadMore: true
 permalink: '/writing/'
 ---
 
@@ -13,6 +15,3 @@ permalink: '/writing/'
 
 [Three poems by Arihant Verma](https://bengalurureview.com/arihant-verma-poems)
 <em>Bengaluru Review</em>
-
-<!-- ## Articles -->
-`
