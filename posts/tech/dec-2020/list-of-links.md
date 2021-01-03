@@ -18,3 +18,5 @@ Bring to the table win-win survival strategies to ensure proactive domination. A
 - `npm root -g`
 - [an interesting privacy leak](https://lobste.rs/s/oay17v/introducing_emoji_picker_element_memory)
 https://twitter.com/gdadsriver/status/1342848820661559296
+
+https://www.youtube.com/watch?v=Pe_-TkdbXN0&ab_channel=GoogleSearchCentral

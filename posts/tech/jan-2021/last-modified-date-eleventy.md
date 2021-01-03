@@ -6,6 +6,8 @@ layout: layouts/post/post.njk
 twitterHandlesForText: ["eleven_ty"]
 twitterRelated: eleven_ty:Simple Javascript Static Site Generator
 twitterHashtags: eleventy,staticsite,javascript,nunjucks,tech
+eleventyExcludeFromCollections: true
+permalink: false
 ---
 
 {% note %}

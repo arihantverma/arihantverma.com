@@ -6,6 +6,8 @@ eleventyNavigation:
   key: About Me
   order: 2
 dontShowDate: true
+dontShowShare: true
+dontShowReadMore: true
 permalink: '/about/'
 ---
 

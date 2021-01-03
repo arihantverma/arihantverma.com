@@ -12,14 +12,19 @@ templateClass: tmpl-post
     <article>
       {{ content | safe }}
 
-      {% twitterShareLink title, metadata.siteUrl + page.url, twitterRelated, twitterHashtags, twitterHandlesForText %}
+      {% if not dontShowShare%}
+        {% twitterShareLink title, metadata.siteUrl + page.url, twitterRelated, twitterHashtags, twitterHandlesForText %}
+      {% endif %}
 
     </article>
   </section>
 
-  <section class="post__read-more--container">
-    {% include "./_prevnext.njk" %}
-  </section>
+  {% if not dontShowReadMore %}
+    <section class="post__read-more--container">
+      {% include "./_prevnext.njk" %}
+    </section>
+  {% endif %}
+
   {% footnotes %}
 <section>
 

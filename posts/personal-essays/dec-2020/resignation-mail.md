@@ -3,6 +3,8 @@ title: 2nd Job Resignation Mail
 tags: ["personal essay", "email"]
 layout: layouts/post/post.njk
 twitterHashtags: resignation,movingon
+date: 2020-12-27
+lastModified: 2020-12-27
 ---
 
 ## My Resgination Mail

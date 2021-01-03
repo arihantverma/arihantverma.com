@@ -2,9 +2,9 @@
   <div class="post__date--container font-size-base">
     <div class="post__date post__last-modified-date">
       <span>Last Modified: </span>
-      <time datetime="{{ fileData.lastModified | htmlDateString }}">
+      <time datetime="{{ lastModified | htmlDateString }}">
         <em>
-          {{ fileData.lastModified }}
+          {{ lastModified | readableDate }}
         </em>
       </time>
     </div>
