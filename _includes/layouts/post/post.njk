@@ -19,16 +19,19 @@ templateClass: tmpl-post
 
 
       <div style="border: 2px solid var(--oceanblue); margin: 20px 0; padding: 1rem;">
-        {% if newsletter %}
-          <h2>If you enjoyed this essay please considering subscribing to my newsletter</h2>
-        {% endif %}
 
         {% if newsletter === 'lit' %}
+            <h2>
+              If you enjoyed this {% if typeOfPost %} {{ typeOfPost }} {% else %} essay {% endif %} please consider subscribing to my literature newsletter
+            </h2>
           {% newsletter "lit"%}
         {% endif %}
 
 
         {% if newsletter === 'tech' %}
+            <h2>
+              If you enjoyed this article please consider subscribing to my tech newsletter
+            </h2>
           {% newsletter "tech"%}
         {% endif %}
 
