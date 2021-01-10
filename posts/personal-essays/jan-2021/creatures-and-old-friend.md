@@ -1,5 +1,5 @@
 ---
-title: Butterfly With A Third Wing; A Possibly Blind, Hynotized or Drunk Pigeon; Memory Of An Old Friend
+title: Butterfly With A Third Wing; A Possibly Blind, Hypnotized or Drunk Pigeon; Memory Of An Old Friend
 description: About the time I accidentally almost interupped butterflies mating. Rendezvous with a possibly blind, hypnotized or drunken pigeon and memory of an old squirrel and school friend.
 tags: ["birds", "personal essay", "nature", "friends", "sunset"]
 layout: layouts/post/post.njk
@@ -25,9 +25,9 @@ I closed in on it again, and this time I could see for sure. It HAD a third wing
   😰
 </div>
 
-Cautious, but impatient, I gently squished the third wing between my index finger and thumb and pulled. The butterfly didn't care to squirm or try to pull out. I lifted it up, and it dangled in between my fingers in min air, motionless. Afraid I might have killed it, I brought my face so close to it that my nose almost touched one of its other wings.
+Cautious, but impatient, I gently squished the third wing between my index finger and thumb and pulled. The butterfly didn't care to squirm or try to pull out. I lifted it up, and it dangled in between my fingers in mid air, motionless. Afraid I might have killed it, I brought my face so close to it that my nose almost touched one of its other wings.
 
-> It wasn't a third wing. It was the whole male butterfly, with its wings closed, so much it appeared as one wing, attached to the female butterfly, mating.
+> It wasn't a third wing. It was the whole male butterfly, with its wings closed, so much, they appeared as one wing, attached to the female butterfly, mating.
 
 <div style="font-size: 4rem; text-align: center;">
   🙈
@@ -67,7 +67,7 @@ When I had come back home from Kota, and was prepping in the last months of 12th
 
 That squirrel reminded me of the first tough transition of my life. My father had transferred to Solan from Nahan. I had got selected in St. Lukes, a top notch school in Solan. An introvert, I found it really hard to make friends there. I struggled with my grades as well. It came as a complete shock because I had never got bad grades in my life before.
 
-Father was posted inside Nauni University, an agriculture and horticulture research university, 13 kms away from the main city of Solan, where the school was. Since there were no residential apartments available inside the university, me, father and grandmother lived in a couple of PWD circuit house rooms. One afternoon, after lunching, I brought my hindi literature book out and sat on the common dining table. As the sun's setting rays warmed by face, and made me feel important, special and in limelight, I read a short story about a squirrel. I don't remember the name of the story, or who had written it, or its plot. I just remember feeling awe and expanded after reading the story.
+Father was posted inside Nauni University, an agriculture and horticulture research university, 13 kms away from the main city of Solan, where the school was. Since there were no residential apartments available inside the university, me, father and grandmother lived in a couple of PWD circuit house rooms. One afternoon, after lunching, I brought my hindi literature book out and sat on the common dining table. As the sun's setting rays warmed my face, and made me feel important, special and in limelight, I read a short story about a squirrel. I don't remember the name of the story, or who had written it, or its plot. I just remember feeling awe and expanded after reading the story.
 
 During those tough 3 months — after which father got transferred back to Nahan — that story gave me a home to return to every evening after school. I read the story multiple times. It's probably the only piece of literature I've read over and over again.
 
