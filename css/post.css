@@ -108,3 +108,7 @@
   padding: 1rem;
   border: 2px dotted var(--navy);
 }
+
+.post__content article h2 {
+  font-size: 1.8rem;
+}

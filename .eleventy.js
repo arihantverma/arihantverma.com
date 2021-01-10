@@ -110,6 +110,16 @@ module.exports = function (eleventyConfig) {
     return `<span style="color: transparent; text-shadow: 0 0 ${spread} ${blurColor}">${text}</span>`
   })
 
+  eleventyConfig.addShortcode("newsletter", (whichOne) => {
+    if (whichOne === "lit") {
+      return `<iframe src="https://arihant.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white; width: 100%;" frameborder="0" scrolling="no"></iframe>`
+    }
+
+    if (whichOne === "tech") {
+      return `<iframe src="https://bangingonthekeyboard.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; width: 100%; background:white;" frameborder="0" scrolling="no"></iframe>`
+    }
+  })
+
   eleventyConfig.addPairedShortcode("doubleQuotesPaired", (content) => {
     return `<span class="double-open-close-quote">${content}</span>`
   })

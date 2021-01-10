@@ -16,6 +16,24 @@ templateClass: tmpl-post
         {% twitterShareLink title, metadata.siteUrl + page.url, twitterRelated, twitterHashtags, twitterHandlesForText %}
       {% endif %}
 
+
+
+      <div style="border: 2px solid var(--oceanblue); margin: 20px 0; padding: 1rem;">
+        {% if newsletter %}
+          <h2>If you enjoyed this essay please considering subscribing to my newsletter</h2>
+        {% endif %}
+
+        {% if newsletter === 'lit' %}
+          {% newsletter "lit"%}
+        {% endif %}
+
+
+        {% if newsletter === 'tech' %}
+          {% newsletter "tech"%}
+        {% endif %}
+
+      </div>
+
     </article>
   </section>
 
