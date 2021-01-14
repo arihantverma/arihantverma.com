@@ -66,12 +66,13 @@
       {% include "../../css/post-list.css" %}
     {% endset %}
 
-  {% if myProject.environment == "production" %}
+  {% if envdata.environment == "production" %}
     <style>{{ css | cssmin | safe }}</style>
   {% else %}
     <style>{{ css | safe }}</style>
   {% endif %}
 
+    <script defer src="/assets/site-main.js"></script>
   </head>
   <body>
     <div class="app">
