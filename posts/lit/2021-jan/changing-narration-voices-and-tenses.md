@@ -1,6 +1,6 @@
 ---
 title: Changing Narration Voices and Tenses ft. Margaret Atwood and Shinjini Kumar
-description: The Power Of Present Perfect In First Person Narration. Update This
+description: In this article, I explore the advice Margaret Atwood gives about trying different narration voices, by applying it in on going first draft short story, and find inspiration from Shinjini's story with same first person narrative and simple present tense as used in my story.
 tags: ["writing", "short fiction", "tense", "narration", "voice"]
 layout: layouts/post/post.njk
 twitterHandlesForText: ["shinjini9"]
