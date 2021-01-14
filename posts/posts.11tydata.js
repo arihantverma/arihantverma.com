@@ -1,7 +1,7 @@
-const path = require('path');
+// const path = require('path');
 
-const getFileLastUpdatedAt = require('../utils/get-file-last-updated-at');
-const getReadableDate = require('../utils/get-readable-date');
+// const getFileLastUpdatedAt = require('../js/utils/get-file-last-updated-at');
+// const getReadableDate = require('../js/utils/get-readable-date');
 
 
 module.exports = {

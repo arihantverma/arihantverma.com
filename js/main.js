@@ -1,0 +1,1 @@
+import ShareAction from './components'
