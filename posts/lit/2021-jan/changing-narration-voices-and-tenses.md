@@ -12,11 +12,11 @@ newsletter: 'lit'
 typeOfPost: 'article'
 ---
 
-Some months back I had a completely random thought,
+Some months back I had a completely random thought
 
 > We are done.
 
-Just like this sentence popped out of nowhere, I thought it'd be interesting to use it in a story where it's completely unexpected. The story — at least in this first draft — starts as:j
+Just like this sentence popped out of nowhere, I thought it'd be interesting to use it in a story where it's completely unexpected. The story — at least in this first draft — starts as:
 
 > "We are done", I hear someone say. I interrupt Litany singing PS2 in my ear pods. It feels like a dream broken.
 
