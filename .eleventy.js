@@ -167,9 +167,9 @@ module.exports = function (eleventyConfig) {
   });
 
   // inline css https://www.11ty.dev/docs/quicktips/inline-css/
-  // eleventyConfig.addFilter("cssmin", function(code) {
-  //   return new CleanCSS({}).minify(code).styles;
-  // });
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();
