@@ -4,6 +4,8 @@ tags: ["personal essay", "accountability", "thoughts"]
 layout: layouts/post/post.njk
 date: 2020-12-31
 lastModified: 2020-12-31
+eleventyExcludeFromCollections: true
+permalink: false
 ---
 
 ## A Brief History Of Me Not Talking
