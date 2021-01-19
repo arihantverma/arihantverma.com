@@ -8,6 +8,6 @@ layout: layouts/home.njk
   {% set tagUrl %}/tags/{{ tag }}/{% endset %}
   <a href="{{ tagUrl | url }}" class="underlined-anchor font-size-large color-gray-60">{{ tag }}</a>
   {% if loop.index !== collections.tagList.length %}
-    <span>,</span>
+    <span>⚡︎</span>
   {% endif %}
 {% endfor %}

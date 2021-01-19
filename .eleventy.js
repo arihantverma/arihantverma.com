@@ -145,6 +145,18 @@ module.exports = function (eleventyConfig) {
     if (whichOne === "tech") {
       return `<iframe src="https://bangingonthekeyboard.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; width: 100%; background:white;" frameborder="0" scrolling="no"></iframe>`;
     }
+
+    if (whichOne === 'lit&tech') {
+      return `
+      <div>
+        <iframe src="https://arihant.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white; width: 100%;" frameborder="0" scrolling="no"></iframe>
+
+        <iframe src="https://bangingonthekeyboard.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; width: 100%; background:white;" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+
+      `.trim();
+    }
   });
 
   eleventyConfig.addPairedShortcode("doubleQuotesPaired", (content) => {

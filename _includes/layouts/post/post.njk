@@ -28,7 +28,7 @@ templateClass: tmpl-post
 
           {% if newsletter === 'lit' %}
               <h2>
-                If you enjoyed this {% if typeOfPost %} {{ typeOfPost }} {% else %} essay {% endif %} please consider subscribing to my literature newsletter
+                If you enjoyed this {% if typeOfPost %}{{ typeOfPost }}{% else %}essay{% endif %} please consider subscribing to my literature newsletter
               </h2>
             {% newsletter "lit"%}
           {% endif %}
@@ -36,9 +36,16 @@ templateClass: tmpl-post
 
           {% if newsletter === 'tech' %}
               <h2>
-                If you enjoyed this article please consider subscribing to my tech newsletter
+                If you enjoyed this article please consider subscribing to my tech newsletter. You can also subscribe to my tech newsletter on <a href="https://tech.arihantverma.com/" target="_blank" ref="noopener">Hashnode</a> For more frequent notifications of tech blog posts published.
               </h2>
             {% newsletter "tech"%}
+          {% endif %}
+
+          {% if newsletter === 'lit&tech' %}
+            <h2>
+              If you enjoyed reading this {% if typeOfPost %}{{ typeOfPost }}{% else %}essay{% endif %}, please consider subscribing to my literature and tech newsletters.
+            </h2>
+            {% newsletter "lit&tech"%}
           {% endif %}
 
         </div>
