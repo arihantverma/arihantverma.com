@@ -36,7 +36,7 @@ I love to write. I write [short stories](/posts/2021/01/14/changing-narration-vo
 1. Writing for news / literary magazines.
 2. Writing for tech / coding magazines.
 
-I want write about stories and books that I read and hear. This way I'll get to read and listen more, and possibly get paid for it. Sounds really cool, doesn't it? I'm going to make it possible.
+I want to write about stories and books that I read and hear. This way I'll get to read and listen more, and possibly get paid. Sounds really cool, doesn't it? I'm going to make it possible, and document everything – failures and successes, as I do so.
 
 I want to write about the code that I read, because I want to read more code. So basically I'm just playing deals with myself.
 
