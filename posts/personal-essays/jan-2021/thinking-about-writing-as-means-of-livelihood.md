@@ -19,7 +19,7 @@ I remember in 2014, early on, as we entered our final year of engineering, he se
 
 [He made udemy courses](http://udemy.com/user/arjit/) before it was cool and earned from them. He quit his first job out of college in about a couple of years and just started [making](https://www.instagram.com/spacetechie/) [stuff](https://www.kickstarter.com/projects/rajarjit/the-rocket-deck?ref=5bugvs). Arjit always pampered me. I knew I didn't deserve his praise, but he still kept at it. I don't know what he initially saw in me. But he eventually decided to stop.
 
-We had a fallout when I promised re making internfeel.com from scratch but I never did. He was the first person to call me out on my tendency to over commit and not deliver at a consistent rate. After that I never promised anybody anything I couldn't do for them. In fact, I almost stopped committing. I haven't talked with him in years. Now that I've quit my job and have actively started a thought process to figure out ways of making a good living without being employed, only Arjit comes to the mind.
+We had a fallout when I promised re making internfeel.com from scratch but never did. He was the first person to call me out on my tendency to over commit and not deliver at a consistent rate. After that I never promised anybody anything I couldn't do for them. In fact, I almost stopped committing. I haven't talked with him in years. Now that I've quit my job and have actively started a thought process to figure out ways of making a good living without being employed, only Arjit comes to the mind.
 
 ## Scratch To Quit Job
 
@@ -29,7 +29,7 @@ Though lesser salary has been a reason to constantly mull over if all the work t
 
 Ever since December last year, I've established one thing – whatever I do, if I don't find ways to earn an income on my own by the side, I'm going to keep having constant urges to quit. So this year I decided to start.
 
-## Taking A Serious Look Writing
+## Taking A Serious Look At Writing
 
 I love to write. I write [short stories](/posts/2021/01/14/changing-narration-voices-and-tenses/), [poetry](/writing), [essays](/tags) and technical articles about code gymnastics. But I never wrote consistently. So I made two goals for myself. I want to get paid writing two kinds of articles.
 
