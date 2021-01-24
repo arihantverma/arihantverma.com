@@ -8,6 +8,9 @@ date: 2021-01-23
 lastModified: 2021-01-23
 newsletter:  'lit&tech'
 typeOfPost: 'essay'
+coverImage: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+coverImageAlt: 'A Person Writing With A Foundtain Pen'
+coverImageCaption: "Photo by Green Chameleon on Unsplash"
 ---
 ## History
 

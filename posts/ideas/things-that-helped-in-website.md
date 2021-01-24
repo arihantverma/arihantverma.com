@@ -22,3 +22,6 @@ https://github.com/chromeos/static-site-scaffold-modules/tree/main/modules/eleve
 https://fonts.google.com/specimen/BenchNine — a possible font for headings where impact is not available
 
 https://obsolete29.com/posts/configuring-responsive-images-eleventy/
+
+https://github.com/liamfiddler/eleventy-plugin-lazyimages
+https://github.com/5t3ph/eleventy-plugin-social-images

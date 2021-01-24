@@ -8,6 +8,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const CleanCSS = require("clean-css");
 const footnotes = require("eleventy-plugin-footnotes");
+const Image = require("@11ty/eleventy-img");
 
 const {
   timeZone,
@@ -105,21 +106,24 @@ module.exports = function (eleventyConfig) {
     }
   );
 
-  eleventyConfig.addShortcode("twitterShareLink", (
-    text = "",
-    url = "",
-    related = "",
-    hashtags = "",
-    additionalTwitterHandles = []
-  ) => {
-    return makeTwitterLink({
-      text,
-      url,
-      related,
-      hashtags,
-      additionalTwitterHandles,
-    });
-  })
+  eleventyConfig.addShortcode(
+    "twitterShareLink",
+    (
+      text = "",
+      url = "",
+      related = "",
+      hashtags = "",
+      additionalTwitterHandles = []
+    ) => {
+      return makeTwitterLink({
+        text,
+        url,
+        related,
+        hashtags,
+        additionalTwitterHandles,
+      });
+    }
+  );
 
   eleventyConfig.addPairedShortcode("centerAlignInPost", (content) => {
     return `<div style="display: flex;align-items: center;justify-content: center;">${content}</div>`;
@@ -146,7 +150,7 @@ module.exports = function (eleventyConfig) {
       return `<iframe src="https://bangingonthekeyboard.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; width: 100%; background:white;" frameborder="0" scrolling="no"></iframe>`;
     }
 
-    if (whichOne === 'lit&tech') {
+    if (whichOne === "lit&tech") {
       return `
       <div>
         <iframe src="https://arihant.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white; width: 100%;" frameborder="0" scrolling="no"></iframe>
@@ -179,7 +183,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // inline css https://www.11ty.dev/docs/quicktips/inline-css/
-  eleventyConfig.addFilter("cssmin", function(code) {
+  eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
 
@@ -212,9 +216,11 @@ module.exports = function (eleventyConfig) {
     return [...tagSet];
   });
 
-  eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("images");
   // eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy({ "favicon-data": "/" });
+
   // eleventyConfig.addPassthroughCopy({ "cert": "/"});
 
   // eleventyConfig.browserSyncConfig = {
@@ -241,6 +247,52 @@ module.exports = function (eleventyConfig) {
     },
     ui: false,
     ghostMode: false,
+  });
+
+  eleventyConfig.addAsyncShortcode("RespImage", async (src, alt, caption) => {
+    if (!alt) {
+      throw new Error(`Missing \`alt\` on Image from: ${src}`);
+    }
+
+    let stats = await Image(src, {
+      widths: [350, 808],
+      formats: ["jpeg", "webp"],
+      urlPath: "/images",
+      outputDir: '_site/images/',
+    });
+
+    let lowestSrc = stats["jpeg"][0];
+    let highResJpeg = stats["jpeg"][1];
+    let lowReswebp = stats["webp"][0];
+    let highReswebp = stats["webp"][1];
+
+    const srcset = Object.keys(stats).reduce(
+      (acc, format) => ({
+        ...acc,
+        [format]: stats[format].reduce(
+          (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+          ""
+        ),
+      }),
+      {}
+    );
+
+    const source = `<source type="image/webp" media="(max-width: 629px)" srcset="${lowReswebp.url}" >
+                    <source type="image/webp" media="(min-width: 630px)" srcset="${highReswebp.url}" >
+                    <source type="image/jpeg" media="(max-width: 529px)" srcset="${lowestSrc.url}" >
+                    <source type="image/jpeg" media="(min-width: 630px)" srcset="${highResJpeg.url}" >`;
+
+    const img = `<figure style="margin: 0;">
+      <img
+        loading="lazy"
+        alt="${alt}"
+        width="${highResJpeg.width}"
+        height="${highResJpeg.height}"
+        src="${lowestSrc.url}">
+      <figcaption style="font-size: 1rem; margin: 0.5rem 0;">Caption: ${caption || alt}</figcaption>
+    </figure>`;
+
+    return `<picture>${source}${img}</picture>`;
   });
 
   return {

@@ -13,6 +13,10 @@ permalink: '/about/'
 
 I'm Arihant. It means one who has conquered his mind. I'm a non stick pan to events 🥘 🟩
 
+<div>
+{% RespImage "./images/avatar.jpg", "Photograph of Arihant Verma" %}
+</div>
+
 I am a front end engineer at Goibibo. I'm looking for my next web front end gig. My [resume](/resume).
 
 I like to read other people's code, learn from it, and make videos about or write about it.
@@ -34,6 +38,7 @@ Look out for this web space for
 | [github](https://github.com/arihantverma)  | [twitter](https://twitter.com/gdadsriver)  |
 | [github old don't ask](https://github.com/gdad-s-river)  | [linkedin](https://www.linkedin.com/in/arihantverma/) |
 | [stackoverflow](https://stackoverflow.com/users/5106072/gdadsriver)  | [resume](/resume)  |
+| | [instagram](https://instagram.com/gdadsriver/)
 
 
 <!-- todo:
