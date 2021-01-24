@@ -16,7 +16,6 @@
     "build:webpack": "webpack --mode production",
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
     "build": "run-s clean build:*"
-
   },
   "repository": {
     "type": "git",
@@ -46,6 +45,7 @@
     "webpack-cli": "^4.3.1"
   },
   "dependencies": {
+    "@11ty/eleventy-img": "^0.7.8",
     "clean-css": "^4.2.3",
     "eleventy-plugin-footnotes": "^0.9.0"
   }

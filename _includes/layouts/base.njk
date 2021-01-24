@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     {% set absolutePageUrl %}{{ page.url | url | absoluteUrl(metadata.homeUrl) }}{% endset %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +18,13 @@
 
     {# OPEN GRAPH TAGS #}
 
-    {#
-      TODO: be more precise with og:type 'article' namespace when you get time.
-      reference — https://ogp.me/#types
-    #}
+    <meta property="og:title" content="title or metadata.title">
     <meta property="og:type" content="{{ogType or 'website'}}">
     <meta property="og:description" content="{{ description or metadata.description }}">
     <meta property="og:url" content="{{ absolutePageUrl }}">
      {# TODO #}
-    {# <meta property="og:img" content="${data.img}"> #}
-    {# <meta property="og:img:alt" content="${data.img_alt}"> #}
+    <meta property="og:img" content="{{coverImage or metadata.avatarImage}}">
+    <meta property="og:img:alt" content="{{ coverImageAlt or 'Arihant Verma Website'}}">
 
 
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
@@ -30,12 +35,12 @@
 
 
     {# TWITTER META TAGS #}
-    {% if image %}
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:image" content="{{ image }}">
-    {% else %}
+    {# {% if image %} #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ coverImage or metadata.avatarImage}}">
+    {# {% else %}
       <meta name="twitter:card" content="summary">
-    {% endif %}
+    {% endif %} #}
     <meta name="twitter:site" content="@gdadsriver">
     <meta name="twitter:creator" content="@gdadsriver">
     <meta name="twitter:title" content="{{ title or metadata.title }}">
