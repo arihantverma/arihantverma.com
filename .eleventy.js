@@ -282,15 +282,13 @@ module.exports = function (eleventyConfig) {
                     <source type="image/jpeg" media="(max-width: 529px)" srcset="${lowestSrc.url}" >
                     <source type="image/jpeg" media="(min-width: 630px)" srcset="${highResJpeg.url}" >`;
 
-    const img = `<figure style="margin: 0;">
+    const img = `
       <img
         loading="lazy"
         alt="${alt}"
         width="${highResJpeg.width}"
         height="${highResJpeg.height}"
-        src="${lowestSrc.url}">
-      <figcaption style="font-size: 1rem; margin: 0.5rem 0;">Caption: ${caption || alt}</figcaption>
-    </figure>`;
+        src="${lowestSrc.url}">`;
 
     return `<picture>${source}${img}</picture>`;
   });

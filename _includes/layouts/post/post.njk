@@ -15,6 +15,13 @@ templateClass: tmpl-post
         {% RespImage coverImage, coverImageAlt, coverImageCaption %}
       {% endif %}
 
+      {% if coverImage %}
+        <p class="font-size-base" style="margin: 0.5rem 0;">
+          Caption: {{coverImageCaption or coverImageAlt}}
+        </p>
+      {% endif %}
+
+
       {{ content | safe }}
 
       {% if not dontShowShare %}
