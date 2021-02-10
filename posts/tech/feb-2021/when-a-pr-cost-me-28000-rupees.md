@@ -1,9 +1,9 @@
 ---
 title: When I Woke Up To ₹ 28,000 Bill From Google Cloud Not Knowing Why
 description: A story about the morning when I woke up to find that I was charged ₹ 28,000 by Google Cloud, with no prior memory of having used anything on Google Cloud, except some firebase projects which were years old.
-tags: ["tech essay", "github", "pull request"]
+tags: ["tech essay", "github", "pull request", "mistake"]
 layout: layouts/post/post.njk
-twitterHashtags: essay,github,pullrequest,googlecloud
+twitterHashtags: essay,github,pullrequest,googlecloud,mistake
 date: 2021-02-10
 lastModified: 2021-02-10
 newsletter: 'tech'
