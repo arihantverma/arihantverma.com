@@ -30,8 +30,9 @@ pre {
   background-color: #f6f6f6;
 }
 
-pre[class*="language-"] {
-  padding: 1.5rem;
+code[class*="language-"] {
+  padding: 0 1rem;
+  display: inline-block;
 }
 
 .highlight-line {

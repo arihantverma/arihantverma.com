@@ -17,7 +17,11 @@ I'm Arihant. It means one who has conquered his mind. I'm a non stick pan to eve
 {% RespImage "./images/avatar.jpg", "Photograph of Arihant Verma" %}
 </div>
 
-I am a front end engineer at Goibibo. I'm looking for my next web front end gig. My [resume](/resume).
+I am a Senior Frontend Engineer at [Next Order](https://nextorder.com.au).
+
+Previously I helped develop new design revamp of [Goibibo Hotels Desktop and Mobile Websites](https://goibibo.com/hotels/) from scratch.
+
+<!-- I'm looking for my next web front end gig. My [resume](/resume). -->
 
 I like to read other people's code, learn from it, and make videos about or write about it.
 
@@ -28,7 +32,7 @@ I write because it keeps me honest to myself and because I like to write stories
 Look out for this web space for
 
 - Book Reviews, Book Suggestions
-- React, Javascript, CSS
+- React, Javascript, Typescript, CSS
 - Deep run downs of open source code
 
 ## Links

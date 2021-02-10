@@ -26,9 +26,6 @@
     <meta property="og:img" content="{{coverImage or metadata.avatarImage}}">
     <meta property="og:img:alt" content="{{ coverImageAlt or 'Arihant Verma Website'}}">
 
-
-    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
-
     {# MISC | SEO #}
 
     <link rel="canonical" href="{{ absolutePageUrl }}"/>
@@ -64,11 +61,12 @@
       {% include "../../css/fonts.css" %}
       {% include "../../css/fonts-override.css" %}
       {% include "../../css/common.css" %}
-      {% include "../../css/code.css" %}
       {% include "../../css/layout.css" %}
       {% include "../../css/header.css" %}
       {% include "../../css/post.css" %}
       {% include "../../css/post-list.css" %}
+      {% include "../../css/prism-base16-monokai.dark.css" %}
+      {% include "../../css/code.css" %}
     {% endset %}
 
   {% if envdata.environment == "production" %}
