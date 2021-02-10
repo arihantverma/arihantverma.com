@@ -16,9 +16,11 @@ templateClass: tmpl-post
       {% endif %}
 
       {% if coverImage %}
-        <p class="font-size-base" style="margin: 0.5rem 0;">
-          Caption: {{coverImageCaption or coverImageAlt}}
-        </p>
+        <caption>
+          <p class="font-size-base" style="margin: 0.5rem 0;">
+            Caption: {{coverImageCaption or coverImageAlt}}
+          </p>
+        </caption>
       {% endif %}
 
 
