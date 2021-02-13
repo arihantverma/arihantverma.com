@@ -58,12 +58,10 @@ And then, after 5 minutes, as if the pigeon was jolted back to reality, the pige
 ## Memory Of An Old Friend
 
 {% note %}
-  [Song by the same name by Angus & Julia Stone](https://i.pinimg.com/564x/0a/8b/d6/0a8bd6f1639147c5000ae62d6bf708a0.jpg) for you to listen to, while you read the remaning text.
+[Song by the same name by Angus & Julia Stone](https://i.pinimg.com/564x/0a/8b/d6/0a8bd6f1639147c5000ae62d6bf708a0.jpg) for you to listen to, while you read the remaning text.
 {% endnote %}
 
-
 When I had come back home from Kota, and was prepping in the last months of 12th grade, for engineering entrance exams, my mother would bring me nuts. Walnuts, almonds, pista and such. I'd break small pieces of them and put them outside my first floor room, on the terrace floor. A squirrel had successfully made a routine of coming at one time, and nibbling at the nutties. As it did, I'd take a break, and watch the sun sliding behind the mountains in front of me. After eating, the squirrel would be off to doing its chores, darting about on trees, kukking and twitching, and I'd go back in my room and resume rote learning inorganic chemistry, or fearfully solving maths and physics questions. Not because I didn't like them, but because I had to study under deadline. Now that I think about it, I've never mended relationships with deadlines. Unless self imposed for the tasks self assigned.
-
 
 That squirrel reminded me of the first tough transition of my life. My father had transferred to Solan from Nahan. I had got selected in St. Lukes, a top notch school in Solan. An introvert, I found it really hard to make friends there. I struggled with my grades as well. It came as a complete shock because I had never got bad grades in my life before.
 
@@ -72,4 +70,3 @@ Father was posted inside Nauni University, an agriculture and horticulture resea
 During those tough 3 months — after which father got transferred back to Nahan — that story gave me a home to return to every evening after school. I read the story multiple times. It's probably the only piece of literature I've read over and over again.
 
 There was one person who was my seat mate and eased my anxiety out by just being who she was. Her name's Parul and I see her Instagram pictures, wondering how she'd have grown up after I transferred. I remember learning the word _inculcate_ from her, as she and Rimjhim brain stormed a speech for some upcoming occasion that was to be celebrated in the school.
-
