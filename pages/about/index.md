@@ -39,10 +39,11 @@ Look out for this web space for
 
 | Code  | Others |
 |:------------- |:------------- |
-| [github](https://github.com/arihantverma)  | [twitter](https://twitter.com/gdadsriver)  |
+| [github](https://github.com/arihantverma)  | [twitter](https://twitter.com/gdadsriver)
 | [github old don't ask](https://github.com/gdad-s-river)  | [linkedin](https://www.linkedin.com/in/arihantverma/) |
 | [stackoverflow](https://stackoverflow.com/users/5106072/gdadsriver)  | [resume](/resume)  |
-| | [instagram](https://instagram.com/gdadsriver/)
+| [Hashnode](https://tech.arihantverma.com) | [instagram](https://instagram.com/gdadsriver/)
+| [Dev](https://dev.to/arihantverma)
 
 
 <!-- todo:
