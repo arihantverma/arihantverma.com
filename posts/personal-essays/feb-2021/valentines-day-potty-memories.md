@@ -49,13 +49,13 @@ Both of us lived in Majra. The school was in Paonta Sahib, 15 km away. At the en
 
 The bus came after about half an hour. We boarded. I sat at the last seat which accomodated at least 6 people if not more. The stomach rumbles had reached near the anal sphincter. It was difficult to control, and I didn't know what to do. As soon as the bus alighted some of the students, I stood up and held onto the hand rail atop me. I started moving my feet around to try to feel in control. On some stretches of the road it seemed to work, on some it didn't.
 
-Shivam was confused. He kept asking what was was up. I kept telling I was tired of sitting. Other people threw a _what the heck are you doing_ look.
+Shivam was confused. He kept asking what was up. I kept telling I was tired of sitting. Other people threw a _what the heck are you doing_ look.
 
 I got down the bus at my stop and rushed home. Opened the door, flung the school bag on the floor, avoiding any concerned follow ups from the family members shouting,
 
 > Ari, what happened?!
 
-My mum followed me to the toilet. I lowered by school pants, then lowered the seat. Just when I was about to sit, I couldn't control it any longer. The anal sphincter sprayed liquid 💩 on the 🚽 and I sat on it.
+My mum followed me to the toilet. I lowered my school pants, then lowered the seat. Just when I was about to sit, I couldn't control it any longer. The anal sphincter sprayed liquid 💩 on the 🚽 and I sat on it.
 
 Happy Valentine's Day
 
