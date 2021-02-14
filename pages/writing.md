@@ -19,9 +19,9 @@ permalink: '/writing/'
 ---
 
 <h2 class="font-family-override-impact font-family-helvetica font-size-xxlarge">
-  Subscribe To My Literature Newsletter
+  Subscribe To My Artsy Newsletter
 </h2>
-If you want to be notified when I publish a literary article or write an essay, a book review, poetry I've read and loved, please consider subscribing to my literature newsletter :)
+If you want to be notified when I publish a artsy article or write an essay, a book review, poetry I've read and loved, please consider subscribing to my literature newsletter :)
 
 <br/>
 <br/>
