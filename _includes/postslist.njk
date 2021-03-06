@@ -4,6 +4,17 @@
   style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}"
 >
   {% for post in postslist | reverse %}
+    {% if post.data.externalUrl %}
+      {% set postUrl = post.data.externalUrl %}
+    {% else %}
+      {% set postUrl = post.url | url %}
+    {% endif %}
+
+    {% macro decideTargetBlank(hasExternalUrl) %}
+      {% if hasExternalUrl %}target="_blank"{% endif %}
+      {% if hasExternalUrl %}rel="noopener"{% endif %}
+    {% endmacro %}
+
     <li class="post-list__item{% if post.url == url %} postlist-item-active{% endif %}">
 
       <span class="post-list__item--date">
@@ -11,8 +22,12 @@
       </span>
 
       <h3 class="post-list__item-title-url font-size-xlarge d-font-size-xxlarge">
-        <a href="{{ post.url | url }}" class="post-list__item-link no-text-decoration color-navy">
-          {% if post.data.title %}{{ post.data.title }}
+        <a href="{{ postUrl }}" class="post-list__item-link no-text-decoration color-navy" {{decideTargetBlank(post.data.externalUrl)}}>
+          {% if post.data.title %}
+            {{ post.data.title }}
+            {% if post.data.externalUrl %}
+              <span>↗️</span>
+            {% endif %}
           {% else %}
             <span>{{ post.url }}</span>
           {% endif %}
