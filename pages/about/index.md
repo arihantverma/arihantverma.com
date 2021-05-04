@@ -8,7 +8,7 @@ eleventyNavigation:
 dontShowDate: true
 dontShowShare: true
 dontShowReadMore: true
-permalink: '/about/'
+permalink: "/about/"
 ---
 
 I'm Arihant. It means one who has conquered his mind. I'm a non stick pan to events 🥘 🟩
@@ -17,9 +17,11 @@ I'm Arihant. It means one who has conquered his mind. I'm a non stick pan to eve
 {% RespImage "./images/avatar.jpg", "Photograph of Arihant Verma" %}
 </div>
 
-I am a Senior Frontend Engineer at [Next Order](https://nextorder.com.au).
+I am a Principant Frontend Engineer at [IND Money](https://www.indmoney.com/)
 
-Previously I helped develop new design revamp of [Goibibo Hotels Desktop and Mobile Websites](https://goibibo.com/hotels/) from scratch.
+Previously I was a Senior Frontend Engineer at [Next Order](https://nextorder.com.au).
+
+Before that, I helped develop new design revamp of [Goibibo Hotels Desktop and Mobile Websites](https://goibibo.com/hotels/) from scratch.
 
 <!-- I'm looking for my next web front end gig. My [resume](/resume). -->
 
@@ -37,14 +39,14 @@ Look out for this web space for
 
 ## Links
 
-| Code  | Others |
-|:------------- |:------------- |
-| [github](https://github.com/arihantverma)  | [twitter](https://twitter.com/gdadsriver)
-| [github old don't ask](https://github.com/gdad-s-river)  | [linkedin](https://www.linkedin.com/in/arihantverma/) |
-| [stackoverflow](https://stackoverflow.com/users/5106072/gdadsriver)  | [resume](/resume)  |
-| [Hashnode](https://tech.arihantverma.com) | [instagram](https://instagram.com/gdadsriver/)
-| [Dev](https://dev.to/arihantverma)
+| Code                                                                | Others                                                |
+| :------------------------------------------------------------------ | :---------------------------------------------------- |
+| [github](https://github.com/arihantverma)                           | [twitter](https://twitter.com/gdadsriver)             |
+| [github old don't ask](https://github.com/gdad-s-river)             | [linkedin](https://www.linkedin.com/in/arihantverma/) |
+| [stackoverflow](https://stackoverflow.com/users/5106072/gdadsriver) | [resume](/resume)                                     |
+| [Hashnode](https://tech.arihantverma.com)                           | [instagram](https://instagram.com/gdadsriver/)        |
 
+| [Dev](https://dev.to/arihantverma)
 
 <!-- todo:
   1. add IRC username
