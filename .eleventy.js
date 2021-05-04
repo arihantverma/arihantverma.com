@@ -32,6 +32,7 @@ let markdownLibrary = markdownIt({
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight, {
+    alwaysWrapLineHighlights: true,
     init: function ({ Prism }) {
       // Prism.languages.myCustomLanguage = /* */;
     },
@@ -131,7 +132,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPairedShortcode("note", (content, fontSize) => {
     const markdownToHtml = markdownLibrary.render(content);
-    return `<div class="post__note"><h3>Note</h3><div>${markdownToHtml}</div></div>`;
+    return `<div class="post__note"><div>${markdownToHtml}</div></div>`;
   });
 
   eleventyConfig.addShortcode(

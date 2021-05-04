@@ -10,6 +10,7 @@ code {
 }
 
 pre {
+  counter-reset: lineNumber;
   border-radius: 20px;
   font-size: 14px;
   line-height: 1.375;
@@ -33,6 +34,21 @@ pre {
 code[class*="language-"] {
   padding: 0 1rem;
   display: inline-block;
+  width: 100%;
+}
+
+code .highlight-line:before {
+  -webkit-user-select: none;
+  border-right: 1px solid #404040;
+  color: #858585;
+  content: counter(lineNumber);
+  counter-increment: lineNumber;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  margin-right: 1.2em;
+  padding-right: 1.2em;
+  text-align: right;
+  width: 2.4em;
 }
 
 .highlight-line {

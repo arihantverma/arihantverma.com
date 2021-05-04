@@ -5,7 +5,7 @@ tags: ["birds", "personal essay", "nature", "friends", "sunset"]
 layout: layouts/post/post.njk
 twitterHashtags: butterfly,birds,nature,essay
 date: 2021-01-10
-lastModified: 2021-01-14
+lastModified: 2021-02-14
 newsletter: "lit"
 ---
 
@@ -17,7 +17,7 @@ Sitting down in the lawn of my father's government residence in Rohru, Himachal 
   🤯 😲
 </div>
 
-Not trusting my birds eye view, I squatted comfortably, went closer and brought my hand to touch the third wing gently. It didn't budge. I poked it a little harder. Nothing. As I positioned my knees to crouch down and take a closer look, it flew away. I was happy that it wasn't dead. I was irritated because I couldn't see what that third wing was all about. It went onto mounting the kitchen window sill. I followed.
+Not trusting my bird's eye view, I squatted comfortably, went closer and brought my hand to touch the third wing gently. It didn't budge. I poked it a little harder. Nothing. As I positioned my knees to crouch down and take a closer look, it flew away. I was happy that it wasn't dead. I was irritated because I couldn't see what that third wing was all about. It went onto mounting the kitchen window sill. I followed.
 
 I closed in on it again, and this time I could see for sure. It HAD a third wing. But the third wing wasn't fluttering, not even mildly swaying under the force of the air. Like it was paralysed.
 

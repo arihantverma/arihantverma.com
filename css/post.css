@@ -73,15 +73,23 @@
 
 /* injected from `note` paired short code */
 .post__note {
-  padding: 5px 10px 15px;
-  font-size: 1.2rem;
-  border: 1px dashed black;
-  background: var(--color-gray-90);
+  background: var(--oceanblue);
+  color: white;
+  padding: 15px;
+  margin: 25px 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
 
-.post__note h3 {
-  text-decoration: underline;
-  margin: 5px 0;
+.post__note a {
+  text-decoration: none;
+  border-bottom: 2px dotted white;
+  color: white;
+}
+
+
+.post__note a:hover {
+  border-bottom: 2px solid white;
 }
 
 .post__note p:last-child {
@@ -115,20 +123,20 @@
 }
 
 .post__content--share-action-button {
-  cursor:pointer;
+  cursor: pointer;
   background: var(--oceanblue);
   position: fixed;
   width: 50px;
   height: 50px;
   right: 25px;
   bottom: 60px;
-  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
   border-radius: 50%;
   padding: 15px;
 }
 
-@media only screen
-and (min-device-width: 768px) {
+@media only screen and (min-device-width: 768px) {
   .post__content--share-action-button {
     right: 100px;
     bottom: 80px;
