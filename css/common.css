@@ -1,6 +1,10 @@
 html {
   /* https://css-tricks.com/elegant-fix-jumping-scrollbar-issue/. */
   margin-left: calc(100vw - 100%);
+  background: var(--color-parchment);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .main-container {
