@@ -7,7 +7,7 @@
   --navy: #17050f;
   --blue: #082840;
   --white: #fff;
-  --oceanblue: #26b2cf;
+  --oceanblue: #91b6be; /* change the name of color  */
 }
 
 /* gray */
@@ -24,6 +24,10 @@
   --color-gray-90:  hsl(0, 0%, 90%);
   --color-gray-95:  hsl(0, 0%, 95%);
   --color-gray-100: white;
+}
+
+:root {
+  --color-parchment: #fbf6ef;
 }
 
 .color-ocean-blue {

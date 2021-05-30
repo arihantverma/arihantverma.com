@@ -1,28 +1,23 @@
 <ol
   reversed="reversed"
-  class="post-list__container font-family-system font-family-garamond"
-  style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}"
->
+  class="post-list__container font-family-etbook"
+  style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
   {% for post in postslist | reverse %}
     {% if post.data.externalUrl %}
       {% set postUrl = post.data.externalUrl %}
     {% else %}
       {% set postUrl = post.url | url %}
     {% endif %}
-
     {% macro decideTargetBlank(hasExternalUrl) %}
       {% if hasExternalUrl %}target="_blank"{% endif %}
       {% if hasExternalUrl %}rel="noopener"{% endif %}
     {% endmacro %}
-
     <li class="post-list__item{% if post.url == url %} postlist-item-active{% endif %}">
-
       <span class="post-list__item--date">
         <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       </span>
-
-      <h3 class="post-list__item-title-url font-size-xlarge d-font-size-xxlarge">
-        <a href="{{ postUrl }}" class="post-list__item-link no-text-decoration color-navy" {{decideTargetBlank(post.data.externalUrl)}}>
+      <h2 class="post-list__item-title-url font-size-xlarge">
+        <a href="{{ postUrl }}" class="post-list__item-link no-text-decoration color-navy font-family-etbook" {{ decideTargetBlank(post.data.externalUrl) }}>
           {% if post.data.title %}
             {{ post.data.title }}
             {% if post.data.externalUrl %}
@@ -32,23 +27,23 @@
             <span>{{ post.url }}</span>
           {% endif %}
         </a>
-      </h3>
+      </h2>
 
+      <div>
+        {{ post.data.description }}
+      </div>
       <div class="post-list__item__tags-container l-block d-l-inline-block">
         <em class="color-gray-60">tags:</em>
-      {% for tag in post.data.tags %}
-        {%- if collections.tagList.indexOf(tag) != -1 -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" class="post-list__item-tag no-text-decoration color-gray-60">{{ tag }}</a>
-
-          {% if loop.index !== post.data.tags.length %}
-           <span>,</span>
-          {% endif %}
-        {%- endif -%}
-      {% endfor %}
+        {% for tag in post.data.tags %}
+          {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" class="post-list__item-tag no-text-decoration color-gray-60">{{ tag }}</a>
+            {% if loop.index !== post.data.tags.length %}
+              <span>,</span>
+            {% endif %}
+          {%- endif -%}
+        {% endfor %}
       </div>
-
-
     </li>
   {% endfor %}
 </ol>
