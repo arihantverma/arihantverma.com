@@ -35,7 +35,7 @@ I've also realised that working solo is a skill that every company cherishes, es
 
 I've finally started to give good thought about what kind of work I'd want to do in the long term. It boils down to two options
 
-1. Learn, build, teach, like many people I follow on the internet have done – made a career out of learning, building and then teaching. Kent C Dodds and Josh Comeau comes to mind.
+1. Learn, build, teach, like many people I follow on the internet have done – made a career out of learning, building and then teaching. Kent C Dodds and Josh Comeau come to mind.
 
 2. Push to keep learning like I'm doing now, so that I'd have enough experience and knowledge to be able to go work at a company like Netflix.
 
@@ -43,4 +43,4 @@ But sometimes when the work load is off the charts, one can't help but wonder, w
 
 > _For how long will I keep working like this day and night? For how long will I keep coding for companies?_
 
-And as much as I ask, I'm inpsired to keep doing what I'm doing so that slowly, but surely, I'd make way to get myself out of corporate world, to give more time to my friends, family, writing, reading, something I've not been able to do ever.
+And as much as I ask, I'm inspired to keep doing what I'm doing so that slowly, but surely, I'd make way to get myself out of corporate world, to give more time to my friends, family, writing, reading, something I've not been able to do ever.

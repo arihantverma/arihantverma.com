@@ -23,6 +23,14 @@ Previously I was a Senior Frontend Engineer at [Next Order](https://nextorder.co
 
 Before that, I helped develop new design revamp of [Goibibo Hotels Desktop and Mobile Websites](https://goibibo.com/hotels/) from scratch.
 
+Also
+
+[![Contact me on Codementor](https://www.codementor.io/m-badges/arihantverma/im-a-cm-b.svg)](https://www.codementor.io/@arihantverma?refer=badge)
+
+[![Contact me on Codementor](https://www.codementor.io/m-badges/arihantverma/contact-me.svg)](https://www.codementor.io/@arihantverma?refer=badge)
+
+[![Contact me on Codementor](https://www.codementor.io/m-badges/arihantverma/book-session.svg)](https://www.codementor.io/@arihantverma?refer=badge)
+
 <!-- I'm looking for my next web front end gig. My [resume](/resume). -->
 
 I like to read other people's code, learn from it, and make videos about or write about it.

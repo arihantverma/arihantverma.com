@@ -250,6 +250,37 @@ module.exports = function (eleventyConfig) {
     ghostMode: false,
   });
 
+  eleventyConfig.addShortcode("InlineEmoji", (emoji, label) => {
+    return `<div style="font-size: 4rem; text-align: center;"><span role="img" aria-label="${label}">${emoji}</span></div>`
+  })
+
+  // https://alexpearce.me/2020/06/jekyll-to-eleventy/
+  eleventyConfig.addShortcode("post_url", (collection, slug) => {
+    try {
+      if (collection.length < 1) {
+        throw "Collection appears to be empty";
+      }
+      if (!Array.isArray(collection)) {
+        throw "Collection is an invalid type - it must be an array!";
+      }
+      if (typeof slug !== "string") {
+        throw "Slug is an invalid type - it must be a string!";
+      }
+
+      const found = collection.find(p => p.fileSlug == slug);
+      if (found === 0 || found === undefined) {
+        throw `${slug} not found in specified collection.`;
+      } else {
+        return found.url;
+      }
+    } catch (e) {
+      console.error(
+        `An error occured while searching for the url to ${slug}. Details:`,
+        e
+      );
+    }
+  });
+
   eleventyConfig.addAsyncShortcode("RespImage", async (src, alt, caption) => {
     if (!alt) {
       throw new Error(`Missing \`alt\` on Image from: ${src}`);

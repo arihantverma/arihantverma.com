@@ -16,22 +16,25 @@
       <span class="post-list__item--date">
         <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       </span>
-      <h2 class="post-list__item-title-url font-size-xlarge">
-        <a href="{{ postUrl }}" class="post-list__item-link no-text-decoration color-navy font-family-etbook" {{ decideTargetBlank(post.data.externalUrl) }}>
-          {% if post.data.title %}
-            {{ post.data.title }}
-            {% if post.data.externalUrl %}
-              <span>↗️</span>
-            {% endif %}
-          {% else %}
-            <span>{{ post.url }}</span>
-          {% endif %}
-        </a>
-      </h2>
+      <a href="{{ postUrl }}" class="post-list__item-link no-text-decoration color-navy font-family-etbook" {{ decideTargetBlank(post.data.externalUrl) }}>
+        <h1 class="post-list__item-title-url font-size-xlarge">
 
-      <div style="font-size: 1.1rem;">
-        {{ post.data.description }}
-      </div>
+            {% if post.data.title %}
+              {{ post.data.title }}
+              {% if post.data.externalUrl %}
+                <span>↗️</span>
+              {% endif %}
+            {% else %}
+              <span>{{ post.url }}</span>
+            {% endif %}
+
+        </h1>
+
+        <div class="font-size-1.1rem">
+          {{ post.data.description }}
+        </div>
+      </a>
+
       <div class="post-list__item__tags-container l-block d-l-inline-block">
         <em class="color-gray-60">tags:</em>
         {% for tag in post.data.tags %}
