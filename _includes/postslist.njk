@@ -17,7 +17,7 @@
         <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       </span>
       <a href="{{ postUrl }}" class="post-list__item-link no-text-decoration color-navy font-family-etbook" {{ decideTargetBlank(post.data.externalUrl) }}>
-        <h1 class="post-list__item-title-url font-size-xlarge">
+        <h1 class="post-list__item-title-heading font-size-xlarge">
 
             {% if post.data.title %}
               {{ post.data.title }}

@@ -130,9 +130,10 @@ module.exports = function (eleventyConfig) {
     return `<div style="display: flex;align-items: center;justify-content: center;">${content}</div>`;
   });
 
-  eleventyConfig.addPairedShortcode("note", (content, fontSize) => {
+  eleventyConfig.addPairedShortcode("note", (content, fontSize, bold) => {
+    const boldStyle = bold ? `style="font-weight:600;"` : ''
     const markdownToHtml = markdownLibrary.render(content);
-    return `<div class="post__note"><div>${markdownToHtml}</div></div>`;
+    return `<div class="post__note" ${boldStyle}><div>${markdownToHtml}</div></div>`;
   });
 
   eleventyConfig.addShortcode(
@@ -281,48 +282,55 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  eleventyConfig.addAsyncShortcode("RespImage", async (src, alt, caption) => {
+  eleventyConfig.addAsyncShortcode("RespImage", async (src, alt, caption, width) => {
     if (!alt) {
       throw new Error(`Missing \`alt\` on Image from: ${src}`);
     }
 
-    let stats = await Image(src, {
-      widths: [350, 808],
-      formats: ["jpeg", "webp"],
-      urlPath: "/images",
-      outputDir: '_site/images/',
-    });
+    try {
+      let stats = await Image(src, {
+        widths: [350, 808, null],
+        formats: ["jpeg", "webp"],
+        urlPath: "/images",
+        outputDir: '_site/images/',
+      });
 
-    let lowestSrc = stats["jpeg"][0];
-    let highResJpeg = stats["jpeg"][1];
-    let lowReswebp = stats["webp"][0];
-    let highReswebp = stats["webp"][1];
+      console.log(stats)
 
-    const srcset = Object.keys(stats).reduce(
-      (acc, format) => ({
-        ...acc,
-        [format]: stats[format].reduce(
-          (_acc, curr) => `${_acc} ${curr.srcset} ,`,
-          ""
-        ),
-      }),
-      {}
-    );
+      let lowestSrc = stats["jpeg"][0];
+      let highResJpeg = stats["jpeg"][1];
+      let lowReswebp = stats["webp"][0];
+      let highReswebp = stats["webp"][1];
 
-    const source = `<source type="image/webp" media="(max-width: 629px)" srcset="${lowReswebp.url}" >
-                    <source type="image/webp" media="(min-width: 630px)" srcset="${highReswebp.url}" >
-                    <source type="image/jpeg" media="(max-width: 529px)" srcset="${lowestSrc.url}" >
-                    <source type="image/jpeg" media="(min-width: 630px)" srcset="${highResJpeg.url}" >`;
+      const srcset = Object.keys(stats).reduce(
+        (acc, format) => ({
+          ...acc,
+          [format]: stats[format].reduce(
+            (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+            ""
+          ),
+        }),
+        {}
+      );
 
-    const img = `
-      <img
-        loading="lazy"
-        alt="${alt}"
-        width="${highResJpeg.width}"
-        height="${highResJpeg.height}"
-        src="${lowestSrc.url}">`;
+      const source = `<source type="image/webp" media="(max-width: 629px)" srcset="${lowReswebp.url}" >
+                      <source type="image/webp" media="(min-width: 630px)" srcset="${highReswebp.url}" >
+                      <source type="image/jpeg" media="(max-width: 529px)" srcset="${lowestSrc.url}" >
+                      <source type="image/jpeg" media="(min-width: 630px)" srcset="${highResJpeg.url}" >`;
 
-    return `<picture>${source}${img}</picture>`;
+      const img = `
+        <img
+          loading="lazy"
+          alt="${alt}"
+          width="${highResJpeg.width}"
+          height="${highResJpeg.height}"
+          src="${lowestSrc.url}">`;
+
+      return `<picture>${source}${img}</picture>`;
+    } catch (e){
+      console.log(e)
+    }
+
   });
 
   return {
