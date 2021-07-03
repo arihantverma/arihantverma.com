@@ -29,7 +29,7 @@ coverImageCaption: "Photo by Luis Villasmil on Unsplash"
 
     Imagine being able to choose between two motivators
     1. Having the privilege to work with the people who are much smarter than you.
-    2. Chasing a variable pay based on performance, [where most of the work demands that you sit alone and code](web.archive.org/web/20210628231425/https://kyleshevlin.com/whats-going-on-mid-2021).
+    2. Chasing a variable pay based on performance, [where most of the work demands that you sit alone and code](https://web.archive.org/web/20210628231425/https://kyleshevlin.com/whats-going-on-mid-2021).
 
     Which one would you choose? It's surprising – the amount of work that a company can get done if they hire top of the skill developers, [drop the appraisal system altogether](https://www.goodreads.com/book/show/49099937-no-rules-rules) and [just pay them properly instead, while leaving them to do wonderful things together.](https://www.goodreads.com/book/show/36417234-powerful?ac=1&from_search=true&qid=PAnPc88Y2l&rank=1)
 
