@@ -17,7 +17,7 @@ I'm Arihant. It means one who has conquered his mind. I'm a non stick pan to eve
 {% RespImage "./images/avatar.jpg", "Photograph of Arihant Verma" %}
 </div>
 
-I am a Principant Frontend Engineer at [IND Money](https://www.indmoney.com/)
+I am a Principal Frontend Engineer at [IND Money](https://www.indmoney.com/)
 
 Previously I was a Senior Frontend Engineer at [Next Order](https://nextorder.com.au).
 
