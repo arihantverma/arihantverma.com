@@ -295,8 +295,6 @@ module.exports = function (eleventyConfig) {
         outputDir: '_site/images/',
       });
 
-      console.log(stats)
-
       let lowestSrc = stats["jpeg"][0];
       let highResJpeg = stats["jpeg"][1];
       let lowReswebp = stats["webp"][0];

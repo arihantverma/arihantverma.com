@@ -1,5 +1,5 @@
 ---
-title: The Problem With Rockstar Culture In Tech
+title: The Problem With Glorification Of Rockstar Culture In Tech
 description: Some of the common problems that I've observed in the companies and cultures I've worked in, and heard from friends around.
 tags: ["culture", "tech", "essay"]
 layout: layouts/post/post.njk
@@ -19,11 +19,11 @@ coverImageCaption: "Photo by Luis Villasmil on Unsplash"
   These points are made out of observation and experience and in no way attempts to generalise.
 {% endnote %}
 
-## Let's Talk Rockstar Culture In Tech
+## Let's Talk Glorification Rockstar Culture In Tech
 
 1. It's draining, impersonal and segregating but monetarily rewarding.
 2. Values only outputs rather than processes that enable tech innovations and helps multiple people reach results. In this process, the silent hard workers, who might have tremendous potential to make tech that makes business product development extremely easy are seldom recognized.
-3. It's doesn't necessarily lead to collaboration.
+3. It doesn't necessarily lead to collaboration.
 4. It isn't a good motivator.
 5. It's tightly coupled with performance based appraisal. It feels like school and college exams all over again.
 
