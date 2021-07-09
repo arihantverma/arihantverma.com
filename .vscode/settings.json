@@ -1,4 +1,7 @@
 {
   "editor.formatOnSave": false,
-  "editor.formatOnType": false
+  "editor.formatOnType": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  }
 }

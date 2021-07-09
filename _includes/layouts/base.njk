@@ -78,6 +78,8 @@
       class="app">
       {# flex r-cent-hor r-cent-vert #}
       {% include "./_header.njk" %}
+      {% include "./_spotify.njk" %}
+
       <main {% if templateclass %} class="{{ templateClass }}" {% endif %} class="main-container">
         {{ content | safe }}
       </main>
