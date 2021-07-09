@@ -7,15 +7,16 @@
     "builddev": "DEBUG=* ELEVENTY_ENV=development eleventy",
     "watch": "eleventy --watch",
     "servedev": "ELEVENTY_ENV=development eleventy --serve",
-    "start": "ELEVENTY_ENV=development eleventy --serve",
+    "startEleventy": "ELEVENTY_ENV=development eleventy --serve",
     "debug": "DEBUG=* eleventy",
-    "serve:eleventy": "yarn start",
-    "serve:webpack": "webpack --mode development --watch",
-    "serve": "npm-run-all clean  --parallel serve:*",
+    "serve:eleventy": "yarn startEleventy",
+    "serve:webpack": "webpack --env ELEVENTY_ENV=development --mode development --watch",
+    "start": "npm-run-all clean  --parallel serve:*",
     "clean": "rimraf _site",
-    "build:webpack": "webpack --mode production",
+    "build:webpack": "webpack --env ELEVENTY_ENV=production --mode production",
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
-    "build": "run-s clean build:*"
+    "build": "run-s clean build:*",
+    "functions": "NODE_ENV=development npx netlify-cli functions:serve --port 8081"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,12 @@
     "url": "https://github.com/arihantverma/website/issues"
   },
   "homepage": "https://github.com/arihantverma/website#readme",
-  "devDependencies": {
+  "dependencies": {
+    "@11ty/eleventy-img": "^0.7.8",
+    "clean-css": "^4.2.3",
+    "dotenv": "^10.0.0",
+    "eleventy-plugin-footnotes": "^0.9.0",
+    "isomorphic-unfetch": "^3.1.0",
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
@@ -43,10 +49,5 @@
     "rimraf": "^3.0.2",
     "webpack": "^5.14.0",
     "webpack-cli": "^4.3.1"
-  },
-  "dependencies": {
-    "@11ty/eleventy-img": "^0.7.8",
-    "clean-css": "^4.2.3",
-    "eleventy-plugin-footnotes": "^0.9.0"
   }
 }
