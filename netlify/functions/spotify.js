@@ -12,13 +12,26 @@ const getHeaders = (token) => {
 };
 
 
-const responseHeaders = {
-  "Access-Control-Allow-Origin": "*"
+const allowedOrigins = [
+  'http://localhost:8080', 'https://arihantverma.com', 'http://arihantverma.com'
+]
+
+const getResponseHeaders = (origin) => {
+  console.log(origin)
+  if (allowedOrigins.includes(origin)) {
+    return {
+      "Access-Control-Allow-Origin": origin
+    }
+  }
+
+  return {}
 }
 
 exports.handler = async function fetchSpotifyCurrentPlaying(event, context) {
   let spotifyCurrentPlayingData = null;
-  let error = null; 
+  let error = null;
+
+  const responseHeaders = getResponseHeaders(event.headers.origin)
   
   const tokenData = await getAccessToken();
   const token = tokenData.access_token
