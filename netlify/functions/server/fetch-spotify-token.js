@@ -9,8 +9,6 @@ if (process.env.NODE_ENV === 'development') {
   const dotenv = require('dotenv')
   const envVariables = dotenv.config().parsed
 
-  console.log(envVariables)
-
   clientId = envVariables.SPOTIFY_CLIENT_ID
   clientSecret = envVariables.SPOTIFY_CLIENT_SECRET
   refreshToken = envVariables.SPOTIFY_REFRESH_TOKEN

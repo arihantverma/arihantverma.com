@@ -20,8 +20,6 @@ exports.handler = async function fetchSpotifyCurrentPlaying(event, context) {
   let spotifyCurrentPlayingData = null;
   let error = null; 
   
-  console.log('node env', process.env.NODE_ENV)
-
   const tokenData = await getAccessToken();
   const token = tokenData.access_token
   const headers = getHeaders(token)
@@ -83,7 +81,6 @@ exports.handler = async function fetchSpotifyCurrentPlaying(event, context) {
 
   } catch (e) {
     console.log(e)
-    console.log('kuch to hua hai')
     return {
       statusCode: 500,
       error: 'Something went wrong',
