@@ -1,7 +1,6 @@
 ---
 layout: layouts/post/post.njk
 title: Published Articles And Poems
-templateClass: tmpl-post
 eleventyNavigation:
   key: Writing
   order: 4

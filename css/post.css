@@ -1,6 +1,7 @@
-.post-container {
+.post__container {
   counter-reset: footnotes;
   position: relative;
+  margin: auto;
 }
 
 .post__container blockquote {
