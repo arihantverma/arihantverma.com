@@ -15,6 +15,10 @@ templateClass: tmpl-post
         {% RespImage coverImage, coverImageAlt, coverImageCaption %}
       {% endif %}
 
+      {% if dataImage %}
+        <img src={{dataImage}} alt={{imageAlt}} />
+      {% endif %}
+
       {% if coverImage %}
         <caption>
           <p class="font-size-small" style="margin: 0.5rem 0;">

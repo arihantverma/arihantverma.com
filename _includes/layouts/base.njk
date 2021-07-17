@@ -78,11 +78,43 @@
       class="app">
       {# flex r-cent-hor r-cent-vert #}
       {% include "./_header.njk" %}
-      {% include "./_spotify.njk" %}
 
-      <main {% if templateclass %} class="{{ templateClass }}" {% endif %} class="main-container">
-        {{ content | safe }}
+
+    {% if templateClass %}
+      {% set conditionalMainClass = templateClass %}
+    {% endif %}
+
+    {% set isPostPage = templateClass == "tmpl-post" %}
+
+    {% if isPostPage %}
+      {% set maxWidthClass = "max-width-60rem" %}
+    {% else %}
+      {% set maxWidthClass = "max-width-50rem" %}
+    {% endif %}
+
+      <main
+      class="main-container {{maxWidthClass}} {{conditionalMainClass}}">
+        <aside class="other-content">
+          <div class="other-content-wrapper">
+            {% include "./_spotify.njk" %}
+
+            <hr class="sidebar-hr" />
+
+            <div>
+              <h2 style="margin: 0;" class="font-family-impact font-size-xlarge">Support Me</h2>
+              <a class="patreon-link" href="https://patreon.com/arihantverma" rel="noopener noreferrer" target="_blank">
+                Patreon
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <section class="content-main">
+          {{ content | safe }}
+        </section>
       </main>
+
+
       <footer></footer>
     </div>
     <!-- Current page: {{ page.url | url }} -->

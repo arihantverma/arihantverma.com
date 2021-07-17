@@ -8,17 +8,63 @@ html {
 }
 
 .main-container {
-  max-width: 40rem;
   margin: 0 auto;
   padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.max-width-60rem {
+  max-width: 60rem;
+}
+
+.max-width-50rem {
+  max-width: 50rem;
 }
 
 @media only screen
 and (min-device-width: 768px) {
   .main-container {
     padding: 0;
+    flex-direction: row-reverse;
   }
 }
+
+.content-main {
+  /* https://weblog.west-wind.com/posts/2016/feb/15/flexbox-containers-pre-tags-and-managing-overflow */
+  min-width: 0;
+  flex: 2;
+}
+
+@media only screen
+and (min-device-width: 768px) {
+  .content-main  {
+    padding: 0 20px;
+  }
+}
+
+.other-content {
+  flex: 1;
+  /* min-width: 250px; */
+}
+
+.other-content-wrapper {
+  padding: 20px 0px;
+  position: sticky;
+  /* https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox#:~:text=Adding%20align%2Dself%3A%20flex%2D,allowed%20scrolling%2C%20and%20fixed%20it. */
+  align-self: flex-start;
+}
+
+@media only screen
+and (min-device-width: 768px) {
+  .other-content-wrapper {
+    padding: 20px 0 20px 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 
 /* .text-align-center {
   text-align: center;
@@ -54,11 +100,11 @@ and (min-device-width: 768px) {
   color: var(--navy);
 }
 
-.spotify--container {
+/* .spotify--container {
   margin-top: 20px;
   display: flex;
   align-items: center;
-}
+} */
 
 .spotify--text-container {
   display: flex;
@@ -67,16 +113,27 @@ and (min-device-width: 768px) {
 }
 
 .spotify--text-container > * {
-  margin-left: 10px;
   padding-top: 3px;
 }
 
-.spotify--text-container a {
+#spotify--song-link {
   text-decoration: none;
   border-bottom: 2px dotted var(--oceanblue);
   color: var(--navy);
   font-family: et-book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.patreon-link {
+  text-decoration: none;
+  border-bottom: 2px dotted var(--oceanblue);
+  color: var(--navy);
+  font-family: et-book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.patreon-link:hover {
+  border-bottom: 2px solid var(--oceanblue);
 }
 
 .spotify--text-container a:hover {
@@ -91,4 +148,32 @@ and (min-device-width: 768px) {
 .layout-show {
   opacity: 1;
   visibility: visible;
+}
+
+.post__heading {
+  margin: 5px 0 20px 0;
+}
+
+@media only screen
+and (min-device-width: 768px) {
+  .post__heading {
+    margin: 20px 0 20px 0;
+  }
+}
+
+.sidebar-hr {
+  border-color: var(--color-gray-80);
+  margin: 10px 0;
+}
+
+
+@media only screen
+and (min-device-width: 768px) {
+  .sidebar-hr  {
+    margin: 10px 50px;
+  }
+}
+
+.spotify--text-container {
+  padding: 10px 0;
 }
