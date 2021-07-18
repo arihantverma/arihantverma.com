@@ -19,6 +19,5 @@ eleventyNavigation:
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 
-{% if collection.posts.length > maxPosts  %}
-  <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
-{% endif %}
+
+<p class="font-family-etbook font-size-xlarge">More posts can be found in <a href="{{ '/posts/' | url }}" class="site-common-link">the archive</a>.</p>
