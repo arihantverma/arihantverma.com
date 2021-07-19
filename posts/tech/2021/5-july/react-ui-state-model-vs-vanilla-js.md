@@ -1,18 +1,20 @@
 ---
-title: React's UI State Model vs Vanilla JavaScript
+title: React's UI State Model vs Vanilla JavaScript DOM State — A Beginner's Introduction
 description: I was fortunate enough to start my front end career by actually using bare bones JS and CSS while we were trained 3/6 months. Others are not so lucky, they have to jump in on frameworks directly. In this post, I give a gentle introduction of React's state and component model by comparing it with vanilla JS, primarily intended for beginners.
 tags: ["React", "JavaScript", "beginnner", "introdution", "tech"]
 layout: layouts/post/post.njk
 twitterHashtags: React,JavaScript,introduction,beginner,whyreact
 date: 2021-07-17
-lastModified: 2021-07-17
+lastModified: 2021-07-19
 newsletter: "tech"
 dataImage: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
 imageAlt: "React logo"
 ---
 
 {% note %}
-  This article is aimed at people who want a glimpse of how writing UI in React makes it a little easier to reason about UI state than writing UI in vanilla JavaScript.
+This article is aimed at beginners who've never had the chance to see 'why React'. It takes a very contrived example to make a point about how React's declarative state model could help keep state sanity when code scales.
+
+If you're an experienced developer [these series of posts by Steven](https://acko.net/blog/climbing-mt-effect) might give deep insights about why declarative abstractions scale in a way you might not have thought before. [Thanks hackernews user Tomuus for the recommendation](https://news.ycombinator.com/item?id=27871733)
 {% endnote %}
 
 When I started my front end journey in 2015, I was privileged enough to have a 6 months training program in which our company at the time — Sapient Nitro ( now Publicis Sapient ) invested in. Our trainer was instructed that by the end of the program we ought to have strong JavaScript fundamentals. I remember one of the SMEs Mahesh, who invested a lot of his time ( and goofy calming laughter ) with us new joinees straight out of college. He guided us to learn DOM JavaScript APIs and make our own jQuery like utility library for the project that we were supposed to deliver in phases during our training. 

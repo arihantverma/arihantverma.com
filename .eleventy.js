@@ -9,6 +9,8 @@ const markdownItAnchor = require("markdown-it-anchor");
 const CleanCSS = require("clean-css");
 const footnotes = require("eleventy-plugin-footnotes");
 const Image = require("@11ty/eleventy-img");
+const fetch = require('isomorphic-unfetch');
+const { optimize } = require('svgo');
 
 const {
   timeZone,
@@ -285,6 +287,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addAsyncShortcode("RespImage", async (src, alt, caption, width) => {
     if (!alt) {
       throw new Error(`Missing \`alt\` on Image from: ${src}`);
+    }
+
+
+    if (src.slice(-3) === 'svg') {
+      const inlineSvgHTML = await fetch(src).then(res => res.text())
+      const optimizedSvg = optimize(inlineSvgHTML, {
+        plugins: ["removeDimensions"]
+      })
+
+      return optimizedSvg.data;
     }
 
     try {
