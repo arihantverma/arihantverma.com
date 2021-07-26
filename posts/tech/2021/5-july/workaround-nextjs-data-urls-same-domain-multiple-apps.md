@@ -108,6 +108,8 @@ const CustomImage: typeof Image = props => {
       return `/${BASE_PREFIX_FOR_APP}/images${urlQuery}&w=${width}&q=${quality ?? 75}`
     })
   }
+
+  return <Image {...finalProps} />
 }
 
 export default CustomImage;
