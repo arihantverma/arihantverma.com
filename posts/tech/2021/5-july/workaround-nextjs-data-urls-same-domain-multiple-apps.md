@@ -14,7 +14,7 @@ coverImageAlt: "Next.js logo"
 coverImageCaption: "Next.js logo"
 ---
 
-If you have to use multiple Next.js apps on a simple domain, the only straightforward way for you to do that is to have [`baseUrl`](https://nextjs.org/docs/api-reference/next.config.js/basepath) option set in `next.config.js`. But the problem with that is, you'll have different URLs for different apps on your domain: 
+If you have to use multiple Next.js apps on a single domain, the only straightforward way for you to do that is to have [`baseUrl`](https://nextjs.org/docs/api-reference/next.config.js/basepath) option set in `next.config.js`. But the problem with that is, you'll have different URLs for different apps on your domain: 
 
 ```md
 example.com/app-1/some-route
