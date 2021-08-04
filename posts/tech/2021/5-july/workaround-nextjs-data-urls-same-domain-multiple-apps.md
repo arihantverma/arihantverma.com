@@ -68,7 +68,7 @@ With this, the client will request assets from `${BASE_PREFIX_FOR_APP}/_next/:pa
 
 In a similar fashion, you'd handle images and api request paths
 
-```js/10-17
+```js/10-18
 // next.config.js
 module.exports = {
   assetPrefix: BASE_PREFIX_FOR_APP,
