@@ -418,8 +418,8 @@ const CHECKBOX_ID = "my-checkbox";
 const defaultLabelContent = "Toggle me, you newbies";
 const beforeDiscountText = "You have not availabled discount";
 const afterDiscountText = "Discount Availed!";
-const beforeLabelText = "Click on me to remove fake discount"
-const afterLabelText = "Click me to apply fake discount!"
+const beforeLabelText = "Click me to apply fake discount!"
+const afterLabelText = "Click on me to remove fake discount"
 
 export default function App() {
   const [isChecked, setIsChecked] = useState(false);
@@ -433,8 +433,8 @@ export default function App() {
     : beforeDiscountText;
 
   const labelText = isChecked
-    ? beforeLabelText
-    : afterLabelText
+    ? afterLabelText
+    : beforeLabelText
 
   return (
     <>
@@ -450,7 +450,7 @@ export default function App() {
       </label>
 
       <div>{discountText}</div>
-    <>
+    </>
   );
 }
 
@@ -508,8 +508,8 @@ const discountText = isChecked
   : beforeDiscountText;
 
 const labelText = isChecked
-  ? beforeLabelText
-  : afterLabelText
+  ? afterLabelText
+  : beforeLabelText
 ```
 
 ```javascript/1,4
