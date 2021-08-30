@@ -60,8 +60,7 @@ and (min-device-width: 768px) {
 and (min-device-width: 768px) {
   .other-content-wrapper {
     padding: 20px 0 20px 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
   }
 }
 

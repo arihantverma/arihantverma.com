@@ -17,7 +17,6 @@ const allowedOrigins = [
 ]
 
 const getResponseHeaders = (origin) => {
-  console.log(origin)
   if (allowedOrigins.includes(origin)) {
     return {
       "Access-Control-Allow-Origin": origin
