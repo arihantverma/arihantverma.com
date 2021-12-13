@@ -40,7 +40,7 @@ on the fact that love hurts (without wisdom).
 
 > It is not love which is giving you pain. Jealousy, hatred, greed, arrogance and attachment are all love’s distortions. Love by itself doesn’t bring misery. That is why knowledge and centredness are so important. If you are centred, you can handle all these distortions, they come for a while and they disappear. Feelings are like clouds. They are like the waves on the surface of the ocean. They arise, they come and they go.
 
-When I read the following minds, I mentally jumped out of my chair and danced
+When I read the following lines, I mentally jumped out of my chair and danced
 
 ---
 
@@ -58,18 +58,23 @@ _**to dance.**_
 
 ---
 
-When I thought about it again today, I remembered endless conversations I've had with my best friend [Amrita][6], who's made me see myself in truth's light like a mirror over all these years. How we could talk through a rainbow of emotions, sometimes after without over all getting affected by it ( if we did, it undo-ed with wisdom of being able to let go, sincere apologies, time ).
+When I thought about it again today, I remembered endless conversations I've had with my best friend [Amrita][6], who's made me see myself in truth's light like a mirror over all these years. How we could talk through a rainbow of emotions, sometimes after, without getting affected by it ( if we did, it undo-ed with wisdom of being able to let go, sincere apologies, sharing and time ).
 
 I remembered the numerous times I shadowed anger into playing hide and seek when mother yelled or complained for whatever reasons. I just assented and quickly diverted attention to something else, so that her mind won't dwell into a habit, and instead tackle the same things pestering the mind with a [spirit of scientific enquiry][7].
 
-The numerous times my oldest friend could forgive me for all the truths I held back, and ultimately deciding to let me go with that forgiveness still intact.
+The numerous times my oldest friend could forgive me for all the truths I held back, and ultimately decided to let me go with that forgiveness still intact.
 
 It is a strange thing about love, that when mixed with wisdom and tools to get to know the tendencies of the mind and how to stay centered amdist those disagreements, it ultimately leads to knowledge that it's wiser to dance, because we haven't got all the time in the world to keep at it, if you are getting the drift.
+
+What does this dance look like? For me it is: not taking life too seriously even in the most chaotic, unfavourable, desperate times. Getting up in the middle of zoom calls, muting, switching camera off and dancing in fits and starts. Catching up with old friends. Acknowledging and understanding the state of the mind, and delaying responses so that they weren't reactions. And just you know…laughing and smiling without any reason.
+
+{% InlineEmoji "💃🏻" "Dancing girl Emoji" %}
+
 
 Here's a wonderful detour about **_the paradox of love and truth_**:
 
 <details>
-  <summary><strong>Truth and Lies</strong></summary>
+  <summary><strong>The Paradox Of Love And Truth</strong></summary>
 
   Excerpt from the book [Celebrating Love][9]
 
@@ -146,19 +151,19 @@ I'll quote the last few lines from the article that I shared before
 
 > When you want love, that want itself is turning or delaying love from manifesting. **So all that you need to do is to let go and relax. You will see your nature is love**. Love is always there. It will manifest when it should. Like the ☀️ is always there but it comes at its own time. In the same way, all the beautiful feelings in your life are there with you all the time. You can’t forcefully manifest them <br /> <br /> They will manifest at different times in life. And that’s why be more relaxed and take them as they come. You ARE Love. You cannot make an effort to love, either yourself or anybody. You simply have to relax and realise that you are love. **Love is the shadow of the Self. The bigger the Self, the bigger the shadow, and the bigger the love. When the love is cast over the entire creation, then you are the Big Self. That is Lordship. When Lordship dawns on the Self, there is a perennial celebration.**
 
-Meditation ( Sahaj Samādhi ) and Sudarshan Kriya have been the tools using which I've been able to relax and let go. In that constant state of heightened awareness yet deep relaxation, the fact that our very nature is love dawns unexplained irrevocably. One experienced the _Self_ that is mentioned above. I've seen couples married and otherwise practicing both, and work towards one common goal, while acting on their own individual goals, happy like the song, for years.
+Meditation ( Sahaj Samādhi ) and Sudarshan Kriya have been the tools using which I've been able to relax and let go. In that constant state of heightened awareness yet deep relaxation, the fact that our very nature is love dawns unexplained irrevocably. One experiences the _Self_ that is mentioned above. I've seen couples married and otherwise practicing both, and work towards one common goal, while acting on their own individual goals, happy like the song, for years.
 
-Once that deep love is experienced as _Self_ we turn amateurs on the subject of ourselves, asking the most fundamental questions like: **_'Who am I?'_**, but with a sense of sincere enquiry and wild celebratory wonder. The avenues previously even not thought of, talents, manifest outside of the made identities before. So in a way, the experience of love can help us surrender and then act.
+Once that deep love is experienced as _Self_ we turn amateurs on the subject of ourselves, asking the most fundamental questions like: **_'Who am I?'_**, but with a sense of sincere enquiry and wild celebratory wonder. The avenues previously even not thought of, talents, events, manifest outside of the made identities before. So in a way, the experience of love can help us surrender and then act.
 
 ---
 
 # Okay? That's it? Are we done yet?
 
-Yes, we are done, phew! I'll keep refining the expression of what I've written overtime of course yes. You would be able to see when the latest revision was made by the date at the start of the article.
+Yes, we are done, phew! I'll keep refining the expression of what I've written overtime of course. You would be able to see when the latest revision was made by the date at the start of the post.
 
 # So what about you? 
 
-Your turn! [Tell me][4], what is **_The Strange Thing About Love_**? Also if you'd like to learn more about or experience Sudarshan Kriya [hit me up][4] :)
+Your turn! [Tell me][4], what is **_The Strange Thing About Love_** for you? Also if you'd like to learn more about or experience Sudarshan Kriya [hit me up][4] :)
 
 [1]: https://www.freepressjournal.in/spirituality/guiding-light-by-sri-sri-ravi-shankar-you-are-love-2
 [2]: https://www.poetryfoundation.org/poetrymagazine/poems/56173/once-i
