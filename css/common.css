@@ -185,6 +185,21 @@ and (min-device-width: 768px) {
   }
 }
 
+hr {
+  color: gainsboro;
+  border-width: 2px 0 0;
+  margin: 50px auto;
+  width: 70%;
+}
+
+@media only screen
+and (min-device-width: 768px) {
+  hr {
+    width: 50%;
+    margin: 40px auto;
+  }
+}
+
 .spotify--text-container {
   padding: 10px 0;
 }
