@@ -1,9 +1,9 @@
 ---
 title: Palpitations And The Way Out?
-description: Update this
-tags: ["poems", "friends", "priorities", "self", "dance"]
+description: Writing freehand about dealing with palpitations I got today, an old friend and love moving on, a good friend who stuck around despite myself and helped me see myself through.
+tags: ["letting go", "friends", "palpitations", "knowledge", "love"]
 layout: layouts/post/post.njk
-twitterHashtags: poem,friends,priorities,self,dance
+twitterHashtags: lettinggo,friends,knowledge,palpitations,love
 date: 2021-12-16
 lastModified: 2021-12-16
 newsletter: "lit"
