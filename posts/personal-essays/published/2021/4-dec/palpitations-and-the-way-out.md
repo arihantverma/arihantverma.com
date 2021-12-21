@@ -5,7 +5,7 @@ tags: ["letting go", "friends", "palpitations", "knowledge", "love"]
 layout: layouts/post/post.njk
 twitterHashtags: lettinggo,friends,knowledge,palpitations,love
 date: 2021-12-16
-lastModified: 2021-12-16
+lastModified: 2021-12-21
 newsletter: "lit"
 typeOfPost: "essay"
 ---

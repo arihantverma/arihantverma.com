@@ -138,6 +138,14 @@ module.exports = function (eleventyConfig) {
     return `<div class="post__note" ${boldStyle}><div>${markdownToHtml}</div></div>`;
   });
 
+  eleventyConfig.addPairedShortcode("longquote", (content) => {
+    const markdownToHtml = markdownLibrary.render(content);
+
+    return `<div style="background: #ffe6c4; padding: 10px 15px; border-radius: 20px; box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);">${markdownToHtml}</div>
+    `
+  })
+
+
   eleventyConfig.addShortcode(
     "blur",
     (text, spread = "10px", blurColor = "rgba(0, 0, 0, 0.75") => {
