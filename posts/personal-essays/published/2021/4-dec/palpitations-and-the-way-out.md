@@ -14,7 +14,9 @@ I don't know why but when something mind stirring happens, or rather when someth
 
 The earliest I remember wanting to do this was when I remembered the time I was playing football with my basketball alone as a kid, and I saw my grandmother storm out of the house, a gray briefcase packed, shouting loudly, pitying herself.
 
-Today the woman who loved me the most, despite my lies, holding back, avoidance, fear of commitment, told me that somebody asked her out today and she said yes, that she was glad she could. I felt glad that she could too, that I didn't held her off from experience something beautiful. 
+Today the woman who loved me the most, despite my lies, holding back, avoidance, fear of commitment, told me that somebody asked her out today and she said yes, that she was glad she could. I felt glad that she could too, that I didn't hold her off from experience something beautiful. 
+
+> The biggest reason that I said yes to him is that he is with me the way I used to be with you.
 
 But I stopped work because palpitations started. Not knowing what to do, I pinged my best friend, the only woman who didn't leave despite myself. She told me a lot of things she've figured about me. And I'm always glad to listen to some honest things without measure or calculative restrain.
 
