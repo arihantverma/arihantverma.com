@@ -8,6 +8,9 @@ date: 2021-12-21
 lastModified: 2021-12-21
 newsletter: "lit"
 typeOfPost: "essay"
+coverImage: https://images.unsplash.com/photo-1543237390-edca99e0f683?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
+coverImageAlt: "Winter Railway Station In The Mountains"
+coverImageCaption: "Winter Railway Station"
 ---
 
 This is not a book review. Book reviews are difficult to write. You've to keep all these notes, and make tradeoffs to keep the book review terse yet powerful and useful. This is a book musing. I underline and write in books I read ( bite me? ), and I thought those notes get lost.
