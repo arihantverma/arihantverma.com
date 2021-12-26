@@ -101,10 +101,9 @@ module.exports = function (eleventyConfig) {
       });
 
       return `<div class="post__twitter-share-text">
-      <h2 class="post__share--heading">Share</h2>
-      <span>If you liked this article please</span>
-      <a href="${link}">share it on twitter.</a>
-      <span>On mobile you can share it with your friends by hitting the blue share button.</span>
+      <h2 class="post__share--heading">
+        <a href="${link}">Share on twitter.</a>
+      </h2>
     </div>`;
     }
   );

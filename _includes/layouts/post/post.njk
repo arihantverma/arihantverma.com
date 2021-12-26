@@ -49,11 +49,12 @@ templateClass: tmpl-post
       {% endif %}
 
       {% if newsletter %}
-        <div style="border: 2px solid var(--oceanblue); margin: 20px 0; padding: 0 1rem 1rem;">
+        <hr />
+        <div style="margin: 20px 0; padding: 0 1rem 1rem;">
 
           {% if newsletter === 'lit' %}
               <h2>
-                If you enjoyed this {% if typeOfPost %}{{ typeOfPost }}{% else %}essay{% endif %} please consider subscribing to my artsy newsletter
+                Subscribe to my artsy newsletter
               </h2>
             {% newsletter "lit"%}
           {% endif %}

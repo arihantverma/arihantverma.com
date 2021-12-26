@@ -120,7 +120,6 @@
 
 .post__read-more--container {
   margin: 20px 0;
-  border: 2px solid var(--oceanblue);
   padding: 1rem;
 }
 
@@ -131,7 +130,7 @@
 
 .post__twitter-share-text {
   padding: 1rem;
-  border: 2px dotted var(--navy);
+  text-align: center;
 }
 
 .post__content article h2 {

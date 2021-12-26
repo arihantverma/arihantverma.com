@@ -1,37 +1,40 @@
-<h2>Read More</h2>
 <ul class="post__read-more--list font-size-xlarge">
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
   {%- if nextPost %}
-    <li>
+    <li style="margin-bottom:10px;">
       <strong>Next:</strong>
-      {% if nextPost.data.externalUrl %}
-        {% set nextPostUrl = nextPost.data.externalUrl %}
-      {% else %}
-        {% set nextPostUrl = nextPost.url | url %}
-      {% endif %}
-      <a href="{{ nextPostUrl }}">
-        {{ nextPost.data.title }}
+        <i>
         {% if nextPost.data.externalUrl %}
-          <span>↗️</span>
+          {% set nextPostUrl = nextPost.data.externalUrl %}
+        {% else %}
+          {% set nextPostUrl = nextPost.url | url %}
         {% endif %}
-      </a>
+        <a href="{{ nextPostUrl }}">
+          {{ nextPost.data.title }}
+          {% if nextPost.data.externalUrl %}
+            <span>↗️</span>
+          {% endif %}
+        </a>
+      </i>
     </li>
   {% endif %}
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
   {%- if previousPost %}
     <li>
       <strong>Previous:</strong>
-      {% if previousPost.data.externalUrl %}
-        {% set previousPostUrl = previousPost.data.externalUrl %}
-      {% else %}
-        {% set previousPostUrl = previousPost.url | url %}
-      {% endif %}
-      <a href="{{ previousPostUrl }}">
-        {{ previousPost.data.title }}
+      <i>
         {% if previousPost.data.externalUrl %}
-          <span>↗️</span>
+          {% set previousPostUrl = previousPost.data.externalUrl %}
+        {% else %}
+          {% set previousPostUrl = previousPost.url | url %}
         {% endif %}
-      </a>
+        <a href="{{ previousPostUrl }}">
+          {{ previousPost.data.title }}
+          {% if previousPost.data.externalUrl %}
+            <span>↗️</span>
+          {% endif %}
+        </a>
+      </i>
     </li>
   {% endif %}
 </ul>
