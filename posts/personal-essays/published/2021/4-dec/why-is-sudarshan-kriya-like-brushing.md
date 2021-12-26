@@ -8,6 +8,9 @@ date: 2021-12-26
 lastModified: 2021-12-26
 newsletter: "lit"
 typeOfPost: "essay"
+coverImage: "./images/science-of-breath.webp"
+coverImageAlt: "Science of Breath: Sudarshan Kriya"
+coverImageCaption: "Science of Breath"
 ---
 
 We brush our teeth daily.
