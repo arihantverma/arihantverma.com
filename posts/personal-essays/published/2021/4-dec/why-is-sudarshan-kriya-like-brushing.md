@@ -5,7 +5,7 @@ tags: ["meditation", "Sudarshan Kriya", "cleansing"]
 layout: layouts/post/post.njk
 twitterHashtags: meditation,sudarshankriya,cleaning,lifestyle
 date: 2021-12-26
-lastModified: 2021-12-26
+lastModified: 2022-01-02
 newsletter: "lit"
 typeOfPost: "essay"
 coverImage: "./images/science-of-breath.webp"
@@ -43,6 +43,9 @@ All of the above assumes that stress is bulk event driven. Something happens, an
 Overtime, I've realised though that stress also sneaks as we live our lives without any comparable significant  event happening. It might be the posture you sit in, the sleep cycles you engage in because of an indoor computer job, digestion stress on your tummy with unhealthy or ill timed meals. This mundane list can go on…
 
 > Stress is also accumulated continuously from all walks of life and not just through emotional, physical or mental exhaustion inflection points.
+
+> **At the subtlest level stress is concentrating on <u>what is not okay</u>**
+> — S[wami Purnachaitanya](https://www.swamipurnachaitanya.com/)
 
 The hardest part about stress is, you can't measure it when it's seeped deep down into the nervous system in ways difficult to comprehend because of its sneaky characteristic. How it shows in our body-mind complex is different for everybody. And like most of the other times when we catch diseases, we end up treating symptoms rather than being able to find the root cause.
 
