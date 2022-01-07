@@ -5,7 +5,7 @@ tags: ["meditation", "Sudarshan Kriya", "cleansing"]
 layout: layouts/post/post.njk
 twitterHashtags: meditation,sudarshankriya,cleaning,lifestyle
 date: 2021-12-26
-lastModified: 2022-01-02
+lastModified: 2022-01-07
 newsletter: "lit"
 typeOfPost: "essay"
 coverImage: "./images/science-of-breath.webp"
@@ -113,4 +113,19 @@ If you want to learn this wonderful piece of art that calms the mind down like m
 **_The best thing is, you can learn it online!_**
 
 {% InlineEmoji "🌟🌟🌟" "3 Sparkling Stars" %}
+
+
+_**If you'd like to register right away, you can do that here 👇🏻**_
+
+<div className="text-center">
+  <a
+    href="https://aol-whitefield.vercel.app"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="padding:4px 16px; background:rgb(34 197 94); color:white; display:inline-block; width:full; text-align:center; font-weight:bold;"
+  >
+    Register Now
+  </a>
+</div>
+
 
