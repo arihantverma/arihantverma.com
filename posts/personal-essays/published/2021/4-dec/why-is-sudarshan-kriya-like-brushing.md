@@ -5,7 +5,7 @@ tags: ["meditation", "Sudarshan Kriya", "cleansing"]
 layout: layouts/post/post.njk
 twitterHashtags: meditation,sudarshankriya,cleaning,lifestyle
 date: 2021-12-26
-lastModified: 2022-01-07
+lastModified: 2022-01-16
 newsletter: "lit"
 typeOfPost: "essay"
 coverImage: "./images/science-of-breath.webp"
@@ -27,9 +27,9 @@ What does Sudarshan Kriya have to do with brushing and pooping?
 
 Our body sustains on periodic cleanliness, does it not? What about our mind? It's fascinating that we don't think about how much it might need cleansing, the way we mindlessly and brilliantly have chores set for physical cleanliness. Chores which we don't even give a second thought.
 
-Therapy helps big time. I personally have never had sessions, but a lot of my friends successfully have had. Sometimes there is a need to talk things out in a systemetic, pragmatic, safe way. How, might not always be evident. That's why trained, non judgemental professionals come into picture.
+Therapy helps big time. I personally have never had sessions, but a lot of my friends successfully have had. Sometimes there is a need to talk things out in a systematic, pragmatic, safe way. How, might not always be evident. That's why trained, non judgemental professionals come into picture.
 
-But there are some things that can't go away with talking. One of them surprisingly and fundamentally is stress. The very word gives such a negative connotation that most of the human minds would feel averse to both the word, and its meaning the usage of the word commonly suggests. Some of the possible things that might pop in your brain are:
+But there are some things that can't go away with talking. One of them surprisingly and fundamentally is stress. The very word gives such a negative connotation that most of the human minds would feel averse to both the word and its meaning the usage of the word commonly suggests. Some of the possible things that might pop in your brain are:
 
 {% longquote %}
   1. I don't have stress in life.
@@ -51,9 +51,9 @@ The hardest part about stress is, you can't measure it when it's seeped deep dow
 
 ---
 
-Think of this from this perspective. We eat, food gets stuck, we have to brush. We eat, it gets digested, we have to throw out the waste. With both of these activities if we don't clean, our bodies are smart enough to put pressure on your body so that you ultimately have to. But the mind doesn't have a very evident excretory system.
+Think of this from this perspective. We eat, food gets stuck, we have to brush. We eat, it gets digested, we have to throw out the waste. With both of these activities if we don't clean, our bodies are smart enough to put pressure so that we ultimately have to. But the mind doesn't have a very evident excretory system.
 
-We use our mind all day, sometime nights ( dreams ) and it has been constantly working since years without any rest at all. Who is washing the mind?
+We use our mind all day, sometimes nights ( dreams ) and it has been constantly working since years without any rest at all. Who is washing the mind? And how?
 
 ---
 

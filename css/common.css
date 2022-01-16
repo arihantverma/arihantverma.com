@@ -203,3 +203,7 @@ and (min-device-width: 768px) {
 .spotify--text-container {
   padding: 10px 0;
 }
+
+iframe {
+  max-width: 100%;
+}
