@@ -1,6 +1,6 @@
 ---
 title: Notes On Grief
-description: Reflecting and revising some of the things in Chimamanda Ngozi Adichie's book.
+description: Reflecting and revisiting some of the things in Chimamanda Ngozi Adichie's book.
 tags: ["grief", "death", "life", "book musing"]
 layout: layouts/post/post.njk
 twitterHashtags: grief,death,life,covid19
