@@ -5,7 +5,7 @@
 }
 
 .post__container blockquote {
-  margin: 1rem;
+  margin: 0;
   quotes: "\201C""\201D""\2018""\2019";
   display: flex;
   align-items: baseline;
@@ -13,6 +13,12 @@
   font-size: 1.3rem;
   border-radius: 15px;
   padding: 10px 0;
+}
+
+@media only screen and (min-device-width: 768px) {
+  .post__container blockquote {
+    margin: 1rem;
+  }
 }
 
 .post__container p {

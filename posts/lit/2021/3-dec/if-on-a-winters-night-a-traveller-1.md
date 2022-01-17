@@ -1,7 +1,7 @@
 ---
 title: If On A Winter's Night A Traveller — Book Musing No. 1
 description: In parts review of Italo Calvino's If On A Winter's Night A Traveller
-tags: ["book review", "reading"]
+tags: ["book musing", "reading"]
 layout: layouts/post/post.njk
 twitterHashtags: bookreview,reading,italocalvino
 date: 2021-12-21

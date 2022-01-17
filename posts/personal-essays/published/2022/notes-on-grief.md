@@ -100,5 +100,5 @@ Towards the end of the book the author talks to the reader and herself about the
 
 The author has had a difficult time dealing with death of a loved one, especially in pandemic times, like so many of us. May she find peace amidst changes, may her ways be auspicious.
 
-Now, I reflect how I dealt with not being around of a loved one, in the next post.
+Now, I reflect how I dealt with a loved one not being around anymore in the next post.
 
