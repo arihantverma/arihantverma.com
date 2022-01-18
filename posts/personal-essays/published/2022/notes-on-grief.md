@@ -55,7 +55,7 @@ Author would quip:
 
 ---
 
-> When my brothers and surprised him on his eightieth birthday, arriving at our parents' flat in Nsukka from the US and the UK, he kept looking at my mother in bafflement that she could have 'lied' to him. 'But you said some friends were coming. You didn't say the children were coming.'
+> When my brothers and I surprised him on his eightieth birthday, arriving at our parents' flat in Nsukka from the US and the UK, he kept looking at my mother in bafflement that she could have 'lied' to him. 'But you said some friends were coming. You didn't say the children were coming.'
 
 And the author had to clarify why:
 
@@ -71,20 +71,20 @@ Note how innocent and cool this is, given that the author's father was the [firs
 
 About a funny incident, involving a billionaire trying to take ancestral land in Abba and only person — Ikemba Njikoka — willing to publicly oppose,
 
->  Nobody in Abba was close to having the wealth and political connections of the billionaire, but there was a straight-talking businessman, Ikemba Njikoka, who was funding my hometown's legal expenses and speaking publicly about the billionaire's conduct. He himself had been threatened. The WhatsApp message on my father's phone had been forwarded by Ikemba jikoka, saying that 'you' would be arrested at a town hall meeting this weekend. My father, not WhatsApp savvy, did not realise that it was a forwarded message and thought that _he_ was about to be illegally arrested. He had spent the day silently burdened by this.
+>  Nobody in Abba was close to having the wealth and political connections of the billionaire, but there was a straight-talking businessman, Ikemba Njikoka, who was funding my hometown's legal expenses and speaking publicly about the billionaire's conduct. He himself had been threatened. The WhatsApp message on my father's phone had been forwarded by Ikemba Njikoka, saying that 'you' would be arrested at a town hall meeting this weekend. My father, not WhatsApp savvy, did not realise that it was a forwarded message and thought that _he_ was about to be illegally arrested. He had spent the day silently burdened by this.
 
 ---
 
 Author's father was kidnapped for ransom from her famous daughter. This is what he said after he returned:
 
-> 'They didn't pronounce your name properly, so I told them the correct pronunciation.
+> They didn't pronounce your name properly, so I told them the correct pronunciation.
 
 ---
 
 <!-- </details> -->
 
 
-The author shares the pain she goes or went through, having to accept the death a little too quickly because their origin culture demands it
+The author shares the pain she goes or went through, having to accept the death a little too quickly because their origin culture demands it —
 
 > But the most important thing [about a person dying in Igbo culture] is 'Clearance'. Clearance attests to how deeply, how forcefully communitarian Igbo culture remains. Clearance means that any outstanding dues to the age grade, the town union, the village, the clan, the _umunna_, must be paid; otherwise, the funeral will be boycotted.
 
