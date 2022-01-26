@@ -192,6 +192,10 @@ hr {
   width: 70%;
 }
 
+picture br {
+  display: none;
+}
+
 @media only screen
 and (min-device-width: 768px) {
   hr {
