@@ -27,7 +27,7 @@ html {
 and (min-device-width: 768px) {
   .main-container {
     padding: 0;
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 }
 
