@@ -87,9 +87,9 @@
     {% set isPostPage = templateClass == "tmpl-post" %}
 
     {% if isPostPage %}
-      {% set maxWidthClass = "max-width-60rem" %}
+      {% set maxWidthClass = "main-container-article-details" %}
     {% else %}
-      {% set maxWidthClass = "max-width-50rem" %}
+      {% set maxWidthClass = "max-width-main-container" %}
     {% endif %}
 
       <main class="main-container {{maxWidthClass}} {{conditionalMainClass}}">

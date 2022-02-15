@@ -4,9 +4,26 @@
   list-style-type: none;
 }
 
+@media only screen
+and (min-device-width: 768px) {
+  .post-list__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
 .post-list__item {
   padding: 0 0 1.5rem 0;
 }
+
+@media only screen
+and (min-device-width: 768px) {
+  .post-list__item {
+    min-width: 31.5%;
+    max-width: 31.5%;
+  }
+}
+
 
 .post-list__item:hover .post-list__item-title-heading {
   color: var(--oceanblue)
