@@ -17,7 +17,7 @@
 
 @media only screen and (min-device-width: 768px) {
   .post__container blockquote {
-    margin: 1rem;
+    margin: 1rem 4rem;
   }
 }
 
