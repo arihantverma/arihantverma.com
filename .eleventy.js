@@ -28,7 +28,7 @@ let markdownLibrary = markdownIt({
 }).use(markdownItAnchor, {
   permalink: true,
   permalinkClass: "direct-link",
-  permalinkSymbol: "#",
+  permalinkSymbol: "🔗",
 });
 
 module.exports = function (eleventyConfig) {
@@ -140,7 +140,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPairedShortcode("longquote", (content) => {
     const markdownToHtml = markdownLibrary.render(content);
 
-    return `<div style="background: #ffe6c4; padding: 10px 15px; border-radius: 20px; box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);">${markdownToHtml}</div>
+    return `<div style="background: #ffe6c4; padding: 10px 15px; border-radius: 20px; box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12); margin-bottom: 20px;">${markdownToHtml}</div>
     `
   })
 
