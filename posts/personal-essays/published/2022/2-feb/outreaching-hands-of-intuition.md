@@ -13,44 +13,59 @@ coverImageAlt: "intuition"
 coverImageCaption: "Photograph by Edz Norton on Unsplash"
 ---
 
-## The Dance Of Desire
+Often our minds swing in between two extremes of actions — complete acquiescence or complete disconsolation wherever you find yourself. Changing jobs, places, partners, friends, don't help. As if the mind's vacillations between the past and the future weren't enough to the already outstanding restlessness and anxiety making up the background of our time. The roots of those 'action' extremes are desires, aimed to achieve comfort through convenience and avoiding struggle of any kind.
 
-> A desire comes up and arrests your senses.
-
-At my first job, I had a desktop. Most of the others in the team had a mac book pro. I wanted it. I had a college laptop at home whose screen had gone rogue and green. One evening, tired of using the laptop on an external glaring TV screen, I gave in. I bought a late 2015, 13 inch, 8GB RAM mac book pro. After the purchase, not able to survive the guilt of my first expensive shopaholic purchase, I called my father. He asked me to consider it as a gift and sent me half the money.
+So when we struggle, our mind conjures up desires which when fulfilled _should_ end the struggle. But do they?
 
 ---
 
+At my first job, I had a desktop. Most of the others in the team had a mac book pro. I wanted it. I had a college laptop at home whose screen had gone rogue and green. One evening, tired of using the laptop on an external glaring TV screen, I gave in. I bought a late 2015, 13 inches, 8GB RAM mac book pro. After the purchase, not able to survive the guilt of my first expensive shopaholic purchase, I called my father. He asked me to consider it as a gift and sent me half the money. 6 years later, when that laptop has died, I wish to have the best mac there is, which costs the annual salary of my first job. But my senses haven't taken the better of me, and the laptop only sits in the cart for the right time.
+
 I can't begin to tell how many times the thought of leaving a job has come to mind. Some of those times I acted out on them, leaving three jobs, without a prior plan or any job offer.
 
-Even now that I'm earning better than before and have no major complains about salary, this thought is omnipresent — for different justifications the mind provides as reasons. It's stubborn on days, and just floating around on the periphery on the others. One would think that if a thought so throbbing, incessant, is extant, it might be sort of a calling, or a warning, an omen, or an intuition.
+Even now that I'm earning better than before and have no major complaints about salary, this thought is omnipresent — for different justifications, the mind provides as reasons. It's stubborn on days, and just floating around on the periphery on the others.
 
+---
 
-## The Hum Of The Moment
+When a thought is so persistent and recurring it's easy to be remiss and give it false meaning, attaching it to a convenient purpose of '_what you're supposed to do_' or passion or calling or just generally dissociating yourself to whatever it is that triggered a revolutionary-escapist instinct in you – a job, a relationship, a situation, a person, a thing… One would think that if a thought so throbbing, incessant, is extant, it might be sort of a calling, or a warning, an omen, or an intuition.
 
-In the background of living our lives resides a silent hum of _it's okay, never mind and so what_. It might be difficult to feel when there's too much going on inside and outside of you. But if you roll around your eyes in the past, it might be looking right at you. You've experienced this. This hum is the hum of this moment, asking you to bathe in it and just be.
+It is in moments like these that we wish we were a child or a teen again. These thoughts lay the foundation of cravings and aversions that our mind trains upon, event by event, person by person, job by job, situation by situation. Once you've attributed what you think is the cause of struggle as such, these two spirals' fire is fueled.
 
-For example, my steps imbibe dance when I walk with my headphones on, not caring about the eyes around. Sometimes I sing aloud too. I forget I'm outside. This happens because I'm totally in the moment, I'm inside myself so to speak. This happens because I'm able to let go.
+> Desires when not observed, and waited for patiently arrest our senses, our mind becomes outbound and it becomes difficult to realise that all desires lead to the same place…the beginning.
 
-Experiencing this hum of the moment frequently – everyday – is necessary to not feel overwhelmed by the thoughts that arouse desire, but at the same time not completely ignore the desires. Desires are necessary for the world to exist and sustain. But how do we do that? How do we not get affected by them and still indulge in them and gauge which ones are worth acting upon? How do we trigger our intellect without giving into the mind's bias for convenience and languor? One word – [_'meditation'_](https://arihantverma.com/posts/2021/12/26/why-is-sudarshan-kriya-like-brushing/).
+The famous and cliché running joke: 
 
-## The Middle Path — Precursor
+- They said to study for 10th grade exams and life will be set
+- Then they said to get good marks in 12th grade and life will be set
+- Then they said to get good marks and placement in college then life will be set
+- Then they said to get a better salary, a better job, then life will be set
+- Then they said to get married and life will be set
+- Then they said to have children and life will be set.
+- …
 
-Like the thought of quitting my job, _so that I could follow my dreams of becoming an author_, our mind vacillates between extremes, as if vacillating between past and the future constantly isn't enough. The constant drumming of the thoughts, specially the ones that enervate: thoughts that express complaints, ambitions, passion, anger, grudge, fear, etc… are gruelling. You've work to do, but you need to rest, because you haven't slept in 3 days, but you can't, because you have work. Life just doesn't come to a stop. Besides, your friends and your partner are becoming distant because you are not able to give enough time.
+does in fact projects what actually happens. It's a never-ending cycle, isn't it? I wanted a 13 inches mac book pro 6 years ago. Today I want the best one. The thought to leave the job, take the risk and do something that I'd enjoy is repetitive, and honestly enervating, if sometimes empowering.
 
-It is in moments like these that you wish you were a child or a teen again. In moments like this where you wish different scenarios for yourself. If those desires don't arise in you, you might never act upon them. Yet at the same time, they are difficult thoughts — since, in this job example — it's difficult to acknowledge and be aware of the fact that you are getting churned, and are not able to do anything enough about it.
+Once there's this awakening, a recognition – and meditation helps become mindful about this like no other action can, again and again – a middle path opens.
 
-But there's a middle way. I recently realised this. A way backed by intuition, laid by persistence and commitment, maintained by centeredness, sustained by patience, and celebrated by small wins on the run.
+> A path where there's gratitude despite the stress, contentment despite ambition, patience despite struggle and endless work.
 
-## The Middle Path
+These seemingly opposite terms of living become complementary, aiding and sometimes mutually exclusive from each other.
 
-The middle path is that of moderation and letting go periodically. In a way you could say that it the path of being a yogi. When thrusting, persistent desires and thoughts keep you busy, having a mind which is centered, turns that insistence into a weapon. The weapon feels like having ginger lemon honey concoction on your tongue as you wade through whatever life throws at you, no matter what. It feels like a super power. Desires no longer demands attention, you get the power to keep gurgling them in your throat on the side. You set your priorities right, make smart trade offs, work towards your goals, habit acted after habit.
+This path opens up ways where you'd see yourself in the light you might not have seen yourself in before. Self-introspection happens frequently, more importantly, you feel the need to do it.
 
-On this path, you know that
+> Complaints, doubts and grudges seem like a waste of time.
 
-> We've had so many desires, but all of them lead to the same place…the beginning.
+Action roots in planning, habits and the hum of this present moment, which provides you with a weapon to handle the mind, of _it's okay, never mind, so what, let's keep going, let's move on…_
 
-So you sit and assume you already have a particular desire fulfilled and you observe how that makes you feel.
+It is then that desires often very frequently turn out to be intuitions. We've all had those magical moments where trying hard to remember something, but not being able to, letting go suddenly brings it all back. It's the same faculty that pops out intuitive thoughts.
+
+In 2018, I attended a meditation retreat that emptied my mind. I'd been having a tough time – unemployed, unclear, unmotivated for over a year and a half. And suddenly after the retreat, I felt like going to Mumbai, where my aunt lived. After 15 days of meeting people from the poetry, music and art circles, people I'd only experienced the art of through Instagram, I felt like going to Bangalore without any plan. 5 months in and I got myself a job again and life started moving again.
+
+This is not to say that intuition always demands spontaneous actions. That particular time demanded galvanizing. I've had intuitions where that voice or feeling told me _not_ to do something for a very long time; I didn't.
+
+On this middle path, between two intuitions, there's a desire to be helpful and work hard. Discipline no longer demands effort after a while, it becomes second nature. I'm a long way to experience that, but I'm on my way. You realise that consistency is the advocate of all that you do. Ambitions, people, circumstances don't define your happiness and neither do they make you want to make any fewer efforts. This path becomes the path of a yogi, a peaceful warrior, of moderation, calculated risks, smart tradeoffs and cutthroat priorities.
+
+The trick is believing you already have what you want, surrendering that desire and then working for it.
 
 {% note %}
 <details>
@@ -66,45 +81,14 @@ If the mind is sharp, you don't wait for experience to happen to you. Anyone's e
 </details>  
 {% endnote %}
 
-This middle is trying, demands discipline, but handles stress and pressure exquisitely. The only way to keep going on this path is by having gratitude, being contented, having patience and cut throat perseverance. _Oh BS!_ You might be inclined to say. This all sounds so abstract and general. And like a gazillion other things, the experience of each one of us is so different because we have different socio-economical, emotional, financial circumstances. But there's a common string that goes right through the middle of this path that can be felt by everyone.
+The thrill of working like this is unmatched. It's the reason I've been able to write for over a month daily, consistently despite the fear of missing out, self-doubts and uncertainty.
+
+---
+
+If I'm walking in public I can't dance let alone sing even if I'm feeling like it. But my steps imbibe dance when I walk with my headphones on, not caring about the eyes around. I forget I'm outside. I visit my inside so to speak where inhibitions shed. The mind needs tools like these to trick itself into relaxation, because by nature the mind is chaotic even if everything is right. The surprising secret to tricking the mind into relaxed awareness and helping it practice it, just like we were wooed by TV or gimmicks played by our parents to make us eat food, is our breath. Modulating it a certain way helps seep into a meditative state of the mind seamlessly. And through that void, the void of the experience of _I'm nothing_ or _I am_ arise intuition and resilience to walk the middle path.
+
+May the middle path be with you. 
+
+{% InlineEmoji "🖖🏼" "Spock Hand" %}
 
 
-## The Overarching, Outreaching Hands Of Intuition
-
-How to find a good tomato in a farm of thousands of rotten tomatoes? Intuition. 
-
-
-
-
-
-<!-- ## When Buddha Said _"I'm Already That"_
-
-Over these years, after numerous mistakes, I've found that there's a small way in which intuition could be detected. Since acting on every desire leads to the same place – the beginning – you could just imagine how you'd feel like when that desire got fulfilled by imagining that it has already happened.
-
-
-
-
---- -->
-
-<!-- ## Intuition Needs Frequently Letting Go
-
-Now that we at least have a hint about our intuitions, how to build it?
-
-We've all had these bouts of extremely mysterious experiences where we are not able to remember something but are trying very hard to. The moment we let go it comes back to us. In life, like everything else, the art of letting go has to be practiced. Intuition and letting go periodically go hand in hand. The mind needs space to be able to have clarity. That space gets build only when we truly let go of everything for a while, everyday. [Learning how to meditate]((https://arihantverma.com/posts/2021/12/26/why-is-sudarshan-kriya-like-brushing/), and meditating is the only way I know where that space is created effortlessly.
-
-The dreams, recurrent thoughts wanting impulsive or necessary actions out of you can become wonderful if you let them co exist with you instead of giving too much attention to them all the time. Intuition builds in this ability to walk on the middle path. -->
-
-<!-- 
-
-That is only possible when we choose to be happy and smile even when situations and people demand otherwise. Only possible when we practice living in the present moment.
-
-> When we listen to our intuition, the action that supports it doesn't have to be spontaneous and immediate. It can be spontaenous and planned, spiced up with calculated risk.
-
-My steps imbibe dance when I walk with my headphones on. Sometimes I sing aloud, not caring about the eyes around. More exactly, forgetting I'm outside. This happens because I'm totally in the moment, because I'm able to let go.
-
-Ultimately we don't have forever. So let's choose the middle path, set our priorities right, not only on paper but in actions as well.
-
-So, I'm going to buy that silver glossiness of a computer, or quit job anytime soon. But I'm going to write and create a lot and keep a look out for the time when I'll be able to.
- -->
-
-<!-- 6 years have passed. 2 months ago, that laptop died beyond repair. I realised then that unlike how I would have felt or reacted even three years ago, I didn't feel sad. There was no desire that replaced it with wanting to buy the latest, best, 16inch, 32GB RAM mac book pro glossiness, that would cost me the annual in hand salary of my first job. Okay, okay. It did occur for a bit, resulting in checking the model out online, and going so far as to add it in the cart. But I didn't buy it. There was no need to. I have an office laptop, so why go do prodical shoppaholic regretful shenanigans. -->
