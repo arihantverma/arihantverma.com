@@ -1,11 +1,11 @@
 ---
 title: The Overarching, Outreaching Hands Of Intuition — The Speaker Who Summons A Middle Path
 description: It's always there. Sometimes we act on it and fail. Sometimes we are afraid. Sometimes we don't know if that is it. What is it?
-tags: ["life", "purpose"]
+tags: ["life", "purpose", "mind", "desire"]
 layout: layouts/post/post.njk
 twitterHashtags: intuition,purpose,writing,drive
-date: 2022-02-11
-lastModified: 2022-02-11
+date: 2022-02-21
+lastModified: 2022-02-21
 newsletter: "lit"
 typeOfPost: "essay"
 coverImage: "https://images.unsplash.com/photo-1627728195483-f628eceaa21c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
