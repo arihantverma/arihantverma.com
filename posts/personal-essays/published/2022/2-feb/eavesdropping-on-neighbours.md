@@ -3,7 +3,7 @@ title: Eavesdropping On Neighbours
 description: I sat down on my balcony documenting emotions of a monologue of a neighbour telling another neighbour how she was feeling leaving this place after 4 years.
 tags: ["neighbours", "eavesdropping", "emotions", "children"]
 layout: layouts/post/post.njk
-twitterHashtags: children,innocence,writing,eavesdropping
+twitterHashtags: neighbours,writing,eavesdropping,emotions
 date: 2022-02-21
 lastModified: 2022-02-21
 newsletter: "lit"
