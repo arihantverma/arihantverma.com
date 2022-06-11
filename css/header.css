@@ -1,5 +1,6 @@
 .site-header {
   border-bottom: 1px dashed var(--lightgray);
+  letter-spacing: -2px;
 }
 
 .site-header__heading {
