@@ -52,8 +52,7 @@ Look out for this web space for
 | [github old don't ask](https://github.com/gdad-s-river)             | [linkedin](https://www.linkedin.com/in/arihantverma/) |
 | [stackoverflow](https://stackoverflow.com/users/5106072/gdadsriver) | [resume](/resume)                                     |
 | [Hashnode](https://tech.arihantverma.com)                           | [instagram](https://instagram.com/gdadsriver/)        |
-
-| [Dev](https://dev.to/arihantverma)
+| [Dev](https://dev.to/arihantverma)                                  | <a rel="me" href="https://hachyderm.io/@arihant">Mastodon</a> |
 
 <!-- todo:
   1. add IRC username
