@@ -68,7 +68,7 @@ Not all is grim and bad. In the past week, I've started to follow one simple pra
 <input type="checkbox" checked disabled> Write a letter to my cousin Janisha, buy the book that I will send to her as a late birthday gift, buy the envelops
 <input type="checkbox" checked disabled> Ditto Insurance call book for term insurance guidance
 <input type="checkbox" checked disabled> Haircut
-<input type="checkbox" checked disabled> Follow up with Sriya about the exciting project I have in mind
+<!-- <input type="checkbox" checked disabled> Follow up with Sriya about the exciting project I have in mind -->
 <input type="checkbox" checked disabled> Buy Vitamin D tablets
 <input type="checkbox" checked disabled> Get RC details for cook bhaiya
 <input type="checkbox" checked disabled> Salt, fruits, cooking oil
