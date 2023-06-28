@@ -12,7 +12,7 @@ permalink: '/writing/'
 
 <h2 class="font-family-override-impact font-family-helvetica font-size-xxlarge">Poems</h2>
 
-[Three poems by Arihant Verma](https://bengalurureview.com/arihant-verma-poems)
+[Three poems by Arihant Verma](https://web.archive.org/web/20211022215733/https://bengalurureview.com/arihant-verma-poems)
 <em>Bengaluru Review</em>
 
 ---
