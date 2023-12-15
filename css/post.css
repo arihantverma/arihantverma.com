@@ -74,6 +74,12 @@
   margin-left: 0.1em;
 }
 
+.post__content picture img {
+  width: 100%;
+  border-radius: 32px;
+  margin-top: 20px;
+}
+
 .post__content a,
 .post__container a {
   text-decoration: none;

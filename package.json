@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/arihantverma/website#readme",
   "dependencies": {
-    "@11ty/eleventy-img": "^0.7.8",
+    "@11ty/eleventy-img": "3.1.8",
     "clean-css": "^4.2.3",
     "dotenv": "^10.0.0",
     "eleventy-plugin-footnotes": "^0.9.0",
