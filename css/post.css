@@ -175,3 +175,8 @@
     height: 70px;
   }
 }
+
+.post-list__item-image img {
+  border-radius: 32px;
+  margin-bottom: 12px;
+}

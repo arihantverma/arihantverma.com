@@ -17,6 +17,12 @@
         <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       </span>
       <a href="{{ postUrl }}" class="post-list__item-link no-text-decoration color-navy font-family-etbook" {{ decideTargetBlank(post.data.externalUrl) }}>
+
+      {# {% if post.data.coverImage %}
+        <div class="post-list__item-image">
+          {% RespImage post.data.coverImage, post.data.coverImageAlt, post.data.coverImageCaption %}
+        </div>
+      {% endif %} #}
         <h1 class="post-list__item-title-heading font-size-xlarge">
 
             {% if post.data.title %}
