@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/arihantverma/website"
+    "url": "git://github.com/arihantverma/arihantverma.com"
   },
   "author": {
     "name": "Arihant Verma",
@@ -29,26 +29,28 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arihantverma/website/issues"
+    "url": "https://github.com/arihantverma/arihantverma.com/issues"
   },
-  "homepage": "https://github.com/arihantverma/website#readme",
+  "homepage": "https://github.com/arihantverma/arihantverma.com#readme",
   "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-img": "3.1.8",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@shikijs/markdown-it": "^1.6.1",
     "clean-css": "^4.2.3",
     "dotenv": "^10.0.0",
     "eleventy-plugin-footnotes": "^0.9.0",
     "isomorphic-unfetch": "^3.1.0",
-    "@11ty/eleventy": "^0.11.1",
-    "@11ty/eleventy-navigation": "^0.1.6",
-    "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "luxon": "^1.21.3",
     "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^5.2.5",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
+    "shiki": "^1.6.1",
+    "svgo": "^2.3.1",
     "webpack": "^5.14.0",
-    "webpack-cli": "^4.3.1",
-    "svgo": "^2.3.1"
+    "webpack-cli": "^4.3.1"
   }
 }

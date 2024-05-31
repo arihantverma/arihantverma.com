@@ -2,7 +2,7 @@ const { DateTime } = require("luxon");
 const fs = require("fs");
 const util = require("util");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+// const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
@@ -29,16 +29,38 @@ let markdownLibrary = markdownIt({
   permalink: true,
   permalinkClass: "direct-link",
   permalinkSymbol: "🔗",
-});
+})
+function shikiPlugin(eleventyConfig, options) {
+  // empty call to notify 11ty that we use this feature
+  // eslint-disable-next-line no-empty-function
+
+  // This is a hack to let eleventy know that we touch that library
+  // eleventyConfig.amendLibrary("md", () => {});
+
+  eleventyConfig.on('eleventy.before', async () => {
+    const shiki = await import('shiki');
+
+    const highlighter = await shiki.getHighlighter(options);
+    eleventyConfig.amendLibrary('md', (mdLib) =>
+      mdLib.set({
+        highlight: (code, lang) => highlighter.codeToHtml(code, { lang }),
+      })
+    );
+  });
+};
+
 
 module.exports = function (eleventyConfig) {
+  // v0 -> v1 in case its needed
+  // eleventyConfig.setLiquidOptions({ strictFilters: false })
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(pluginSyntaxHighlight, {
-    alwaysWrapLineHighlights: true,
-    init: function ({ Prism }) {
-      // Prism.languages.myCustomLanguage = /* */;
-    },
-  });
+  eleventyConfig.addPlugin(shikiPlugin, { theme: "dark-plus" }); 
+  // eleventyConfig.addPlugin(pluginSyntaxHighlight, {
+  //   alwaysWrapLineHighlights: true,
+  //   init: function ({ Prism }) {
+  //     // Prism.languages.myCustomLanguage = /* */;
+  //   },
+  // });
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(footnotes);
 
