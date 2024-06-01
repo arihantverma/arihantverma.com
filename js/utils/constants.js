@@ -1,4 +1,2 @@
-module.exports = {
-  timeZone: 'utc+05:30',
-  readableDateFormatForLuxon: "dd LLL yyyy"
-}
+export const timeZone = 'utc+05:30'
+export const readableDateFormatForLuxon = "dd LLL yyyy"

@@ -1,12 +1,12 @@
-const fetch = require('isomorphic-unfetch')
-const querystring = require('querystring');
+import fetch from 'isomorphic-unfetch';
+import querystring from 'querystring';
+import * as dotenv from 'dotenv'
 
 let clientId
 let clientSecret
 let refreshToken
 
 if (process.env.NODE_ENV === 'development') {
-  const dotenv = require('dotenv')
   const envVariables = dotenv.config().parsed
 
   clientId = envVariables.SPOTIFY_CLIENT_ID
@@ -25,7 +25,7 @@ const refresh_token = refreshToken;
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
-module.exports = async function getAccessToken () {
+export default async function getAccessToken () {
   const response = await fetch(TOKEN_ENDPOINT, {
     method: 'POST',
     headers: {

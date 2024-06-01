@@ -1,3 +1,3 @@
-module.exports = {
-  environment: process.env.ELEVENTY_ENV
+export default {
+  environment: process.env.ELEVENTY_ENV ?? 'development',
 }

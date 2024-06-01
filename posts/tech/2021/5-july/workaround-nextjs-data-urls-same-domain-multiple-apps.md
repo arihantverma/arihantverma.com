@@ -48,7 +48,7 @@ I ended up making it work at my job by doing a bunch of things.
 
 Using [asset prefix](https://nextjs.org/docs/api-reference/next.config.js/cdn-support-with-asset-prefix) to make a distinguishing factor between assets of different next.js apps, along with a [next.js re write rule](https://nextjs.org/docs/api-reference/next.config.js/rewrites).
 
-```js
+```javascript
 // next.config.js
 module.exports = {
   assetPrefix: BASE_PREFIX_FOR_APP,
@@ -68,7 +68,7 @@ With this, the client will request assets from `${BASE_PREFIX_FOR_APP}/_next/:pa
 
 In a similar fashion, you'd handle images and api request paths
 
-```js/10-18
+```javascript/10-18
 // next.config.js
 module.exports = {
   assetPrefix: BASE_PREFIX_FOR_APP,

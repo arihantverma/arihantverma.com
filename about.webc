@@ -1,5 +1,5 @@
 ---
-layout: layouts/post/post.njk
+layout: layouts/main.webc
 title: About Me
 eleventyNavigation:
   key: About Me
@@ -7,12 +7,14 @@ eleventyNavigation:
 dontShowDate: true
 dontShowShare: true
 dontShowReadMore: true
-permalink: "/about/"
 ---
 
+<section class="font-family-etbook font-size-base d-font-size-21px post__container post__content">
+  <h1 class="post__heading font-family-system font-family-override-impact font-family-helvetica d-font-family-impact color-dark-gray">About Me</h1>
+<template webc:type="11ty" 11ty:type="njk,md">
 I'm Arihant. It means one who has conquered his mind.
 
-<div>
+<div style="display: flex; justify-content:center;">
 {% RespImage "./images/avatar.jpg", "Photograph of Arihant Verma" %}
 </div>
 
@@ -33,10 +35,12 @@ I'm Arihant. It means one who has conquered his mind.
   1. add IRC username
   2. dev.to
   3. hashnode
- -->
+  -->
 
 [![Contact me on Codementor](https://www.codementor.io/m-badges/arihantverma/im-a-cm-b.svg)](https://www.codementor.io/@arihantverma?refer=badge)
 
 [![Contact me on Codementor](https://www.codementor.io/m-badges/arihantverma/contact-me.svg)](https://www.codementor.io/@arihantverma?refer=badge)
 
 [![Contact me on Codementor](https://www.codementor.io/m-badges/arihantverma/book-session.svg)](https://www.codementor.io/@arihantverma?refer=badge)
+</template>
+</section>

@@ -24,4 +24,4 @@ const makeTwitterLink = ({
   return link;
 };
 
-module.exports = makeTwitterLink;
+export default makeTwitterLink;

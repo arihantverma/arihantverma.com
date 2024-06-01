@@ -6,12 +6,11 @@ twitterHashtags: resignation,movingon
 date: 2020-12-27
 lastModified: 2020-12-27
 eleventyExcludeFromCollections: true
-permalink: false
 ---
 
-## My Resgination Mail
+## My Resignation Mail
 
- Hey {% blur "Boss's_Name" "10px" "rgba(0, 0, 0, 0.5)"%},
+Hey {% blur "Boss's_Name" "10px" "rgba(0, 0, 0, 0.5)"%},
 
 Thanks a lot for the conversation that we had at the start of the last week. It gave me a sense of direction and of course very concerned, empathetic and encouraging advice from you.
 

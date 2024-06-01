@@ -1,6 +1,6 @@
 ---
-eleventyExcludeFromCollections: true
-permalink: false
+# eleventyExcludeFromCollections: true
+# permalink: false
 title: Lost Friends
 description: Remembering the friends I've not kept in touch with over the years, or vice versa, or them who as if suddenly vanished from the face of the earth not knowing why.
 tags: ["personal essay", "life", "friends", "lost"]

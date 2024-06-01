@@ -1,77 +1,111 @@
-const { DateTime } = require("luxon");
-const fs = require("fs");
-const util = require("util");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-// const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const CleanCSS = require("clean-css");
-const footnotes = require("eleventy-plugin-footnotes");
-const Image = require("@11ty/eleventy-img");
-const fetch = require('isomorphic-unfetch');
-const { optimize } = require('svgo');
+// @ts-check
+import { DateTime } from "luxon";
+import fs from "fs";
+import util from "util";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import markdownIt from "markdown-it";
+import anchor from "markdown-it-anchor";
+import CleanCSS from "clean-css";
+import footnotes from "eleventy-plugin-footnotes";
+import Image from "@11ty/eleventy-img";
+import fetch from 'isomorphic-unfetch';
+import { optimize } from 'svgo';
+import pluginWebc from '@11ty/eleventy-plugin-webc'
+import { EleventyRenderPlugin } from '@11ty/eleventy'
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+// import Shiki from '@shikijs/markdown-it'
 
-const {
+// NOT SUPPORTED FOR NUNJUCKS, to support nunjucks, have to load the language locally
+// https://github.com/shikijs/textmate-grammars-themes/tree/main/packages/tm-grammars/grammars
+// https://github.com/shikijs/shiki/pull/494
+// https://shiki.style/languages
+// const shiki = await Shiki({
+//   themes: {
+//     light: 'github-light',
+//     dark: 'github-dark',
+//   },
+// })
+
+import {
   timeZone,
   readableDateFormatForLuxon,
-} = require("./js/utils/constants");
+} from "./js/utils/constants.js";
 
-const getReadableDate = require("./js/utils/get-readable-date");
-const makeTwitterLink = require("./js/utils/make-twitter-link");
+import getReadableDate from "./js/utils/get-readable-date.js";
+import makeTwitterLink from "./js/utils/make-twitter-link.js";
 
 /* Markdown Overrides */
 let markdownLibrary = markdownIt({
   html: true,
   breaks: true,
   linkify: true,
-}).use(markdownItAnchor, {
-  permalink: true,
-  permalinkClass: "direct-link",
-  permalinkSymbol: "🔗",
+}).use(anchor, {
+  permalink: anchor.permalink.linkInsideHeader({
+    class: "direct-link",
+    symbol: "🔗",
+  }),
 })
-function shikiPlugin(eleventyConfig, options) {
-  // empty call to notify 11ty that we use this feature
-  // eslint-disable-next-line no-empty-function
+// .use(shiki)
 
-  // This is a hack to let eleventy know that we touch that library
-  // eleventyConfig.amendLibrary("md", () => {});
-
-  eleventyConfig.on('eleventy.before', async () => {
-    const shiki = await import('shiki');
-
-    const highlighter = await shiki.getHighlighter(options);
-    eleventyConfig.amendLibrary('md', (mdLib) =>
-      mdLib.set({
-        highlight: (code, lang) => highlighter.codeToHtml(code, { lang }),
-      })
-    );
-  });
-};
-
-
-module.exports = function (eleventyConfig) {
+export default function config (eleventyConfig) {
   // v0 -> v1 in case its needed
   // eleventyConfig.setLiquidOptions({ strictFilters: false })
+
+  eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
+		return (data) => {
+			// Always skip during non-watch/serve builds
+			if (data.draft && !process.env.BUILD_DRAFTS) {
+				return false;
+			}
+
+			return data.permalink;
+		};
+	});
+
+  // When `eleventyExcludeFromCollections` is true, the file is not included in any collections
+	eleventyConfig.addGlobalData(
+		"eleventyComputed.eleventyExcludeFromCollections",
+		function () {
+			return (data) => {
+				// Always exclude from non-watch/serve builds
+				if (data.draft && !process.env.BUILD_DRAFTS) {
+					return true;
+				}
+
+				return data.eleventyExcludeFromCollections;
+			};
+		}
+	);
+
+	eleventyConfig.on("eleventy.before", ({ runMode }) => {
+		// Set the environment variable
+		if (runMode === "serve" || runMode === "watch") {
+			process.env.BUILD_DRAFTS = true;
+		}
+	});
+
+  eleventyConfig.addPlugin(pluginSyntaxHighlight, {
+    alwaysWrapLineHighlights: true,
+    init: function ({ Prism }) {
+      // Prism.languages.myCustomLanguage = /* */;
+    },
+  });
+
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
+  
+  eleventyConfig.addPlugin(pluginWebc, {
+    components: '_includes/components/**/*.webc'
+  });
+  
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(shikiPlugin, { theme: "dark-plus" }); 
-  // eleventyConfig.addPlugin(pluginSyntaxHighlight, {
-  //   alwaysWrapLineHighlights: true,
-  //   init: function ({ Prism }) {
-  //     // Prism.languages.myCustomLanguage = /* */;
-  //   },
-  // });
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(footnotes);
-
   eleventyConfig.setDataDeepMerge(true);
-
   eleventyConfig.addLayoutAlias("post", "layouts/post/post.njk");
-
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return getReadableDate(dateObj);
   });
-
   eleventyConfig.addFilter("dump", (obj) => {
     return util.inspect(obj);
   });
@@ -217,7 +251,7 @@ module.exports = function (eleventyConfig) {
 
   // inline css https://www.11ty.dev/docs/quicktips/inline-css/
   eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({}).minify(code).styles;
+    return (new CleanCSS({}).minify(code)).styles;
   });
 
   eleventyConfig.addCollection("tagList", function (collection) {
@@ -252,6 +286,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("fonts");
+  eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy({ "favicon-data": "/" });
 
   // eleventyConfig.addPassthroughCopy({ "cert": "/"});

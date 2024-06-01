@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+---
+
+<script webc:setup>
+  const conditionalMainClass = templateClass ?? "";
+  const isPostPage = templateClass === "tmpl-post";
+  const maxWidthClass = isPostPage
+    ? "main-container-article-details"
+    : "max-width-main-container";
+  const mainClass = `main-container ${maxWidthClass} ${conditionalMainClass}`;
+</script>
+
+<link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
+<script :src="getBundleFileUrl('js')" webc:keep></script>
+<div class="app">
+  <template webc:type="11ty" 11ty:type="njk">
+    {% include "./layouts/header.njk" %}
+  </template>
+
+  <main :@class="mainClass">
+    <section class="content-main">
+      <div @raw="content"></div>
+    </section>
+
+    <aside class="other-content">
+      <div class="other-content-wrapper">
+        <!-- <spotify-playing webc:nokeep></spotify-playing> -->
+      </div>
+    </aside>
+  </main>
+</div>

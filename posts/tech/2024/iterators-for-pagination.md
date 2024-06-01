@@ -19,7 +19,7 @@ One interesting thing I stumbled upon today was their [`.paginate.iterator`](htt
 
 The nice thing about implementing this iterator function is that we can just use a normal `for await` loop and it’ll keep fetching next paginated page’s data. Something like
 
-```shiki
+```typescript {1}
 const mainCommits: Endpoints["GET /repos/{owner}/{repo}/commits"]["response"]["data"] = []
 const mainCommitsIterator = octokit.paginate.iterator(octokitRest.repos.listCommits, {
   ...githubDetails,

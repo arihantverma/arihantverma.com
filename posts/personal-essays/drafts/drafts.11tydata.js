@@ -1,4 +1,4 @@
-module.exports = {
-  eleventyExcludeFromCollections: true,
-  permalink: false
+export default {
+  draft: true,
+  eleventyExcludeFromCollections: true
 }

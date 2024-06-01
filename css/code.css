@@ -4,7 +4,6 @@ code {
     "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
     "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L",
     "Courier New", Courier, monospace;
-  line-height: 1.5;
   background: #fdf6e380;
   font-size: 1.2rem;
 }
@@ -13,7 +12,6 @@ pre {
   counter-reset: lineNumber;
   border-radius: 20px;
   font-size: 14px;
-  line-height: 1.375;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -52,12 +50,10 @@ code .highlight-line:before {
 }
 
 .highlight-line {
-  display: block;
   padding: 0.125em 1em;
   text-decoration: none;
   color: inherit;
 }
-
 /* allow highlighting empty lines */
 .highlight-line:empty:before {
   content: " ";
