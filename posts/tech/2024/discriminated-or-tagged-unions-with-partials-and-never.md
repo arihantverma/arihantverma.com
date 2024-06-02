@@ -1,6 +1,6 @@
 ---
 title: Discriminated / Tagged Union Types
-description: Make discriminated union types without common types.
+description: Let's learn about discriminated union types a little more than we already know.
 tags: ["typescript", "types", "discriminated", "union"]
 layout: layouts/post/post.njk
 twitterHashtags: typescript,types,discriminated,union
