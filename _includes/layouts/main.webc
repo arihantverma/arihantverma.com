@@ -23,10 +23,6 @@ layout: layouts/base.njk
       <div @raw="content"></div>
     </section>
 
-    <aside class="other-content">
-      <div class="other-content-wrapper">
-        <spotify-playing webc:nokeep></spotify-playing>
-      </div>
-    </aside>
+    <spotify-playing webc:nokeep></spotify-playing>
   </main>
 </div>

@@ -52,18 +52,6 @@ and (min-device-width: 768px) {
   }
 }
 
-.other-content {
-  display: flex;
-  justify-content: start;
-  /* added on March 10th, 2024*/
-  position: sticky;
-  bottom: 0;
-  background-color: #fbf6ef;
-  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(17, 24, 39, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
-  margin: 0 -20px;
-  padding: 0 10px;
-}
-
 @media only screen
 and (min-device-width: 768px) {
   .other-content {
@@ -122,11 +110,18 @@ and (min-device-width: 768px) {
   color: var(--navy);
 }
 
-/* .spotify--container {
-  margin-top: 20px;
+.spotify--container {
   display: flex;
-  align-items: center;
-} */
+  justify-content: start;
+  /* added on March 10th, 2024*/
+  position: sticky;
+  bottom: 0;
+  background-color: #728f95;
+  color: white;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(17, 24, 39, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
+  margin: 0 -20px;
+  padding: 0 10px;
+}
 
 .spotify--text-container {
   display: flex;
@@ -141,7 +136,7 @@ and (min-device-width: 768px) {
 #spotify--song-link {
   text-decoration: none;
   border-bottom: 2px dotted var(--oceanblue);
-  color: var(--navy);
+  color: var(--white);
   font-family: et-book, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -174,7 +169,7 @@ and (min-device-width: 768px) {
   border-bottom: 2px solid var(--oceanblue);
 }
 
-.layout-hidden {
+.layout-hidden, .layout-hide {
   opacity: 0;
   visibility: hidden;
 }
