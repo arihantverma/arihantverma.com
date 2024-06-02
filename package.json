@@ -2,25 +2,20 @@
   "name": "arihantverma.com",
   "version": "1.0.0",
   "description": "Arihant Verma's personal website",
+  "type": "module",
   "scripts": {
-    "buildprod": "DEBUG=* ELEVENTY_ENV=production eleventy",
-    "builddev": "DEBUG=* ELEVENTY_ENV=development eleventy",
     "watch": "eleventy --watch",
-    "servedev": "ELEVENTY_ENV=development eleventy --serve",
-    "startEleventy": "ELEVENTY_ENV=development eleventy --serve",
-    "debug": "DEBUG=* eleventy",
-    "serve:eleventy": "yarn startEleventy",
-    "serve:webpack": "webpack --env ELEVENTY_ENV=development --mode development --watch",
-    "start": "npm-run-all clean  --parallel serve:*",
+    "debug": "DEBUG=ELEVENTY* eleventy --serve",
+    "serve:eleventy": "eleventy --serve",
+    "dev": "npm-run-all clean  --parallel serve:*",
     "clean": "rimraf _site",
-    "build:webpack": "webpack --env ELEVENTY_ENV=production --mode production",
-    "build:eleventy": "ELEVENTY_ENV=production eleventy",
+    "build:eleventy": "eleventy",
     "build": "run-s clean build:*",
     "functions": "NODE_ENV=development npx netlify-cli functions:serve --port 8081"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/arihantverma/website"
+    "url": "git://github.com/arihantverma/arihantverma.com"
   },
   "author": {
     "name": "Arihant Verma",
@@ -29,26 +24,31 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arihantverma/website/issues"
+    "url": "https://github.com/arihantverma/arihantverma.com/issues"
   },
-  "homepage": "https://github.com/arihantverma/website#readme",
+  "homepage": "https://github.com/arihantverma/arihantverma.com#readme",
   "dependencies": {
-    "@11ty/eleventy-img": "3.1.8",
+    "@11ty/eleventy": "^3.0.0-alpha.10",
+    "@11ty/eleventy-img": "4.0.2",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "@shikijs/markdown-it": "^1.6.1",
     "clean-css": "^4.2.3",
-    "dotenv": "^10.0.0",
-    "eleventy-plugin-footnotes": "^0.9.0",
+    "dedent": "^1.5.3",
+    "dotenv": "^16.4.5",
+    "eleventy-plugin-footnotes": "^0.11.0",
     "isomorphic-unfetch": "^3.1.0",
-    "@11ty/eleventy": "^0.11.1",
-    "@11ty/eleventy-navigation": "^0.1.6",
-    "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "luxon": "^1.21.3",
-    "markdown-it": "^12.3.2",
-    "markdown-it-anchor": "^5.2.5",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.0.1",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2",
-    "webpack": "^5.14.0",
-    "webpack-cli": "^4.3.1",
+    "shiki": "^1.6.1",
     "svgo": "^2.3.1"
+  },
+  "resolutions": {
+    "@11ty/eleventy": "3.0.0-alpha.10"
   }
 }

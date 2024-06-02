@@ -4,7 +4,25 @@
  * @fileoverview Element that adds a share action on click
  */
 
-import isWebShareSupported from "../../utils/browser/is-new-share";
+// https://github.com/GoogleChrome/web.dev/blob/603a318d27d3152ee4f8aabb56370219c2832258/src/lib/utils/web-share.js
+function isWebShareSupported() {
+  if (!('share' in window.navigator)) {
+    return false;
+  }
+
+  /**
+   * ensure that the user would be able to share a reference URL
+   * This is part of Web Share Level 2, so feature-detect it:
+   * https://bugs.chromium.org/p/chromium/issues/detail?id=903010
+   */
+
+  if ('canShare' in navigator) {
+    const url = `https://${window.location.hostname}`;
+    return window.navigator.canShare({ url });
+  }
+
+  return true;
+ }
 
 /**
  * Renders share element. This simply adds behaviour to share,
@@ -13,16 +31,12 @@ import isWebShareSupported from "../../utils/browser/is-new-share";
  * @extends {HTMLElement}
  * @final
  */
-export default class ShareAction extends HTMLElement {
+class ShareAction extends HTMLElement {
   constructor() {
     super();
     const webShareIsSupported = isWebShareSupported();
-
     const label = webShareIsSupported ? "share" : "twitter";
-
     this.label = label;
-
-    this.setAttribute("data-label", label);
 
     const handler = webShareIsSupported
       ? this.oneWebShare
@@ -32,6 +46,7 @@ export default class ShareAction extends HTMLElement {
   }
 
   oneWebShare(e) {
+    alert('yeah')
     e.preventDefault();
 
     navigator.share({
@@ -62,4 +77,6 @@ export default class ShareAction extends HTMLElement {
   }
 }
 
-customElements.define("share-action", ShareAction);
+if ("customElements" in window) {
+  customElements.define("share-page", ShareAction);
+}

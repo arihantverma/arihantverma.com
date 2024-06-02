@@ -1,5 +1,5 @@
-const fetch = require('isomorphic-unfetch')
-const getAccessToken = require('./server/fetch-spotify-token')
+import fetch from 'isomorphic-unfetch';
+import getAccessToken from './server/fetch-spotify-token';
 
 const SPOTIFY_API_URL= 'https://api.spotify.com/v1/me/player/currently-playing';
 
@@ -26,7 +26,7 @@ const getResponseHeaders = (origin) => {
   return {}
 }
 
-exports.handler = async function fetchSpotifyCurrentPlaying(event, context) {
+export const handler = async (event, context) => {
   let spotifyCurrentPlayingData = null;
   let error = null;
 

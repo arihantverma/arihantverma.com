@@ -1,11 +1,18 @@
 ---
-title: Importance Of Talking And The Birth Of Accountability
-tags: ["personal essay", "accountability", "thoughts"]
+title: Iterators for Pagination
+description: How iterators are a natural fit for pagination requests.
+tags: ["iterator", "javascript", "octokit", "github", "api"]
 layout: layouts/post/post.njk
-date: 2020-12-31
-lastModified: 2020-12-31
-eleventyExcludeFromCollections: true
-permalink: false
+twitterHashtags: iterator,javascript,octokit,github,api
+date: 2024-05-29
+lastModified: 2024-05-29
+newsletter: "tech"
+typeOfPost: "essay"
+coverImage: "./images/pagination.png"
+coverImageAlt: "Pagination"
+coverImageCaption: "My Pagination Art"
+eleventyExcludeFromCollections: true,
+draft: true
 ---
 
 ## A Brief History Of Me Not Talking

@@ -4,7 +4,7 @@
 // const getReadableDate = require('../js/utils/get-readable-date');
 
 
-module.exports = {
+export default {
   permalink: "/posts/{{ page.date | date: '%Y/%m/%d' }}/{{ page.fileSlug }}/",
   ogType: "article",
   // eleventyComputed: {

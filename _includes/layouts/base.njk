@@ -70,49 +70,10 @@
     <link rel="stylesheet" href="{{ '/css/post-list.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/code.css' | url }}">
+    <script>{% include "components/share-page.js" %}</script>
     {% endif %}
-    <script defer src="/assets/site-main.js"></script>
   </head>
   <body>
-    <div
-      class="app">
-      {# flex r-cent-hor r-cent-vert #}
-      {% include "./_header.njk" %}
-
-
-    {% if templateClass %}
-      {% set conditionalMainClass = templateClass %}
-    {% endif %}
-
-    {% set isPostPage = templateClass == "tmpl-post" %}
-
-    {% if isPostPage %}
-      {% set maxWidthClass = "main-container-article-details" %}
-    {% else %}
-      {% set maxWidthClass = "max-width-main-container" %}
-    {% endif %}
-
-      <main class="main-container {{maxWidthClass}} {{conditionalMainClass}}">
-        <section class="content-main">
-          {{ content | safe }}
-        </section>
-
-        <aside class="other-content">
-          <div class="other-content-wrapper">
-            {% include "./_spotify.njk" %}
-
-            {# <hr style="margin-top:15px; margin-bottom:15px;"/>
-
-            <div>
-              Hello! I'm Arihant. On this website you'll find my tech, literature and life musings and essays. Thank you for stopping by.
-            </div> #}
-          </div>
-        </aside>
-      </main>
-
-
-      <footer></footer>
-    </div>
-    <!-- Current page: {{ page.url | url }} -->
+    {{ content | safe }}
   </body>
 </html>

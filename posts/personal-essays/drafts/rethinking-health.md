@@ -1,3 +1,19 @@
+---
+title: Iterators for Pagination
+description: How iterators are a natural fit for pagination requests.
+tags: ["iterator", "javascript", "octokit", "github", "api"]
+layout: layouts/post/post.njk
+twitterHashtags: iterator,javascript,octokit,github,api
+date: 2024-05-29
+lastModified: 2024-05-29
+newsletter: "tech"
+typeOfPost: "essay"
+coverImage: "./images/pagination.png"
+coverImageAlt: "Pagination"
+coverImageCaption: "My Pagination Art"
+eleventyExcludeFromCollections: true,
+draft: true
+---
 
 In 7th grade, when he had a heart attack, I had my 7th grade exams. For the first time, I had no parental help to prepare. I was also not exactly told what was wrong. My grandmother had informed just as much that Appa wasn't well. Since 2007, I never asked or knew which medicines he took for his left ventrical to keep functioning, for his high blood pressure and diabetes. He's never bothered with his health details. Not even when his feet swell. His blatant answer to how he's feeling or doing has been
 
