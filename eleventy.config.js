@@ -14,6 +14,7 @@ import { optimize } from 'svgo';
 import pluginWebc from '@11ty/eleventy-plugin-webc'
 import { EleventyRenderPlugin } from '@11ty/eleventy'
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import {inspect} from 'node:util'
 // import Shiki from '@shikijs/markdown-it'
 
 // NOT SUPPORTED FOR NUNJUCKS, to support nunjucks, have to load the language locally
@@ -198,6 +199,7 @@ export default function config (eleventyConfig) {
     `
   })
 
+  eleventyConfig.addFilter("debug", (content) => `<code><pre>${inspect(content)}</pre></code>`);
 
   eleventyConfig.addShortcode(
     "blur",

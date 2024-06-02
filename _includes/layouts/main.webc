@@ -5,6 +5,8 @@ layout: layouts/base.njk
 <script webc:setup>
   const conditionalMainClass = templateClass ?? "";
   const isPostPage = templateClass === "tmpl-post";
+  // const isNotPostPage = !isPostPage
+
   const maxWidthClass = isPostPage
     ? "main-container-article-details"
     : "max-width-main-container";
@@ -17,12 +19,16 @@ layout: layouts/base.njk
   <template webc:type="11ty" 11ty:type="njk">
     {% include "./layouts/header.njk" %}
   </template>
+<!-- 
+  <code>
+    <pre @text="pageData"></pre>
+  </code> -->
 
   <main :@class="mainClass">
     <section class="content-main">
       <div @raw="content"></div>
     </section>
 
-    <spotify-playing webc:nokeep></spotify-playing>
+    <spotify-playing webc:nokeep webc:if="isNotPostPage"></spotify-playing>
   </main>
 </div>
