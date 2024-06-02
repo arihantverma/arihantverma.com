@@ -2,10 +2,10 @@
   const endpointUrl = "/.netlify/functions/spotify";
 
   // prod
-  // const APIURL = endpointUrl;
+  const APIURL = endpointUrl;
 
   // dev
-  const APIURL = `http://localhost:8081${endpointUrl}`
+  // const APIURL = `http://localhost:8081${endpointUrl}`
 
 
   fetch(APIURL)
