@@ -1,4 +1,4 @@
 export default {
-  draft: true,
-  eleventyExcludeFromCollections: true
+  eleventyExcludeFromCollections: true,
+  draft: true
 }

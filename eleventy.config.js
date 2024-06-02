@@ -54,8 +54,7 @@ export default function config (eleventyConfig) {
 
   eleventyConfig.addGlobalData("eleventyComputed.permalink", function () {
 		return (data) => {
-			// Always skip during non-watch/serve builds
-			if (data.draft && !process.env.BUILD_DRAFTS) {
+			if (data.draft) {
 				return false;
 			}
 
@@ -68,8 +67,7 @@ export default function config (eleventyConfig) {
 		"eleventyComputed.eleventyExcludeFromCollections",
 		function () {
 			return (data) => {
-				// Always exclude from non-watch/serve builds
-				if (data.draft && !process.env.BUILD_DRAFTS) {
+				if (data.draft) {
 					return true;
 				}
 
@@ -78,12 +76,12 @@ export default function config (eleventyConfig) {
 		}
 	);
 
-	eleventyConfig.on("eleventy.before", ({ runMode }) => {
-		// Set the environment variable
-		if (runMode === "serve" || runMode === "watch") {
-			process.env.BUILD_DRAFTS = true;
-		}
-	});
+	// eleventyConfig.on("eleventy.before", ({ runMode }) => {
+	// 	// Set the environment variable
+	// 	if (runMode === "serve" || runMode === "watch") {
+	// 		process.env.BUILD_DRAFTS = true;
+	// 	}
+	// });
 
   eleventyConfig.addPlugin(pluginSyntaxHighlight, {
     alwaysWrapLineHighlights: true,

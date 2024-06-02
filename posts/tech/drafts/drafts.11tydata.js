@@ -1,4 +1,5 @@
 export default {
-  // eleventyExcludeFromCollections: true,
+  eleventyExcludeFromCollections: true,
+  draft: true
   // permalink: false
 }
