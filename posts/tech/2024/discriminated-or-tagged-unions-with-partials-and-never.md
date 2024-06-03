@@ -7,7 +7,7 @@ twitterHashtags: typescript,types,discriminated,union
 date: 2024-06-02
 lastModified: 2024-06-02
 typeOfPost: "essay"
-coverImage: "./images/discriminated-types-in-typescript.webp"
+coverImage: "./images/discriminated-union-types-in-typescript.webp"
 coverImageAlt: "Typescript Discriminated Union"
 coverImageCaption: "Typescript Discriminated Union"
 ---
