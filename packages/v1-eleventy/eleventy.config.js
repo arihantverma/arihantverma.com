@@ -367,7 +367,7 @@ export default function config (eleventyConfig) {
       let stats = await Image(src, {
         widths: [350, 808, null],
         formats: ["jpeg", "webp"],
-        urlPath: "/images",
+        urlPath: "/v1/images",
         outputDir: '_site/images/',
       });
 
@@ -418,7 +418,7 @@ export default function config (eleventyConfig) {
     // Best paired with the `url` filter: https://www.11ty.dev/docs/filters/url/
 
     // You can also pass this in on the command line using `--pathprefix`
-    // pathPrefix: "/",
+    pathPrefix: "/v1/",
 
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",

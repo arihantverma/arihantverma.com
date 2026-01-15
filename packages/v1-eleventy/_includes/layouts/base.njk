@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
+    <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
+    <link rel="mask-icon" href="{{ '/safari-pinned-tab.svg' | url }}" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     {% set absolutePageUrl %}{{ page.url | url | absoluteUrl(metadata.homeUrl) }}{% endset %} <meta charset="utf-8">
@@ -36,10 +36,10 @@
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
     <meta
     name="twitter:description" content="{{ description or metadata.description }}"> {# todo: find out what 'crossorigin' does #}
-    <link rel="preload" as="font" href="/fonts/CascadiaCode.woff2" type="font/woff2"> {# website css inline #}
-    <link rel="preload" as="font" href="/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff" type="font/woff2">
-    <link rel="preload" as="font" href="/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff" type="font/woff">
-    <link rel="preload" as="font" href="/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff" type="font/woff">
+    <link rel="preload" as="font" href="{{ '/fonts/CascadiaCode.woff2' | url }}" type="font/woff2"> {# website css inline #}
+    <link rel="preload" as="font" href="{{ '/fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff' | url }}" type="font/woff2">
+    <link rel="preload" as="font" href="{{ '/fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff' | url }}" type="font/woff">
+    <link rel="preload" as="font" href="{{ '/fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff' | url }}" type="font/woff">
 
     {% set css %}
     {% include "../../css/remedy/remedy.css" %}

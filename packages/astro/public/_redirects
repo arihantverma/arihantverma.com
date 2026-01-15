@@ -1,0 +1,14 @@
+# Static redirects (must come before dynamic/splat rules for performance)
+
+# Migrated from netlify.toml
+/resume  https://www.notion.so/arihant/Arihant-Verma-88508cf57c38404ebdfb2a3f2bfd6877  301
+/toyj    https://arihantverma.github.io/toyj  301
+
+# Legacy static paths → /v1/*
+/about   /v1/about  301
+
+# Dynamic redirects (splats) - legacy URLs → /v1/*
+/posts/*  /v1/posts/:splat  301
+/pages/*  /v1/pages/:splat  301
+/tags/*   /v1/tags/:splat   301
+/feed/*   /v1/feed/:splat   301

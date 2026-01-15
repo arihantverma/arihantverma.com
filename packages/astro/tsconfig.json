@@ -1,0 +1,34 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    // Effective TypeScript 2nd Edition recommendations
+    // (astro/tsconfigs/strict already enables strict: true)
+    "strictNullChecks": true,
+
+    // Safer indexed access - forces undefined checks on array/object access
+    "noUncheckedIndexedAccess": true,
+
+    // Stricter optional properties - distinguishes between missing and undefined
+    "exactOptionalPropertyTypes": true,
+
+    // Forces bracket notation for index signatures - clearer intent
+    "noPropertyAccessFromIndexSignature": true,
+
+    // Ensures all code paths return a value
+    "noImplicitReturns": true,
+
+    // Prevents accidental switch fallthrough
+    "noFallthroughCasesInSwitch": true,
+
+    // Faster builds by skipping .d.ts validation in node_modules
+    "skipLibCheck": true,
+
+    // Prevents cross-platform case sensitivity issues
+    "forceConsistentCasingInFileNames": true,
+
+    // Verbatim module syntax for ESM consistency
+    "verbatimModuleSyntax": true
+  },
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist", "public/v1"]
+}
