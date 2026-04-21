@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "./jc-reset.css";
+
+@theme {
+  --top-color: hsl(200, 70%, 78%);
+  --color-riri-background: hsl(0deg 0% 100%);
+}

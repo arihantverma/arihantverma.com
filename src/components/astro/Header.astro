@@ -1,0 +1,82 @@
+---
+import clsx from "clsx";
+import { headerNavEls } from "@consts";
+---
+
+<div
+  class={clsx(
+    "sticky top-0 left-0 right-0 z-10",
+    // mt-8
+    "w-full",
+    // "bg-[linear-gradient(to_top,transparent_0,var(--top-color)_100%)]",
+  )}
+>
+  <div class="relative" style="--thickness: 4px;">
+    <!-- TINTED GLASS UI START -->
+    <!-- backdrop -->
+    <div
+      class={clsx(
+        // position and layout
+        "absolute inset-0 h-[200%]",
+        // design
+        "rounded-sm backdrop-blur-lg",
+        // TODO: come back to this to change the colour once site colours are finalised
+        "bg-[linear-gradient(to_bottom,hsl(0deg_0%_95%),transparent_50%)]",
+        // design hack
+        "mask-[linear-gradient(to_bottom,black_0%_50%,transparent_50%_100%)]",
+        // behaviour
+        "pointer-events-none",
+      )}
+    >
+    </div>
+
+    <!-- backdrop edge -->
+    <div
+      class={clsx(
+        // position and layout
+        "absolute inset-0 h-full translate-y-full",
+        // design
+        "backdrop-blur-md brightness-120",
+        // design hack
+        "mask-[linear-gradient(to_bottom,black_0,black_var(--thickness),transparent_var(--thickness))]",
+        "bg-[hsl(0_0%_100%/0.1)]",
+        // behhaviour
+        "pointer-events-none",
+      )}
+    >
+    </div>
+
+    <!-- TINTED GLASS UI END -->
+
+    <div
+      class={clsx(
+        "max-w-5xl relative mx-auto w-full",
+        // DevNote: padding to match viewport content when need be
+      )}
+    >
+      <div class="flex items-center h-20">
+        <header class="flex items-center grow shrink basis-0 gap-12 h-12">
+          <a href="/" class="font-semibold text-2xl">Riri</a>
+          <nav class="relative">
+            <ul class="flex justify-center gap-2">
+              {
+                headerNavEls.map((el) => {
+                  return (
+                    <li>
+                      <a
+                        href={el.url}
+                        class="h-12 flex flex-col justify-center"
+                      >
+                        {el.text}
+                      </a>
+                    </li>
+                  );
+                })
+              }
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+  </div>
+</div>
