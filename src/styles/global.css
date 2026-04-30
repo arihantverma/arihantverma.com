@@ -1,7 +1,31 @@
 @import "tailwindcss";
 @import "./jc-reset.css";
+@plugin "@tailwindcss/typography";
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+  }
+}
 
 @theme {
   --top-color: hsl(200, 70%, 78%);
   --color-riri-background: hsl(0deg 0% 100%);
+  --font-playwrite-nz-guides: var(--astro-font-playwrite-nz-guides);
+}
+
+@theme static {
+  /*
+    Spacer tokens are consumed from inline styles in Spacer.astro.
+    Mark them static so Tailwind always emits the runtime CSS variables.
+  */
+  --spacing-spacer-3xs: calc(var(--spacing) * 1);
+  --spacing-spacer-2xs: calc(var(--spacing) * 2);
+  --spacing-spacer-xs: calc(var(--spacing) * 3);
+  --spacing-spacer-sm: calc(var(--spacing) * 4);
+  --spacing-spacer-md: calc(var(--spacing) * 6);
+  --spacing-spacer-lg: calc(var(--spacing) * 8);
+  --spacing-spacer-xl: calc(var(--spacing) * 12);
+  --spacing-spacer-2xl: calc(var(--spacing) * 16);
 }

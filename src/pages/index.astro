@@ -1,17 +1,6 @@
 ---
-import Header from "@components/astro/Header.astro";
-import Image from "astro/components/Image.astro";
-import LegoAvatar from "@images/lego-avatar-transparent-bg.png";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { homePageBasicSeoData } from "@consts";
 ---
 
-<BaseLayout {...homePageBasicSeoData}>
-  <div class="w-full">
-    <Image
-      src={LegoAvatar}
-      alt="Arihant's lego caricature avatar image"
-      class="block"
-    />
-  </div>
-</BaseLayout>
+<BaseLayout {...homePageBasicSeoData}> Home </BaseLayout>

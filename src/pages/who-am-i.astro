@@ -1,0 +1,32 @@
+---
+import MdxRenderer from "@components/astro/MdxRenderer.astro";
+import Spacer from "@components/astro/Spacer.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import LegoAvatar from "@images/lego-avatar-transparent-bg.png";
+import { Content as AboutMdxContent } from "@standalone-content/about-text.mdx";
+---
+
+<BaseLayout title="" description="" />
+<Spacer size="sm" axis="vertical" />
+<div class="max-w-4xl mx-auto">
+  <div class="flex">
+    <div class="flex-1">
+      <h1 class="text-5xl semibold font-playwrite-nz-guides">
+        Hello! I am Riri.
+      </h1>
+
+      <Spacer size="xl" axis="vertical" />
+      <MdxRenderer Content={AboutMdxContent} />
+    </div>
+    <div class="w-full flex-1">
+      <div class="relative mx-auto">
+        <Image
+          src={LegoAvatar}
+          alt="Arihant's lego caricature avatar image"
+          class="block"
+        />
+      </div>
+    </div>
+  </div>
+</div>

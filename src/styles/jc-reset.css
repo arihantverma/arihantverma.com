@@ -1,3 +1,5 @@
+/* Josh Comeau's CSS Reset */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
 @layer base {
   /* 1. Use a more-intuitive box-sizing model */
   *,

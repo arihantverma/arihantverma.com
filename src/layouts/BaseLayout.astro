@@ -5,7 +5,9 @@ import "@styles/global.css";
 import type { ImageMetadata } from "astro";
 
 import Header from "@components/astro/Header.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "@consts";
+import { SITE_TITLE } from "@consts";
+import Footer from "@components/astro/Footer.astro";
+import { Font } from "astro:assets";
 
 type SocialImage = ImageMetadata | string;
 
@@ -95,6 +97,8 @@ const socialImageUrl = image
     <!-- Uncomment when you add page-level structured data. -->
     <!-- <script type="application/ld+json">{JSON.stringify({})}</script> -->
 
+    <Font cssVariable="--astro-font-playwrite-nz-guides" />
+
     <slot name="head" />
   </head>
   <body>
@@ -111,6 +115,8 @@ const socialImageUrl = image
       <main id="main-content" tabindex="-1">
         <slot />
       </main>
+
+      <Footer />
     </div>
   </body>
 </html>

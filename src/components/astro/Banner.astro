@@ -1,0 +1,192 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import clsx from "clsx";
+
+interface Props {
+  animateOn?: "interaction" | "immediately";
+  image?: ImageMetadata;
+  panImage?: boolean;
+}
+
+const { animateOn = "interaction", image, panImage = true } = Astro.props;
+const hasTitleSlot = Astro.slots.has("title");
+const hasDescriptionSlot = Astro.slots.has("default");
+
+const shouldAnimate = hasDescriptionSlot;
+const shouldAnimateOnInteraction = shouldAnimate && animateOn === "interaction";
+const shouldAnimateImmediately = shouldAnimate && animateOn === "immediately";
+
+if (!hasTitleSlot) {
+  throw new Error("Banner requires a title slot.");
+}
+---
+
+<div
+  tabindex={shouldAnimateOnInteraction ? "0" : undefined}
+  class={clsx(
+    // fallback color
+    "bg-slate-100",
+    // position and layout
+    "relative h-48 overflow-hidden",
+    // typography
+    "text-white",
+    // component tokens
+    "[--banner-duration:500ms]",
+    "[--banner-easing:ease-in-out]",
+    "[--banner-overlay-opacity:0.8]",
+    "[--banner-overlay-start:50%]",
+    "[--banner-title-gap:0.75em]",
+    "[--banner-theme-color:var(--color-mist-800)]",
+    "[--banner-accent-color:var(--color-mist-600)]",
+    "[--banner-overlay-color:color-mix(in_srgb,var(--banner-theme-color)_70%,black)]",
+    // behaviour
+    shouldAnimateOnInteraction && "group",
+    shouldAnimateOnInteraction &&
+      "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--banner-accent-color)",
+    // motion
+    "transition-[opacity,translate] duration-(--banner-duration) ease-(--banner-easing) motion-reduce:transition-none",
+  )}
+>
+  {
+    image && (
+      <Image
+        src={image}
+        alt=""
+        aria-hidden="true"
+        class={clsx(
+          "absolute inset-0 h-full w-full object-cover",
+          panImage &&
+            "motion-safe:animate-[banner-image-pan_50s_linear_infinite_alternate]",
+        )}
+        loading="eager"
+      />
+    )
+  }
+
+  <!-- base readability gradient -->
+  <div
+    aria-hidden="true"
+    class="absolute inset-0 bg-linear-to-b from-transparent to-black/50"
+  >
+  </div>
+
+  <!-- overlay -->
+  <div
+    class={clsx(
+      // position and layout
+      "absolute inset-0",
+      // appearance
+      "bg-[linear-gradient(to_bottom,transparent_var(--banner-overlay-start),var(--banner-overlay-color)_100%)] opacity-0",
+      // behaviour
+      shouldAnimateOnInteraction &&
+        "group-hover:opacity-(--banner-overlay-opacity) group-focus:opacity-(--banner-overlay-opacity)",
+      shouldAnimateImmediately &&
+        "motion-safe:animate-[banner-overlay-reveal_var(--banner-duration)_var(--banner-easing)_forwards] motion-reduce:opacity-(--banner-overlay-opacity)",
+      // motion
+      "[transition:inherit]",
+    )}
+  >
+  </div>
+
+  <!-- text content -->
+  <div
+    class={clsx(
+      // position and layout
+      "absolute inset-x-0",
+      "top-full",
+      "px-4 pb-4 md:px-8",
+      // typography
+      "text-sm md:text-base",
+      "[text-shadow:0_1px_4px_rgb(0_0_0/0.35)]",
+      // behaviour
+      shouldAnimateOnInteraction &&
+        "group-hover:-translate-y-full group-focus:-translate-y-full",
+      shouldAnimateImmediately &&
+        "motion-safe:animate-[banner-content-reveal_var(--banner-duration)_var(--banner-easing)_forwards] motion-reduce:-translate-y-full",
+      // motion
+      "[transition:inherit]",
+    )}
+  >
+    <p
+      class={clsx(
+        // position and layout
+        // Remove paragraph margins so the title-height translate math stays exact.
+        "m-0",
+        // Lift the title by its own height, plus a small bottom breathing gap.
+        "translate-y-[calc(-100%-var(--banner-title-gap))]",
+        // Style the title container, but leave unknown slotted inline markup alone.
+        "text-xl leading-tight font-semibold md:text-2xl",
+        // behaviour
+        shouldAnimateOnInteraction &&
+          // Revealed state returns the title to its natural position.
+          "group-hover:translate-y-0 group-focus:translate-y-0",
+        shouldAnimateImmediately &&
+          "motion-safe:animate-[banner-title-reveal_var(--banner-duration)_var(--banner-easing)_forwards] motion-reduce:translate-y-0",
+        // motion
+        "[transition:inherit]",
+      )}
+    >
+      <slot name="title" />
+    </p>
+    {
+      hasDescriptionSlot && (
+        // The default slot is intentionally wrapped in a paragraph.
+        // Pass inline phrasing content only: text, span, em, strong, etc.
+        <p
+          class={clsx(
+            // Reset margins so description spacing is owned by the component.
+            "m-0 mt-2 max-w-[100ch]",
+            // The rule and italic style make this read as supporting text.
+            "italic text-[0.9em] border-s border-current ps-4 ms-1",
+            // Start subdued; both reveal modes bring the description to full opacity.
+            "opacity-30",
+            shouldAnimateOnInteraction &&
+              "group-hover:opacity-100 group-focus:opacity-100",
+            shouldAnimateImmediately &&
+              "motion-safe:animate-[banner-description-reveal_var(--banner-duration)_var(--banner-easing)_forwards] motion-reduce:opacity-100",
+            "[transition:inherit]",
+          )}
+        >
+          <slot />
+        </p>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  @keyframes banner-content-reveal {
+    to {
+      translate: 0 -100%;
+    }
+  }
+
+  @keyframes banner-title-reveal {
+    to {
+      translate: 0 0;
+    }
+  }
+
+  @keyframes banner-description-reveal {
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes banner-overlay-reveal {
+    to {
+      opacity: var(--banner-overlay-opacity);
+    }
+  }
+
+  @keyframes banner-image-pan {
+    from {
+      object-position: center 0%;
+    }
+
+    to {
+      object-position: center 100%;
+    }
+  }
+</style>

@@ -11,7 +11,21 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: "https://arihantverma.com",
   integrations: [mdx(), sitemap(), react()],
-  fonts: [],
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      // Google/Fontsource expose this family under the NZ abbreviation.
+      name: "Playwrite NZ Guides",
+      cssVariable: "--astro-font-playwrite-nz-guides",
+      weights: [400],
+      styles: ["normal"],
+      // Google metadata exposes this family as `menu`, but the returned CSS
+      // labels the only block as `fallback`, so we include both for Astro.
+      subsets: ["menu", "fallback"],
+      // TODO: change this fallback to something else.
+      fallbacks: ["cursive"],
+    },
+  ],
   vite: {
     plugins: [tailwindcss()],
   },

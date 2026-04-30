@@ -6,16 +6,16 @@ export const SITE_DESCRIPTION = 'Welcome to my website!';
 
 export const headerNavEls = [
   {
-    text: 'Who am I?',
+    text: 'Who am I',
     url: '/who-am-i'
   },
   {
-    text: 'Who are you?',
+    text: 'Who are you',
     url: '/who-are-you'
   },
   {
-    text: 'blog',
-    url: '/blog'
+    text: 'Writing',
+    url: '/writing'
   },
 ] satisfies Array<{ text: string, url: string }>
 

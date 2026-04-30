@@ -1,4 +1,7 @@
 ---
+import Banner from "@components/astro/Banner.astro";
+import Spacer from "@components/astro/Spacer.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 import { type CollectionEntry, getCollection, render } from "astro:content";
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -13,4 +16,28 @@ const post = Astro.props;
 const { Content } = await render(post);
 ---
 
-<Content />
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  ogType="article"
+>
+  <div class="max-w-4xl mx-auto">
+    <Banner image={post.data.heroImage}>
+      <Fragment slot="title">
+        You are currently in a <strong>sea of fields </strong>
+      </Fragment>
+
+      <span>
+        The wind picks up and begins to blow harder. The soothing rustling of
+        the grass mingles with the chirping of crickets in a calm melody. The
+        sun, reflecting off the vast green field, makes you think for a moment
+        of an endless golden carpet unfolding before you. The verdant trees,
+        bent by the wind, and the numerous patches of wild vegetables reveal a
+        fertile land like few others.
+      </span>
+    </Banner>
+
+    <Spacer axis="vertical" />
+    <Content />
+  </div>
+</BaseLayout>

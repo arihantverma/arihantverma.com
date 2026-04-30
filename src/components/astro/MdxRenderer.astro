@@ -1,0 +1,24 @@
+---
+import clsx from "clsx";
+import type { MDXContentProps } from "astro";
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"section"> {
+  Content: AstroComponentFactory;
+  components?: MDXContentProps["components"];
+  as?: keyof HTMLElementTagNameMap;
+}
+
+const {
+  Content,
+  components = {},
+  as: Element = "div",
+  class: className,
+  ...delegated
+} = Astro.props;
+---
+
+<Element class={clsx("prose max-w-none", className)} {...delegated}>
+  <Content components={components} />
+</Element>
